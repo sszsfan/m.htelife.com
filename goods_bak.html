@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="Author" content="xiaoxiongdao.com Inc.">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>衣物管理</title>
+		<link rel="icon" href="images/favicon.ico">
+		<link href="styles/common.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<!-- start pane_box -->
+		<div class="pane_box wc_view">
+			<!-- start pane -->
+			<div class="pane wc_view pane_right_width_380">
+				<!-- start pane_left -->
+				<div class="pane_left wc_view">
+					<div class="toolbar wc_view">
+						<div class="wc_controls wc_view" id="js_openallnav">
+							<div class="nav_title">衣物管理</div>
+							<div class="logo"></div>
+							<div class="icon_down"></div>
+						</div>
+						<div class="allnavbox wc_view selectno" style="display:none;" id="js_allnav">
+							<div class="allnav">
+								<a href="order_wash.html">
+									<div class="icon"><img src="images/allnav_001.png"></div>
+									<div class="text">订单管理</div>
+								</a>
+								<a href="goods.html" class="active">
+									<div class="icon"><img src="images/allnav_004.png"></div>
+									<div class="text">衣物管理</div>
+								</a>
+								
+								<a href="user.html">
+									<div class="icon"><img src="images/allnav_005.png"></div>
+									<div class="text">用户管理</div>
+								</a>
+								<a href="trade_recharge.html">
+									<div class="icon"><img src="images/allnav_008.png"></div>
+									<div class="text">充值记录</div>
+								</a>
+								<a href="stockin.html">
+									<div class="icon"><img src="images/stockin.png"></div>
+									<div class="text">入库</div>
+								</a>
+								<a href="stockout.html">
+									<div class="icon"><img src="images/stockout.png"></div>
+									<div class="text">出库</div>
+								</a>
+								<a href="leavefactory.html">
+									<div class="icon"><img src="images/stockout.png"></div>
+									<div class="text">出厂</div>
+								</a>
+								<a href="coupons.html">
+									<div class="icon"><img src="images/allnav_006.png"></div>
+									<div class="text">优惠券</div>
+								</a>
+								<a href="staff.html">
+									<div class="icon"><img src="images/allnav_007.png"></div>
+									<div class="text">员工管理</div>
+								</a>
+								<a href="community.html">
+									<div class="icon"><img src="images/allnav_002.png"></div>
+									<div class="text">小区管理</div>
+								</a>
+								<a href="srpersonnel.html">
+									<div class="icon"><img src="images/allnav_003.png"></div>
+									<div class="text">收送专员</div>
+								</a>
+								<a href="product.html">
+									<div class="icon"><img src="images/allnav_004.png"></div>
+									<div class="text">产品管理</div>
+								</a>
+								<a href="setup.html">
+									<div class="icon"><img src="images/allnav_0014.png"></div>
+									<div class="text">设置</div>
+								</a>
+								<a href="index.html">
+									<div class="icon"><img src="images/home.png"></div>
+									<div class="text">主页</div>
+								</a>
+							</div>
+							<div class="pointer wc_view"></div>
+						</div>
+					</div>
+					<div class="contentbody wc_view" style="bottom:0px;">
+						<div class="l_content">
+							<div class="memu" style="top:0px;">
+								<div class="menu_item active">
+									<div class="item_border"></div>
+									<div class="item_text">未出库</div>
+								</div>
+								<div class="menu_item">
+									<div class="item_border"></div>
+									<div class="item_text">已出库</div>
+								</div>
+								<div class="menu_item">
+									<div class="item_border"></div>
+									<div class="item_text">所有</div>
+								</div>
+								<div class="menu_item">
+									<div class="item_border"></div>
+									<div class="item_text">返工</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end pane_left -->
+				
+				<!-- start pane_left_line -->
+				<div class="pane_left_line wc_view"><div class="line"></div></div>
+				<!-- end pane_left_line -->
+				
+				<!-- start pane_center -->
+				<div class="pane_center wc_view">
+					<div class="toolbar wc_view">
+						<div class="search wc_view">
+							<div class="inputinner wc_view">
+								<div class="icon_search wc_view"></div>
+								<input type="text" placeholder="快速搜索" class="inputtext wc_view">
+							</div>
+							<div class="buttoninner wc_view">
+								<button class="button wc_view">搜索</button>
+							</div>
+						</div>
+					</div>
+					<div class="contenttop wc_view">
+						<div class="selectbar" style=""><!-- height:90px; -->
+							<div class="tabnav">
+								<div class="bh">
+									<div class="tabnav_item"><span class="t first">今天</span></div>
+									<div class="tabnav_item active"><span class="t">近7天</span></div>
+									<div class="tabnav_item"><span class="t">近30天</span></div>
+									<div class="tabnav_item"><span class="t">所有</span></div>
+									<div class="tabnav_item"><span class="t last">自定义</span></div>
+								</div>
+								<div class="tobox" style="display:none;"><!-- 当点击“自定义”出现 -->
+									<input type="text" class="input" placeholder="开始时间">
+									<i class="text">至</i>
+									<input type="text" class="input" placeholder="结束时间">
+									<button class="button">筛选</button>
+								</div>
+							</div>
+							<div class="recordnum">共有<span class="color_blue">16</span>条记录</div>
+						</div>
+					</div>
+					<div class="contentbody wc_view" style="bottom:0px;"><!-- top:146px; -->
+						<div class="order_list">
+							<div class="order_item">
+								<div class="bh">
+									<div class="user">453241907 光面皮衣加脂复柔</div>
+									<div class="state"><span class="color_red">未出库</span></div>
+								</div>
+							</div>
+							<div class="order_item active">
+								<div class="bh">
+									<div class="user">453241909 外套</div>
+									<div class="state"><span class="color_red">未出库</span></div>
+								</div>
+							</div>
+							<div class="order_item">
+								<div class="bh">
+									<div class="user">453241907 光面皮衣加脂复柔</div>
+									<div class="state"><span class="color_red">未出库</span></div>
+								</div>
+							</div>
+							<div class="order_item">
+								<div class="bh">
+									<div class="user">453241909 外套</div>
+									<div class="state"><span class="color_red">未出库</span></div>
+								</div>
+							</div>
+							<div class="order_item">
+								<div class="bh">
+									<div class="user">453241907 光面皮衣加脂复柔</div>
+									<div class="state"><span class="color_red">未出库</span></div>
+								</div>
+							</div>
+							<div class="order_item">
+								<div class="bh">
+									<div class="user">453241909 外套</div>
+									<div class="state"><span class="color_red">未出库</span></div>
+								</div>
+							</div>
+							<div class="loadingmore">正在加载更多 <img src="images/loading.gif"></div>
+							<div class="data_none">无搜索结果</div>
+							<div class="loadingbox"><img src="images/loading.gif"></div>
+						</div>
+					</div>
+				</div>
+				<!-- end pane_center -->
+				
+				<!-- start pane_center_line -->
+				<div class="pane_center_line wc_view"><div class="line"></div></div>
+				<!-- end pane_center_line -->
+				
+				<!-- start pane_right -->
+				<div class="pane_right wc_view" id="js_pane_right_width">
+					<div class="toolbar wc_view selectno">
+						<div class="wc_controls wc_view">
+							<div class="nav_title" id="js_logout">国家体育馆店-管理员</div>
+							<div class="icon_down"></div>
+							<ul class="selectnav_son selectno" style="display:none;" id="js_logout_open">
+								<div class="pointer wc_view"></div>
+								<li>安全退出</li>
+							</ul>
+						</div>
+					</div>
+					<div class="contentbody wc_view">
+						<div class="detail_info">
+							<div class="item">
+								<div class="bh">
+									<div class="i_title">453241909 外套</div>
+								</div>
+								<div class="i_describe"><i>货架号码：</i><span class="fsize20">224</span></div>
+								<div class="i_describe"><i>订单编号：</i>W20150816502317</div>
+								<div class="i_describe"><i>地址：</i>长沙市-岳麓区-涉外-</div>
+								<div class="i_describe"><i>入库操作人：</i>超级用户</div>
+								<div class="i_describe"><i>入库时间：</i>2015-08-16 15:48:12</div>
+								<div class="i_describe"><i>出库操作人：</i>无</div>
+								<div class="i_describe"><i>出库时间：</i>无</div>
+								<div class="i_describe"><i>返工操作人：</i>无</div>
+								<div class="i_describe"><i>返工时间：</i>无</div>
+								<div class="i_describe"><i>服务类型：</i>A</div>
+								<div class="i_describe"><i>特征：</i>起球 油漆渍 衬破 </div>
+								<div class="i_describe"><i>附加服务：</i>无</div>
+								<div class="buttonbar bordertop">
+									<div class="button_item">
+										<button onclick="stockOut()" class="btn btn_blue">出库</button></div> <div class="button_item">
+										<button onclick="jumpOrderDetail()" class="btn btn_blue">订单信息</button>
+									</div>
+								</div>
+							</div>
+							<div class="data_none">未选取</div>
+							<div class="loadingbox"><img src="images/loading.gif"></div>
+						</div>
+					</div>
+				</div>
+				<!-- end pane_right -->
+			</div>
+			<!-- end pane -->
+		</div>
+		<!-- end pane_box -->
+		
+		<!-- //提示 开始 -->
+		<div class="modal" id="modal_001" style="display: none;">
+		  <div class="modal_dialog_tips" id="modal_t_001">
+		    <div class="modal_content">
+		    	<div class="mc_body">
+		    		<span class="color_red">确认该衣物返工吗？</span>
+		    	</div>
+		    	<div class="mc_foot">
+		    		<div class="buttonbar">
+						<div class="button_item"><button class="btn btn_grey js_drop_001">取消</button></div>
+						<div class="button_item"><button class="btn btn_red js_drop_001">确定</button></div>
+					</div>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="modal_cover"></div>
+		</div>
+		<!-- //提示 结束 -->
+		
+		<!-- //输入框 开始 -->
+		<div class="modal" id="modal_002" style="display: none;">
+		  <div class="modal_dialog_tips" id="modal_t_002">
+		    <div class="modal_content">
+		    	<div class="mc_body">
+		    		<div class="inputitem">
+		    			<span class="">确认出库吗？</span>
+		    		</div>
+		    	</div>
+		    	<div class="mc_foot">
+		    		<div class="buttonbar">
+						<div class="button_item"><button class="btn btn_grey js_drop_002">取消</button></div>
+						<div class="button_item"><button class="btn btn_blue js_drop_002">确定</button></div>
+					</div>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="modal_cover"></div>
+		</div>
+		<!-- //输入框 结束 -->
+		
+		<!-- //大型弹出层 开始 -->
+		<div class="modal" id="modal_big_001" style="display: none;">
+		  <div class="modal_dialog_big" id="modal_t_big_001">
+		    <div class="modal_content">
+		    	<div class="mc_body">
+		    		<div class="inputitem">
+		    			<input type="text" class="inputtext" placeholder="录入运单号码" onfocus="">
+		    		</div>
+		    	</div>
+		    	<div class="mc_foot">
+		    		<div class="buttonbar">
+						<div class="button_item"><button class="btn btn_grey js_drop_002">取消</button></div>
+						<div class="button_item"><button class="btn btn_blue js_drop_002">确定</button></div>
+					</div>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="modal_cover"></div>
+		</div>
+		<!-- //大型弹出层 结束 -->
+		
+		
+		
+		<!-- start javascript -->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/common.js"></script>
+		<!-- end javascript -->
+
+	</body>
+</html>

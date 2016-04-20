@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="Author" content="xiaoxiongdao.com Inc.">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>客户详情</title>
+		<link rel="icon" href="images/favicon.ico">
+		<link href="styles/common.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<!-- start pane_box -->
+		<div class="pane_box wc_view">
+			<!-- start pane -->
+			<div class="pane wc_view pane_row_2">
+				<!-- start pane_left -->
+				<div class="pane_left wc_view">
+					<div class="toolbar wc_view">
+						<div class="wc_controls wc_view selectno" id="js_openallnav">
+							<div class="nav_title">客户管理</div>
+							<div class="logo"></div>
+							<div class="icon_down" style="left:140px;"></div>
+						</div>
+						<div class="allnavbox wc_view selectno" style="display:none;" id="js_allnav">
+							<div class="allnav">
+								<a href="order_wash.html">
+									<div class="icon"><img src="images/allnav_001.png"></div>
+									<div class="text">订单管理</div>
+								</a>
+								<a href="goods.html">
+									<div class="icon"><img src="images/allnav_004.png"></div>
+									<div class="text">衣物管理</div>
+								</a>
+								<a href="user.html" class="active">
+									<div class="icon"><img src="images/allnav_005.png"></div>
+									<div class="text">客户管理</div>
+								</a>
+								<a href="trade.html">
+									<div class="icon"><img src="images/allnav_008.png"></div>
+									<div class="text">交易记录</div>
+								</a>
+								<a href="stockin.html">
+									<div class="icon"><img src="images/stockin.png"></div>
+									<div class="text">订单入库</div>
+								</a>
+								<a href="check.html">
+									<div class="icon"><img src="images/clothing_stockin.png"></div>
+									<div class="text">衣物分拣</div>
+								</a>
+								<a href="stockout.html">
+									<div class="icon"><img src="images/stockout.png"></div>
+									<div class="text">出库</div>
+								</a>
+								<a href="leavefactory.html">
+									<div class="icon"><img src="images/leavefactory.png"></div>
+									<div class="text">出厂</div>
+								</a>
+								<a href="coupons.html">
+									<div class="icon"><img src="images/allnav_006.png"></div>
+									<div class="text">应用营销</div>
+								</a>
+								<a href="staff.html">
+									<div class="icon"><img src="images/allnav_007.png"></div>
+									<div class="text">员工管理</div>
+								</a>
+								<a href="community.html">
+									<div class="icon"><img src="images/allnav_002.png"></div>
+									<div class="text">小区管理</div>
+								</a>
+								<a href="store.html">
+									<div class="icon"><img src="images/allnav_store.png"></div>
+									<div class="text">门店管理</div>
+								</a>
+								<a href="factory.html">
+									<div class="icon"><img src="images/factory.png"></div>
+									<div class="text">工厂管理</div>
+								</a>
+								<a href="store_owner.html">
+									<div class="icon"><img src="images/allnav_storeowner.png"></div>
+									<div class="text">店主管理</div>
+								</a>
+								<a href="operation.html">
+									<div class="icon"><img src="images/allnav_operation.png"></div>
+									<div class="text">运营中心</div>
+								</a>
+								<a href="srpersonnel.html">
+									<div class="icon"><img src="images/allnav_003.png"></div>
+									<div class="text">收送专员</div>
+								</a>
+								<a href="logistic.html">
+									<div class="icon"><img src="images/logistic.png"></div>
+									<div class="text">物流人员</div>
+								</a>
+								<a href="product.html">
+									<div class="icon"><img src="images/product.png"></div>
+									<div class="text">产品管理</div>
+								</a>
+								<a href="setup.html">
+									<div class="icon"><img src="images/allnav_0014.png"></div>
+									<div class="text">设置</div>
+								</a>
+								<a href="index.html">
+									<div class="icon"><img src="images/home.png"></div>
+									<div class="text">主页</div>
+								</a>
+								<a href="telephone.html">
+									<div class="icon"><img src="images/order_stockincloting.png"></div>
+									<div class="text">下单收衣</div>
+								</a>
+								<a href="waybill.html">
+									<div class="icon"><img src="images/icon_waybill.png"></div>
+									<div class="text">运单码</div>
+								</a>
+								<a href="station.html">
+									<div class="icon"><img src="images/station.png"></div>
+									<div class="text">工作站</div>
+								</a>
+							</div>
+							<div class="pointer wc_view"></div>
+						</div>
+					</div>
+					<div class="contentbody wc_view" style="bottom:0px;">
+						<div class="l_content">
+							<div class="memu" style="top:0px;">
+								<div class="menu_item" onclick="location.href='user.html'">
+									<div class="item_border"></div>
+									<div class="item_text">客户概况</div>
+								</div>
+								<div class="menu_item active" onclick="location.href='user_all.html'">
+									<div class="item_border"></div>
+									<div class="item_text">所有客户</div>
+								</div>
+								<div class="menu_item" onclick="location.href='user_group.html'">
+									<div class="item_border"></div>
+									<div class="item_text">分组管理</div>
+								</div>
+								<div class="menu_item" onclick="location.href='user_cards.html'">
+									<div class="item_border"></div>
+									<div class="item_text">客户等级</div>
+								</div>
+								<div class="menu_item" onclick="location.href='user_tag.html'">
+									<div class="item_border"></div>
+									<div class="item_text">标签管理</div>
+								</div>
+								<div class="menu_item" onclick="location.href='user_points.html'">
+									<div class="item_border"></div>
+									<div class="item_text">积分管理</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end pane_left -->
+				
+				<!-- start pane_left_line -->
+				<div class="pane_left_line wc_view"><div class="line"></div></div>
+				<!-- end pane_left_line -->
+					
+				<!-- start pane_right -->
+				<div class="pane_right wc_view">
+					<div class="toolbar wc_view selectno">
+						<div class="wc_controls wc_view">
+							<div class="nav_title" id="js_logout">超级管理员</div>
+							<div class="icon_down"></div>
+							<ul class="selectnav_son selectno" style="display:none;" id="js_logout_open">
+								<div class="pointer wc_view"></div>
+								<li>安全退出</li>
+							</ul>
+						</div>
+					</div>
+					<div class="contentbody wc_view">
+						<div class="detail_info user_detail">
+							<div class="pagetitle">
+								<a href="user_all.html">所有客户</a>
+								<span class="gegege">/</span>
+								<a href="user_detail.html" class="on">王国军</a>
+								<span class="right"><button class="btn_s btn_white">拉黑</button> <button class="btn_s btn_white">销户</button></span>
+							</div>
+							
+							<div class="tabbarbox">
+								<div class="tabbar">
+									<ul>
+										<li class="active"><a href="javascript:void(0);">基本信息</a></li>
+										<li><a href="javascript:void(0);">地址</a></li>
+										<li><a href="javascript:void(0);">消费记录</a></li>
+										<li><a href="javascript:void(0);">充值记录</a></li>
+										<li><a href="javascript:void(0);">优惠券</a></li>
+										<li><a href="javascript:void(0);">优惠码</a></li>
+										<li><a href="javascript:void(0);">订单</a></li>
+										<li><a href="javascript:void(0);">衣物统计</a></li>
+									</ul>
+								</div>
+								<!-- //tabbar -->
+							</div>
+							<!-- //tabbarbox -->
+							
+							<div class="p20">
+								<div class="user_info">
+									<img src="images/avatar_user.png" class="user_avatar" />
+									<div class="user_avatar_edit"><span class="action">修改</span></div>
+									<div class="user_info_meta">
+										<div class="u_item name_item">
+											<span class="name left">王国军（王）</span>
+											<span class="usertype left">
+										    	<i class="itemarea weixin"></i>
+										    	<i class="itemarea mobi"></i>
+										    	<i class="itemarea mobiok"></i>
+										    	<i class="itemarea android"></i>
+										    	<i class="itemarea ios"></i>
+										    </span>
+										    <span class="action">改备注</span>
+										</div>
+										<div class="u_item mobi_item">
+											<div class="mobi">18678788787 <span class="mark mark_grey">未绑定手机</span></div>
+										</div>
+										<div class="u_item desc_item">
+											<div class="desc"><span class="d_title">微信昵称：</span>会飞的猪</div>
+										</div>
+										<div class="u_item desc_item">
+											<div class="desc"><span class="d_title">会员卡号：</span>88800159</div>
+										</div>
+										<div class="u_item desc_item">
+											<div class="desc"><span class="d_title">客户性别：</span>男</div>
+										</div>
+										<div class="u_item desc_item">
+											<div class="desc"><span class="d_title">出生日期：</span>公历：1992年10月1日 <span class="action js_button_002">修改</span></div>
+										</div>
+										<div class="u_item desc_item">
+											<div class="desc">
+												<span class="d_title">所属分组：</span>
+												<span class="pointerbox">
+													中国银行VIP<i class="pointer"></i>
+													<div class="dropdown_normal_container" style="display: block;">
+														<div class="pointer_ppp wc_view"></div>
+													    <ul class="dropdown_data_list">
+												            <li class="dropdown_data_item ">  
+												                <a href="javascript:void(0);">分组一</a>
+												            </li>
+												            <li class="dropdown_data_item ">  
+												                <a href="javascript:void(0);">分组一</a>
+												            </li>
+													    </ul>
+													</div>
+													<!-- //dropdown_normal_container -->
+												</span>
+											</div>
+										</div>
+										<div class="u_item desc_item">
+											<div class="desc"><span class="d_title">创建时间：</span>2015-10-01 14:30</div>
+										</div>
+										<div class="u_item desc_item">
+											<div class="desc"><span class="d_title">最近下单：</span>2015-10-01 14:30</div>
+										</div>
+										<div class="u_item desc_item">
+											<div class="desc"><span class="d_title">所属门店：</span>华天e生活五一大道店<span class="gegege">-</span>水立方店</div>
+										</div>
+										<div class="u_item desc_item">
+											<div class="desc"><span class="d_title">客户等级：</span><span class="pointerbox mt5">金卡用户<i class="pointer"></i></span> <span class="color_grey">6.5折</span></div>
+										</div>
+										<div class="u_item desc_item">
+											<div class="desc"><span class="d_title">客户积分：</span>109 <span class="action">给积分</span></div>
+										</div>
+										<div class="u_item desc_item">
+											<div class="desc"><span class="d_title">客户余额：</span>2048.00 元 <span class="action">充值</span></div>
+										</div>
+										<div class="u_item desc_item">
+											<div class="desc"><span class="d_title">客户标签：</span>住别墅<span class="gegege">-</span>家有小孩<span class="gegege">-</span>豪爽 <span class="action">修改</span></div>
+										</div>
+										<div class="u_item desc_item">
+											<div class="desc"><span class="d_title">所在地区：</span>中国 湖南 长沙</div>
+										</div>
+										<div class="u_item desc_item">
+											<div class="desc"><span class="d_title">详细地址：</span>岳麓大道99号</div>
+										</div>
+									</div>
+									<!-- //user_info_meta -->
+									<div class="user_info_data">
+										<ul>
+											<li>
+												<div class="title">均价（元）</div>
+												<div class="num">79.00</div>
+											</li>
+											<li>
+												<div class="title">订单</div>
+												<div class="num">300</div>
+											</li>
+											<li>
+												<div class="title">总额（元）</div>
+												<div class="num">23800.00</div>
+											</li>
+										</ul>
+									</div>
+									<!-- //user_info_data -->
+								</div>
+								<!-- //user_info -->
+							</div>
+							
+							
+							<!-- 地址 开始 -->
+							<div style="display:block;">
+								<div class="p20">
+									<div class="row_box">
+										新增地址
+									</div>
+									<div class="ui_box">
+										<div class="formglobalbox">
+											<div class="formglobal">
+												<div class="itemgroup">
+													<div class="titlebox">
+														<div class="title">
+															<span class="color_red">（必填）</span>所在地区
+														</div>
+													</div>
+													<div class="contentbox">
+														<div class="content">
+															<div class="selectbox">
+												    			<div class="dropdown_menu left">
+													    			<a href="javascript:;" class="dropdown_a">
+													    				<label>湖南省</label>
+													    				<i class="arrow"></i>
+													    			</a>
+																	<div class="dropdown_data_container" style="display: none;">
+																		<div class="pointer wc_view"></div>
+																	    <ul class="dropdown_data_list">
+																            <li class="dropdown_data_item ">  
+																                <a href="javascript:void(0);">北京市</a>
+																            </li>
+																            <li class="dropdown_data_item ">  
+																                <a href="javascript:void(0);">湖南省</a>
+																            </li>
+																            <li class="dropdown_data_item ">  
+																                <a href="javascript:void(0);">深圳市</a>
+																            </li>
+																	    </ul>
+																	</div>
+																</div>
+																<div class="dropdown_menu left">
+													    			<a href="javascript:;" class="dropdown_a">
+													    				<label>长沙市</label>
+													    				<i class="arrow"></i>
+													    			</a>
+																	<div class="dropdown_data_container" style="display: none;">
+																		<div class="pointer wc_view"></div>
+																	    <ul class="dropdown_data_list">
+																            <li class="dropdown_data_item ">  
+																                <a href="javascript:void(0);">长沙市</a>
+																            </li>
+																            <li class="dropdown_data_item ">  
+																                <a href="javascript:void(0);">株洲市</a>
+																            </li>
+																            <li class="dropdown_data_item ">  
+																                <a href="javascript:void(0);">湘潭市</a>
+																            </li>
+																	    </ul>
+																	</div>
+																</div>
+																<div class="dropdown_menu left">
+													    			<a href="javascript:;" class="dropdown_a">
+													    				<label>岳麓区</label>
+													    				<i class="arrow"></i>
+													    			</a>
+																	<div class="dropdown_data_container" style="display: none;">
+																		<div class="pointer wc_view"></div>
+																	    <ul class="dropdown_data_list">
+																            <li class="dropdown_data_item ">  
+																                <a href="javascript:void(0);">长沙市</a>
+																            </li>
+																            <li class="dropdown_data_item ">  
+																                <a href="javascript:void(0);">株洲市</a>
+																            </li>
+																            <li class="dropdown_data_item ">  
+																                <a href="javascript:void(0);">湘潭市</a>
+																            </li>
+																	    </ul>
+																	</div>
+																</div>
+												    		</div>
+												    		<!-- //selectbox -->
+														</div>
+													</div>
+												</div>
+												<div class="itemgroup">
+													<div class="titlebox">
+														<div class="title">
+															<span class="color_red">（必填）</span>详细地址
+														</div>
+													</div>
+													<div class="contentbox">
+														<div class="content">
+															<div class="inputitem">
+												    			<input type="text" class="inputtext" placeholder="请填写详细地址">
+												    		</div>
+												    		<div class="tips color_red">请填写详细地址</div>
+														</div>
+													</div>
+												</div>
+												
+												<div class="itemgroup">
+													<div class="titlebox">
+														<div class="title">
+															邮政编码
+														</div>
+													</div>
+													<div class="contentbox">
+														<div class="content">
+															<div class="inputitem">
+												    			<input type="text" class="inputtext" placeholder="请填写邮政编码" style="width:260px;">
+												    		</div>
+														</div>
+													</div>
+												</div>
+												
+												<div class="itemgroup">
+													<div class="titlebox">
+														<div class="title">
+															<span class="color_red">（必填）</span>联系人
+														</div>
+													</div>
+													<div class="contentbox">
+														<div class="content">
+															<div class="inputitem">
+												    			<input type="text" class="inputtext" value="王国军" style="width:260px;">
+												    		</div>
+														</div>
+													</div>
+												</div>
+												<div class="itemgroup">
+													<div class="titlebox">
+														<div class="title">
+															<span class="color_red">（必填其中一项）</span>联系电话
+														</div>
+													</div>
+													<div class="contentbox">
+														<div class="content">
+															<div class="item_project" style="padding-left:80px;">
+																<div class="name">
+																	手机
+																</div>
+																<div class="inputitem">
+													    			<input type="text" class="inputtext" placeholder="请填写手机" style="width:180px;">
+													    		</div>
+															</div>
+															<div class="item_project" style="padding-left:80px;">
+																<div class="name">
+																	电话
+																</div>
+																<div class="inputitem">
+													    			<input type="text" class="inputtext" placeholder="区号" style="width:50px;">
+													    			<span class="gegege"> - </span>
+													    			<input type="text" class="inputtext" placeholder="电话号码" style="width:100px;">
+													    			<span class="gegege"> - </span>
+													    			<input type="text" class="inputtext" placeholder="分机" style="width:60px;">
+													    		</div>
+															</div>
+															
+														</div>
+													</div>
+												</div>
+												<div class="itemgroup">
+													<div class="titlebox">
+														<div class="title">
+															
+														</div>
+													</div>
+													<div class="contentbox">
+														<div class="content">
+															<input type="checkbox" name="defaultAddress">
+															<label for="defaultAddress" >设置为默认地址</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- //formglobal -->
+											<div class="formglobal_button">
+												<div class="itemgroup">
+													<div class="titlebox">
+														<div class="title">
+															
+														</div>
+													</div>
+													<div class="contentbox">
+														<div class="content">
+															<button class="btn btn_blue">保存</button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- //formglobal_button -->
+											
+										</div>
+										<!-- //formglobalbox -->
+									</div>
+									<!-- //ui_box -->
+								</div>
+								
+								<div class="tablebox">
+									<div class="row_box">
+										已保存了 <i class="color_blue bold">3</i> 条地址。
+									</div>
+									<table class="table_all">
+										<thead>
+									        <tr class="buttonbox">
+									        	<th class="name_inner">
+									                <div>联系人</div>
+									            </th>
+												<th>
+									                <div>所在地区</div>
+									            </th>
+									            <th>
+									                <div>详细地址</div>
+									            </th>
+									            <th>
+										        	<div>邮编</div>
+										        </th>
+										        <th class="time_inner">
+											        <div>手机/电话</div>
+											    </th>
+											    <th class="time_inner">
+											        <div>操作</div>
+											    </th>
+											    <th class="time_inner">
+											        <div></div>
+											    </th>
+									        </tr>
+									    </thead>
+									    <tbody>
+											<tr>
+												<td class="name_inner">
+											    	<div>王国军</div>
+											    </td>
+											    <td>
+													<div>
+												   		湖南省 长沙市 岳麓区 咸嘉湖街道
+												    </div>
+											    </td>
+											    <td>
+											    	<div>
+												   		金星中路438号湘腾商业广场3栋2908房
+												    </div>
+											    </td>
+											    <td>
+											    	<div>
+												    	410205
+												    </div>
+											    </td>
+											    <td class="time_inner">
+											    	<div>18678788787</div>
+											    </td>
+											    <td class="time_inner">
+											    	<div>
+												    	<a href="javascript:void(0);">修改</a>
+												    	<span class="gegege">-</span>
+												    	<a href="javascript:void(0);">删除</a>
+											    	</div>
+											    </td>
+											    <td class="time_inner">
+											    	<div>
+												    	<span class="color_red">默认地址</span>
+											    	</div>
+											    </td>
+											</tr>
+											<tr>
+												<td class="name_inner">
+											    	<div>王国军</div>
+											    </td>
+											    <td>
+													<div>
+												   		湖南省 长沙市 岳麓区 咸嘉湖街道
+												    </div>
+											    </td>
+											    <td>
+											    	<div>
+												   		金星中路438号湘腾商业广场3栋2908房
+												    </div>
+											    </td>
+											    <td>
+											    	<div>
+												    	410205
+												    </div>
+											    </td>
+											    <td class="time_inner">
+											    	<div>18678788787</div>
+											    </td>
+											    <td class="time_inner">
+											    	<div>
+												    	<a href="javascript:void(0);">修改</a>
+												    	<span class="gegege">-</span>
+												    	<a href="javascript:void(0);">删除</a>
+											    	</div>
+											    </td>
+											    <td class="time_inner">
+											    	<div>
+												    	<a href="javascript:void(0);" class="color_blue">设为默认</a>
+											    	</div>
+											    </td>
+											</tr>
+											<tr>
+												<td class="name_inner">
+											    	<div>王国军</div>
+											    </td>
+											    <td>
+													<div>
+												   		湖南省 长沙市 岳麓区 咸嘉湖街道
+												    </div>
+											    </td>
+											    <td>
+											    	<div>
+												   		金星中路438号湘腾商业广场3栋2908房
+												    </div>
+											    </td>
+											    <td>
+											    	<div>
+												    	410205
+												    </div>
+											    </td>
+											    <td class="time_inner">
+											    	<div>18678788787</div>
+											    </td>
+											    <td class="time_inner">
+											    	<div>
+												    	<a href="javascript:void(0);">修改</a>
+												    	<span class="gegege">-</span>
+												    	<a href="javascript:void(0);">删除</a>
+											    	</div>
+											    </td>
+											    <td class="time_inner">
+											    	<div>
+												    	<a href="javascript:void(0);" class="color_blue">设为默认</a>
+											    	</div>
+											    </td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- //tablebox -->
+							</div>
+							<!-- //地址 结束 -->
+							
+							
+							<!-- 消费记录 开始 -->
+							<div style="display:none;">
+								<div class="tablebox">
+									<div class="row_box">
+										共有 <i class="color_blue bold">5</i> 条记录。
+									</div>
+									<div class="box">
+										<table class="table_all">
+											<thead>
+										        <tr class="buttonbox">
+										        	<th>
+										                <div>支付时间</div>
+										            </th>
+										            <th>
+											        	<div>名称</div>
+											        </th>
+													<th>
+										                <div>订单号｜支付流水号</div>
+										            </th>
+											        <th>
+												        <div>门店</div>
+												    </th>
+												    <th class="text_right">
+												        <div>金额｜详细</div>
+												    </th>
+												    <th>
+												        <div>支付方式</div>
+												    </th>
+												    <th>
+												        <div>状态</div>
+												    </th>
+												    <th>
+												        <div>操作</div>
+												    </th>
+										        </tr>
+										    </thead>
+										    <thead style="display:none;">
+										        <tr class="buttonbox">
+										        	<th>
+										                <div>支付时间</div>
+										            </th>
+										            <th>
+											        	<div>名称</div>
+											        </th>
+													<th>
+										                <div>订单号｜支付流水号</div>
+										            </th>
+											        <th>
+												        <div>门店</div>
+												    </th>
+												    <th class="text_right">
+												        <div>金额｜详细</div>
+												    </th>
+												    <th>
+												        <div>支付方式</div>
+												    </th>
+												    <th>
+												        <div>状态</div>
+												    </th>
+												    <th>
+												        <div>操作</div>
+												    </th>
+										        </tr>
+										    </thead>
+											<tbody>
+												<tr>
+													<td>
+												    	<div>
+													   		<p>2015-01-24</p>
+													    	<p>22:50</p>
+													    </div>
+												    </td>
+												    <td>
+												    	<div>客户下单</div>
+												    </td>
+												    <td>
+														<div>
+													   		<p>W20150808417210</p>
+													    	<p>20150807150104044136</p>
+													    </div>
+												    </td>
+												    <td>
+												    	<div>华天e生活五一大道店</div>
+												    </td>
+												    <td class="text_right">
+												    	<div>
+												            <span class="money_in">+ 200.00</span>
+												        </div>
+												    </td>
+												    <td>
+												    	<div>
+													    	<p>余额支付</p>
+													    </div>
+												    </td>
+												    <td>
+												    	<div>交易成功</div>
+												    </td>
+												    <td>
+												    	<a href="order_detail.html">查看</div>
+												    </td>
+												</tr>
+											</tbody>
+											<tbody>
+												<tr>
+													<td rowspan="4">
+												    	<div>
+													   		<p>2015-01-24</p>
+													    	<p>22:50</p>
+													    </div>
+												    </td>
+												    <td>
+												    	<div>客户下单</div>
+												    </td>
+												    <td>
+														<div>
+													   		<p>W20150808417210</p>
+													    	<p>20150807150104044136</p>
+													    </div>
+												    </td>
+												    <td>
+												    	<div>华天e生活五一大道店</div>
+												    </td>
+												    <td class="text_right">
+												    	<div>
+												            <span class="money_in">+ 200.00</span>
+												        </div>
+												    </td>
+												    <td>
+												    	<div>
+													    	<p>余额支付</p>
+													    </div>
+												    </td>
+												    <td>
+												    	<div><span class="color_red">进行中</span></div>
+												    </td>
+												    <td>
+												    	<a href="order_detail.html">查看</div>
+												    </td>
+												</tr>
+												<tr class="trade_son_item">
+												    <td colspan="3">退款</td>
+												    <td class="text_right">
+												        <div>
+												            <span class="money_out">- 5.00</span>
+												        </div>
+												    </td>
+												    <td colspan="3"></td>
+												</tr>
+												<tr class="trade_son_item">
+													
+												    <td colspan="3">退款</td>
+												    <td class="text_right">
+												        <div>
+												            <span class="money_out">- 5.00</span>
+												        </div>
+												    </td>
+												    <td colspan="3"></td>
+												</tr>
+												<tr class="trade_son_item">
+													
+												    <td colspan="3">退款</td>
+												    <td class="text_right">
+												        <div>
+												            <span class="money_out">- 5.00</span>
+												        </div>
+												    </td>
+												    <td colspan="3"></td>
+												</tr>
+											</tbody>
+											<tbody>
+												<tr>
+													<td>
+												    	<div>
+													   		<p>2015-01-24</p>
+													    	<p>22:50</p>
+													    </div>
+												    </td>
+												    <td>
+												    	<div>客户下单</div>
+												    </td>
+												    <td>
+														<div>
+													   		<p>W20150808417210</p>
+													    	<p>20150807150104044136</p>
+													    </div>
+												    </td>
+												    <td>
+												    	<div>华天e生活五一大道店</div>
+												    </td>
+												    <td class="text_right">
+												    	<div>
+												            <span class="money_in">+ 200.00</span>
+												        </div>
+												    </td>
+												    <td>
+												    	<div>
+													    	<p>余额支付</p>
+													    </div>
+												    </td>
+												    <td>
+												    	<div>交易成功</div>
+												    </td>
+												    <td>
+												    	<a href="order_detail.html">查看</div>
+												    </td>
+												</tr>
+											</tbody>
+											<tbody>
+												<tr>
+													<td rowspan="2">
+												    	<div>
+													   		<p>2015-10-29</p>
+													    	<p>17:20</p>
+													    </div>
+												    </td>
+												    <td>
+												    	<div>客户下单</div>
+												    </td>
+												    <td>
+														<div>
+													   		<p>W20150808417210</p>
+													    	<p>1509281744208254</p>
+													    </div>
+												    </td>
+												    <td>
+												    	<div>华天e生活五一大道店</div>
+												    </td>
+												    <td class="text_right">
+												    	<div>
+												            <span class="money_out">- 5.00</span>
+												        </div>
+												    </td>
+												    <td>
+												    	<div>
+													    	
+													    </div>
+												    </td>
+												    <td>
+												    	<div>交易成功</div>
+												    </td>
+												    <td>
+												    	<a href="order_detail.html">查看</div>
+												    </td>
+												</tr>
+												<tr class="trade_son_item">
+													
+												    <td colspan="3">退款</td>
+												    <td class="text_right">
+												        <div>
+												            <span class="money_out">- 5.00</span>
+												        </div>
+												    </td>
+												    <td colspan="3"></td>
+												</tr>
+											</tbody>
+											<tbody>
+												<tr>
+													<td>
+												    	<div>
+													   		<p>2015-10-24</p>
+													    	<p>10:50</p>
+													    </div>
+												    </td>
+												    <td>
+												    	<div>客户下单</div>
+												    </td>
+												    <td>
+														<div>
+													   		<p>W20150808417210</p>
+													    	<p>20150807150104044136</p>
+													    </div>
+												    </td>
+												    <td>
+												    	<div>华天e生活五一大道店</div>
+												    </td>
+												    <td class="text_right">
+												    	<div>
+												            <span class="money_in">+ 100.00</span>
+												        </div>
+												    </td>
+												    <td>
+												    	<div>
+													    	<p>微信支付</p>
+													    </div>
+												    </td>
+												    <td>
+												    	<div>交易成功</div>
+												    </td>
+												    <td>
+												    	<a href="order_detail.html">查看</div>
+												    </td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="hb">
+										<div class="pagination">
+										    <span class="page_nav_area">
+										        <a href="javascript:void(0);" class="btn page_first" style="display: none;"></a>
+										        <a href="javascript:void(0);" tag="prepage" class="btn page_prev"><i class="arrow"></i></a>
+										            <span class="page_num">
+										                <label>1</label>
+										                <span class="num_gap">/</span>
+										                <label id="tpage">3</label>
+										            </span>
+										        <a href="javascript:void(0);" tag="nextpage" class="btn page_next"><i class="arrow"></i></a>
+										        <a href="javascript:void(0);" class="btn page_last" style="display: none;"></a>            
+										    </span>
+										    <span class="goto_area">
+										        <input type="text">
+										        <a href="javascript:void(0);" tag="pagego" class="btn page_go">跳转</a>
+										    </span>
+										</div>
+									</div>
+								</div>
+								<!-- //tablebox -->
+							</div>
+							<!-- 消费记录 结束 -->
+							
+							<!-- 充值记录 开始 -->
+							<div>
+								<div class="tablebox">
+									<div class="row_box">
+										共有 <i class="color_blue bold">6</i> 条记录。
+										实充金额 <i class="color_blue bold">56254.00</i> 元，赠送金额 <i class="color_red bold">56254.00</i> 元。
+									</div>
+									<table class="table_item_all">
+										<thead>
+									        <tr>
+									            <th class="time_inner">
+									                <div>发生时间</div>
+									            </th>
+										        <th>
+											        <div>所属门店</div>
+											    </th>
+											    <th class="money_inner">
+											        <div>实充金额（元）</div>
+											    </th>
+											    <th class="money_inner">
+											        <div>赠送金额（元）</div>
+											    </th>
+											    <th class="money_inner">
+											        <div>充值后余额（元）</div>
+											    </th>
+											    <th>
+											        <div>描述</div>
+											    </th>
+											    <th>
+											        <div>操作人</div>
+											    </th>
+									        </tr>
+									    </thead>
+									    
+									    <tbody class="table_list_item">
+									    	<tr class="nothing_row">
+											    <td colspan="7"></td>
+											</tr>
+											<tr class="header_row">
+											    <td colspan="5">
+												    <span>支付流水号：W20150808417210</span>
+												    <span class="color_grey">（现金支付）</span>
+											    </td>
+											    <td colspan="2" class="text_right">
+											    	
+											    </td>
+											</tr>
+									    	<tr class="content_row">
+											    <td class="time_inner">
+											    	<div>
+											    		<p>2015-01-24</p>
+											    		<p>22:50</p>
+											    	</div>
+											    </td>
+											    <td>
+											    	<div>华天e生活五一大道店</div>
+											    </td>
+											    <td class="money_inner">
+											    	<div class="color_blue bold">500.00</div>
+											    </td>
+											    <td class="money_inner">
+											    	<div class="color_red bold">100.00</div>
+											    </td>
+											    <td class="money_inner">
+											    	<div class="color_green bold">800.00</div>
+											    </td>
+											    <td>
+											    	<div>后台充值,充500送100</div>
+											    </td>
+											    <td>
+											    	<div>李娟848754849</div>
+											    </td>
+											</tr>
+									    </tbody>
+									    <tbody class="table_list_item">
+									    	<tr class="nothing_row">
+											    <td colspan="7"></td>
+											</tr>
+											<tr class="header_row">
+											    <td colspan="5">
+												    <span>支付流水号：X20150808417210</span>
+												    <span class="color_grey">（微信支付）</span>
+											    </td>
+											    <td colspan="2" class="text_right">
+											    	
+											    </td>
+											</tr>
+									    	<tr class="content_row">
+											    <td class="time_inner">
+											    	<div>
+											    		<p>2015-01-24</p>
+											    		<p>22:50</p>
+											    	</div>
+											    </td>
+											    <td>
+											    	<div>华天e生活五一大道店</div>
+											    </td>
+											    <td class="money_inner">
+											    	<div class="color_blue bold">108.00</div>
+											    </td>
+											    <td class="money_inner">
+											    	-
+											    </td>
+											    <td class="money_inner">
+											    	<div class="color_green bold">800.00</div>
+											    </td>
+											    <td>
+											    	<div>用户微信充值</div>
+											    </td>
+											    <td>
+											    	<div>用户</div>
+											    </td>
+											</tr>
+									    </tbody>
+									    <tbody class="table_list_item">
+									    	<tr class="nothing_row">
+											    <td colspan="7"></td>
+											</tr>
+											<tr class="header_row">
+											    <td colspan="5">
+												    <span>支付流水号：W20150808417210</span>
+												    <span class="color_grey">（微信支付）</span>
+											    </td>
+											    <td colspan="2" class="text_right">
+											    	
+											    </td>
+											</tr>
+									    	<tr class="content_row">
+											    <td class="time_inner">
+											    	<div>
+											    		<p>2015-01-24</p>
+											    		<p>22:50</p>
+											    	</div>
+											    </td>
+											    <td>
+											    	<div>华天e生活五一大道店</div>
+											    </td>
+											    <td class="money_inner">
+											    	<div class="color_blue bold">500.00</div>
+											    </td>
+											    <td class="money_inner">
+											    	<div class="color_red bold">100.00</div>
+											    </td>
+											    <td class="money_inner">
+											    	<div class="color_green bold">800.00</div>
+											    </td>
+											    <td>
+											    	<div>用户微信充值</div>
+											    </td>
+											    <td>
+											    	<div>用户</div>
+											    </td>
+											</tr>
+									    </tbody>
+									    <tbody class="table_list_item">
+									    	<tr class="nothing_row">
+											    <td colspan="7"></td>
+											</tr>
+											<tr class="header_row">
+											    <td colspan="5">
+												    <span>支付流水号：W20150808417210</span>
+												    <span class="color_grey">（微信支付）</span>
+											    </td>
+											    <td colspan="2" class="text_right">
+											    	
+											    </td>
+											</tr>
+									    	<tr class="content_row">
+											    <td class="time_inner">
+											    	<div>
+											    		<p>2015-01-24</p>
+											    		<p>22:50</p>
+											    	</div>
+											    </td>
+											    <td>
+											    	<div>华天e生活五一大道店</div>
+											    </td>
+											    <td class="money_inner">
+											    	<div class="color_blue bold">500.00</div>
+											    </td>
+											    <td class="money_inner">
+											    	<div class="color_red bold">100.00</div>
+											    </td>
+											    <td class="money_inner">
+											    	<div class="color_green bold">800.00</div>
+											    </td>
+											    <td>
+											    	<div>用户微信充值</div>
+											    </td>
+											    <td>
+											    	<div>用户</div>
+											    </td>
+											</tr>
+									    </tbody>
+									</table>
+									<div class="hb">
+										<div class="pagination">
+										    <span class="page_nav_area">
+										        <a href="javascript:void(0);" class="btn page_first" style="display: none;"></a>
+										        <a href="javascript:void(0);" tag="prepage" class="btn page_prev"><i class="arrow"></i></a>
+										            <span class="page_num">
+										                <label>1</label>
+										                <span class="num_gap">/</span>
+										                <label id="tpage">3</label>
+										            </span>
+										        <a href="javascript:void(0);" tag="nextpage" class="btn page_next"><i class="arrow"></i></a>
+										        <a href="javascript:void(0);" class="btn page_last" style="display: none;"></a>            
+										    </span>
+										    <span class="goto_area">
+										        <input type="text">
+										        <a href="javascript:void(0);" tag="pagego" class="btn page_go">跳转</a>
+										    </span>
+										</div>
+									</div>
+								</div>
+								<!-- //tablebox -->
+							</div>
+							<!-- 充值记录 结束 -->
+							
+							<div class="loadingbox"><img src="images/loading.gif"></div>
+						</div>
+					</div>
+				</div>
+				<!-- end pane_right -->
+			</div>
+			<!-- end pane -->
+		</div>
+		<!-- end pane_box -->
+		
+		<!-- //输入框 开始 -->
+		<div class="modal" id="modal_002" style="display: none;">
+		  <div class="modal_dialog_tips" id="modal_t_002">
+		    <div class="modal_content">
+		    	<div class="mc_head">
+		    		出生日期
+		    		<div class="close"><a href="javascript:void(0);" class="js_drop_002">关闭</a></div>
+		    	</div>
+		    	<div class="mc_body">
+			    	
+		    		<div class="select_bigitem two">
+		    			<div class="sbi_item">
+		    				<div class="sbi_item_inner">
+		    					公历
+		    					<i class="icon_select"></i>
+		    				</div>
+		    			</div>
+		    			<div class="sbi_item">
+		    				<div class="sbi_item_inner active">
+		    					农历
+		    					<i class="icon_select"></i>
+		    				</div>
+		    			</div>
+		    		</div>
+		    		<!-- //select_bigitem -->
+		    		
+		    		
+		    		
+		    		<div class="select_biglist">
+		    			<div class="showpoint"></div>
+		    			<div class="controlarea">
+				    		<div class="selectbox">
+				    			<div class="dropdown_menu left">
+					    			<a href="javascript:;" class="dropdown_a">
+					    				<label>年</label>
+					    				<i class="arrow"></i>
+					    			</a>
+									<div class="dropdown_data_container" style="display: none;">
+										<div class="pointer wc_view"></div>
+									    <ul class="dropdown_data_list">
+								            <li class="dropdown_data_item ">  
+								                <a href="javascript:void(0);">2016年</a>
+								            </li>
+								            <li class="dropdown_data_item ">  
+								                <a href="javascript:void(0);">2015年</a>
+								            </li>
+								            <li class="dropdown_data_item ">  
+								                <a href="javascript:void(0);">2014年</a>
+								            </li>
+									    </ul>
+									</div>
+								</div>
+								<div class="dropdown_menu left">
+					    			<a href="javascript:;" class="dropdown_a">
+					    				<label>月</label>
+					    				<i class="arrow"></i>
+					    			</a>
+									<div class="dropdown_data_container" style="display: block;">
+										<div class="pointer wc_view"></div>
+									    <ul class="dropdown_data_list">
+								            <li class="dropdown_data_item ">  
+								                <a href="javascript:void(0);">1月</a>
+								            </li>
+								            <li class="dropdown_data_item ">  
+								                <a href="javascript:void(0);">2月</a>
+								            </li>
+								            <li class="dropdown_data_item ">  
+								                <a href="javascript:void(0);">3月</a>
+								            </li>
+								            <li class="dropdown_data_item ">  
+								                <a href="javascript:void(0);">3月</a>
+								            </li>
+								            <li class="dropdown_data_item ">  
+								                <a href="javascript:void(0);">3月</a>
+								            </li>
+								            <li class="dropdown_data_item ">  
+								                <a href="javascript:void(0);">1月</a>
+								            </li>
+								            <li class="dropdown_data_item ">  
+								                <a href="javascript:void(0);">2月</a>
+								            </li>
+								            <li class="dropdown_data_item ">  
+								                <a href="javascript:void(0);">3月</a>
+								            </li>
+								            <li class="dropdown_data_item ">  
+								                <a href="javascript:void(0);">3月</a>
+								            </li>
+								            <li class="dropdown_data_item ">  
+								                <a href="javascript:void(0);">3月</a>
+								            </li>
+									    </ul>
+									</div>
+								</div>
+								<div class="dropdown_menu left">
+					    			<a href="javascript:;" class="dropdown_a">
+					    				<label>日</label>
+					    				<i class="arrow"></i>
+					    			</a>
+									<div class="dropdown_data_container" style="display: none;">
+										<div class="pointer wc_view"></div>
+									    <ul class="dropdown_data_list">
+								            <li class="dropdown_data_item ">  
+								                <a href="javascript:void(0);">1日</a>
+								            </li>
+								            <li class="dropdown_data_item ">  
+								                <a href="javascript:void(0);">2日</a>
+								            </li>
+								            <li class="dropdown_data_item ">  
+								                <a href="javascript:void(0);">3日</a>
+								            </li>
+									    </ul>
+									</div>
+								</div>
+				    		</div>
+			    		</div>
+		    		</div>
+		    		<!-- //select_biglist -->
+		    		
+		    	</div>
+		    	<div class="mc_foot">
+		    		<div class="buttonbar">
+						<div class="button_item"><button class="btn btn_grey js_drop_002">取消</button></div>
+						<div class="button_item"><button class="btn btn_blue" onclick="location.href='goods_batch_in_detail.html'">确定</button></div>
+					</div>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="modal_cover"></div>
+		</div>
+		<!-- //输入框 结束 -->
+		
+		
+		<!-- //输入框 开始 -->
+		<div class="modal" id="modal_005" style="display: none;">
+		  <div class="modal_dialog_tips" id="modal_t_005">
+		    <div class="modal_content">
+		    	<div class="mc_head">
+		    		确认派送
+		    	</div>
+		    	<div class="mc_body">
+		    		<div class="show_info">
+		    			<dl>
+		    				<dt>人数</dt>
+		    				<dd>共选择68人</dd>
+		    			</dl>
+		    			<dl>
+		    				<dt>单额</dt>
+		    				<dd>每人派送20元优惠券</dd>
+		    			</dl>
+		    			<dl>
+		    				<dt>总金额</dt>
+		    				<dd><span class="color_red bold">￥1360.00</span></dd>
+		    			</dl>
+		    			<dl>
+		    				<dt>到期日期</dt>
+		    				<dd>2015-08-02 24:00</dd>
+		    			</dl>
+		    		</div>
+		    	</div>
+		    	<div class="mc_foot">
+		    		<div class="buttonbar">
+						<div class="button_item"><button class="btn btn_grey js_drop_005">取消</button></div>
+						<div class="button_item"><button class="btn btn_blue js_drop_005">确认派送</button></div>
+					</div>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="modal_cover"></div>
+		</div>
+		<!-- //输入框 结束 -->
+		
+	
+		<!-- start javascript -->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/common.js"></script>
+		<!-- end javascript -->
+	</body>
+</html>

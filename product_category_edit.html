@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="Author" content="xiaoxiongdao.com Inc.">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>产品类别管理</title>
+		<link rel="icon" href="images/favicon.ico">
+		<link href="styles/common.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<!-- start pane_box -->
+		<div class="pane_box wc_view">
+			<!-- start pane -->
+			<div class="pane wc_view pane_row_2">
+				<!-- start pane_left -->
+				<div class="pane_left wc_view">
+					<div class="toolbar wc_view">
+						<div class="wc_controls wc_view selectno" id="js_openallnav">
+							<div class="nav_title">产品管理</div>
+							<div class="logo"></div>
+							<div class="icon_down" style="left:140px;"></div>
+						</div>
+						<div class="allnavbox wc_view selectno" style="display:none;" id="js_allnav">
+							<div class="allnav">
+								<a href="order_wash.html">
+									<div class="icon"><img src="images/allnav_001.png"></div>
+									<div class="text">订单管理</div>
+								</a>
+								<a href="goods.html">
+									<div class="icon"><img src="images/allnav_004.png"></div>
+									<div class="text">衣物管理</div>
+								</a>
+								
+								<a href="user.html">
+									<div class="icon"><img src="images/allnav_005.png"></div>
+									<div class="text">用户管理</div>
+								</a>
+								<a href="trade.html">
+									<div class="icon"><img src="images/allnav_008.png"></div>
+									<div class="text">交易记录</div>
+								</a>
+								<a href="stockin.html">
+									<div class="icon"><img src="images/stockin.png"></div>
+									<div class="text">入库</div>
+								</a>
+								<a href="stockout.html">
+									<div class="icon"><img src="images/stockout.png"></div>
+									<div class="text">出库</div>
+								</a>
+								<a href="leavefactory.html">
+									<div class="icon"><img src="images/leavefactory.png"></div>
+									<div class="text">出厂</div>
+								</a>
+								<a href="coupons.html">
+									<div class="icon"><img src="images/allnav_006.png"></div>
+									<div class="text">优惠券</div>
+								</a>
+								<a href="staff.html">
+									<div class="icon"><img src="images/allnav_007.png"></div>
+									<div class="text">员工管理</div>
+								</a>
+								<a href="community.html">
+									<div class="icon"><img src="images/allnav_002.png"></div>
+									<div class="text">小区管理</div>
+								</a>
+								<a href="store.html">
+									<div class="icon"><img src="images/allnav_store.png"></div>
+									<div class="text">门店管理</div>
+								</a>
+								<a href="store_owner.html">
+									<div class="icon"><img src="images/allnav_storeowner.png"></div>
+									<div class="text">店主管理</div>
+								</a>
+								<a href="operation.html">
+									<div class="icon"><img src="images/allnav_operation.png"></div>
+									<div class="text">运营中心</div>
+								</a>
+								<a href="srpersonnel.html">
+									<div class="icon"><img src="images/allnav_003.png"></div>
+									<div class="text">收送专员</div>
+								</a>
+								<a href="product.html" class="active">
+									<div class="icon"><img src="images/product.png"></div>
+									<div class="text">产品管理</div>
+								</a>
+								<a href="setup.html">
+									<div class="icon"><img src="images/allnav_0014.png"></div>
+									<div class="text">设置</div>
+								</a>
+								<a href="index.html">
+									<div class="icon"><img src="images/home.png"></div>
+									<div class="text">主页</div>
+								</a>
+								<a href="telephone.html">
+									<div class="icon"><img src="images/telephone.png"></div>
+									<div class="text">电话下单</div>
+								</a>
+								<a href="waybill.html">
+									<div class="icon"><img src="images/icon_waybill.png"></div>
+									<div class="text">运单码</div>
+								</a>
+							</div>
+							<div class="pointer wc_view"></div>
+						</div>
+					</div>
+					<div class="contentbody wc_view" style="bottom:0px;">
+						<div class="l_content">
+							<div class="memu" style="top:0px;">
+								<div class="menu_item" onclick="location.href='product.html'">
+									<div class="item_border"></div>
+									<div class="item_text">产品列表</div>
+								</div>
+								<div class="menu_item active" onclick="location.href='product_category.html'">
+									<div class="item_border"></div>
+									<div class="item_text">产品类别</div>
+								</div>
+								<div class="menu_item" onclick="location.href='product_attribute.html'">
+									<div class="item_border"></div>
+									<div class="item_text">产品属性</div>
+								</div>
+								<div class="menu_item" onclick="location.href='product_attribute_category.html'">
+									<div class="item_border"></div>
+									<div class="item_text">产品属性类别</div>
+								</div>
+								<div class="menu_item" onclick="location.href='product_project.html'">
+									<div class="item_border"></div>
+									<div class="item_text">产品服务项目</div>
+								</div>
+								<div class="menu_item" onclick="location.href='product_service.html'">
+									<div class="item_border"></div>
+									<div class="item_text">经营大类</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end pane_left -->
+				
+				<!-- start pane_left_line -->
+				<div class="pane_left_line wc_view"><div class="line"></div></div>
+				<!-- end pane_left_line -->
+					
+				<!-- start pane_right -->
+				<div class="pane_right have_contenttop wc_view">
+					<div class="toolbar wc_view selectno">
+						<div class="wc_controls wc_view">
+							<div class="nav_title" id="js_logout">超级管理员</div>
+							<div class="icon_down"></div>
+							<ul class="selectnav_son selectno" style="display:none;" id="js_logout_open">
+								<div class="pointer wc_view"></div>
+								<li>安全退出</li>
+							</ul>
+						</div>
+					</div>
+					<div class="contenttop wc_view">
+						<div class="page_title">
+							<div class="left wc_view">
+								<a href="product_category_look.html" class="btn_back"><span class="icon"></span>返回</a>
+							</div>
+							<div class="right wc_view">
+								<div class="btn_item align_right"><a href="product_category.html" class="btn_s btn_blue">保存完成</a></div>
+							</div>
+							编辑
+						</div>
+						<div class="page_search">
+							<div class="search">
+								<div class="inputinner wc_view">
+									<div class="icon_search wc_view"></div>
+									<input type="text" placeholder="快速搜索" class="inputtext wc_view">
+								</div>
+								<div class="buttoninner wc_view">
+									<button class="button wc_view">搜索</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="contentbody wc_view">
+						<div class="detail_info">
+							<div class="formglobalbox">
+								<div class="formglobal">
+									<div class="itemgroup">
+										<div class="titlebox">
+											<div class="title">
+												<span class="color_red">（必填）</span>产品类名
+											</div>
+										</div>
+										<div class="contentbox">
+											<div class="content">
+												<div class="inputitem">
+									    			<input type="text" class="inputtext" value="上装" style="width:260px;">
+									    		</div>
+											</div>
+										</div>
+									</div>
+									<div class="itemgroup">
+										<div class="titlebox">
+											<div class="title">
+												<span class="color_red">（必填）</span>编号
+											</div>
+										</div>
+										<div class="contentbox">
+											<div class="content">
+												<div class="inputitem">
+									    			<input type="text" class="inputtext" value="345" style="width:260px;">
+									    		</div>
+											</div>
+										</div>
+									</div>
+									<div class="itemgroup">
+										<div class="titlebox">
+											<div class="title">
+												<span class="color_red">（必填）</span>所属经营大类
+											</div>
+										</div>
+										<div class="contentbox">
+											<div class="content">
+												<div class="selectbox">
+									    			<div class="dropdown_menu left">
+										    			<a href="javascript:;" class="dropdown_a">
+										    				<label>洗衣</label>
+										    				<i class="arrow"></i>
+										    			</a>
+														<div class="dropdown_data_container" style="display: none;">
+															<div class="pointer wc_view"></div>
+														    <ul class="dropdown_data_list">
+													            <li class="dropdown_data_item ">  
+													                <a href="javascript:void(0);">皮具</a>
+													            </li>
+													            <li class="dropdown_data_item ">  
+													                <a href="javascript:void(0);">裙裤</a>
+													            </li>
+													            <li class="dropdown_data_item ">  
+													                <a href="javascript:void(0);">奢侈品</a>
+													            </li>
+														    </ul>
+														</div>
+													</div>
+									    		</div>
+									    		<!-- //selectbox -->
+											</div>
+										</div>
+									</div>
+									<div class="itemgroup">
+										<div class="titlebox">
+											<div class="title">
+												首字母
+											</div>
+										</div>
+										<div class="contentbox">
+											<div class="content">
+												<div class="inputitem">
+									    			<input type="text" class="inputtext" value="SZ" style="width:260px;">
+									    		</div>
+											</div>
+										</div>
+									</div>
+									<div class="itemgroup">
+										<div class="titlebox">
+											<div class="title">
+												序号
+											</div>
+										</div>
+										<div class="contentbox">
+											<div class="content">
+												<div class="inputitem">
+									    			<input type="text" class="inputtext" value="0" style="width:260px;">
+									    		</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- //formglobal -->
+							</div>
+							<!-- //formglobalbox -->
+							<div class="loadingbox"><img src="images/loading.gif"></div>
+						</div>
+					</div>
+				</div>
+				<!-- end pane_right -->
+			</div>
+			<!-- end pane -->
+		</div>
+		<!-- end pane_box -->
+		
+		<!-- //输入框 开始 -->
+		<div class="modal" id="modal_005" style="display: none;">
+		  <div class="modal_dialog_tips" id="modal_t_005">
+		    <div class="modal_content">
+		    	<div class="mc_head">
+		    		确认派送
+		    	</div>
+		    	<div class="mc_body">
+		    		<div class="show_info">
+		    			<dl>
+		    				<dt>人数</dt>
+		    				<dd>共选择68人</dd>
+		    			</dl>
+		    			<dl>
+		    				<dt>单额</dt>
+		    				<dd>每人派送20元优惠券</dd>
+		    			</dl>
+		    			<dl>
+		    				<dt>总金额</dt>
+		    				<dd><span class="color_red bold">￥1360.00</span></dd>
+		    			</dl>
+		    			<dl>
+		    				<dt>到期日期</dt>
+		    				<dd>2015-08-02 24:00</dd>
+		    			</dl>
+		    		</div>
+		    	</div>
+		    	<div class="mc_foot">
+		    		<div class="buttonbar">
+						<div class="button_item"><button class="btn btn_grey js_drop_005">取消</button></div>
+						<div class="button_item"><button class="btn btn_blue js_drop_005">确认派送</button></div>
+					</div>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="modal_cover"></div>
+		</div>
+		<!-- //输入框 结束 -->
+		
+	
+		<!-- start javascript -->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/common.js"></script>
+		<!-- end javascript -->
+	</body>
+</html>

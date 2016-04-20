@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="Author" content="WeCheerful Inc.">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>打印衣物</title>
+		<link rel="icon" href="images/favicon.ico">
+		<style type="text/css">
+			*{-webkit-tap-highlight-color:transparent;outline:0}
+			body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;vertical-align:baseline;}
+			body {margin:0;font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","华文细黑","STHeiti","微软雅黑","Microsoft YaHei",SimHei,sans-serif !important;color:#000;-webkit-text-size-adjust: 100% !important;background: #fff;font-weight: normal;font-size: 9px;line-height:1.2;display: block;-webkit-text-size-adjust:none }
+			table{border-collapse:collapse;border-spacing:0}
+			body,html {display: block;-webkit-text-size-adjust:none;height: 18mm;padding: 0;text-align: left;padding: 0;margin: 0;overflow: hidden;}
+
+
+			.print_clothing {height: 17mm;padding: 0;text-align: left;padding: 1mm 0 0 0;margin: 0;overflow: hidden;}
+			.print_clothing .leftbox {width: 48%;float: left;padding: 0 0 0 2%;margin: 0;}
+			.print_clothing .rightbox {width: 46%;float: right;padding: 0 0 0 4%;margin: 0;}
+
+			.qc_text_hd {overflow: hidden;display: block;height: 12mm;overflow: hidden;}
+			.qc {float: left;}
+			.qc img {width: 12mm;height: 12mm;}
+			.text {font-size: 10px;color: #000; }
+		</style>
+	</head>
+	<body>
+		<div class="print_clothing">
+			<div class="leftbox">
+				<div class="textwarp">
+					<p id="js_proName" class="text">衣物：羽绒服（短）</p>
+					<p id="js_proSrv" class="text">服务：干洗 件数:3/0</p>
+					<p id="js_proAttr" class="text">特征：污渍尽洗\油渍\深灰\</p>
+					<p id="js_proAddSrv" class="text">附件：帽子\领边\腰带\</p>
+				</div>
+			</div>
+			<div class="rightbox">
+				<div class="qc_text_hd">
+					<div class="qc"><img src="upload/qrcode.png" id="js_qc"/></div>
+					<div class="textwarp">
+						<p id="js_user" class="text">马占军13674860227</p>
+						<p id="js_inDate" class="text">分拣:11-16</p>
+						<p id="js_addr" class="text">赤峰市-赤峰新区-万达C区-3栋2单元</p>
+					</div>
+				</div>
+				<div class="text" id="js_proCode">014000000012万达店</div>
+			</div>
+		</div>
+	</body>
+</html>

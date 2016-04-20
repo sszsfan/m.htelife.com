@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="Author" content="WeCheerful Inc.">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>出库小票</title>
+		<link rel="icon" href="images/favicon.ico">
+		<style type="text/css">
+			*{-webkit-tap-highlight-color:transparent;outline:0}
+			body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;vertical-align:baseline;}
+			body {margin:0;font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","华文细黑","STHeiti","微软雅黑","Microsoft YaHei",SimHei,sans-serif !important;color:#000;-webkit-text-size-adjust: 100% !important;background: #fff;font-smoothing: antialiased;-webkit-font-smoothing: antialiased;-o-font-smoothing: antialiased;-moz-font-smoothing: antialiased;font-weight: 300;font-size: 15px;line-height:1.2;display: block;}
+			table{border-collapse:collapse;border-spacing:0}
+			body,html {height: 40mm;}
+			
+			.p_order {height: 40mm;display: block;border: 1px solid #e7e7e7;padding:0mm;}
+			.p_order .qr {padding:0;}
+			.p_order .qr img {width: 22mm;height: 22mm;margin: 0 auto;}
+			.p_order .bignum {font-size: 16px;font-weight: bold;}
+			.p_order .text {font-size: 12px;}
+			
+			
+			.stockout_card {height: 40mm;display: block;border: 1px solid #e7e7e7;padding:0mm;}
+			
+			.stockout_card .box_one {height: 30mm;overflow: hidden;display: block;}
+			.stockout_card .box_one .qc {width: 30mm;height: 30mm;float: left;margin-right: 0mm;}
+			.stockout_card .box_one .qc img {width: 30mm;height: 30mm;}
+			
+			.stockout_card .box_one .textinner {margin-left: 30mm; height: 30mm;overflow: hidden;}
+			.stockout_card .box_one .textinner .clothingnum {font-size: 22px;font-weight: 500;}
+			.stockout_card .box_one .textinner .time {font-size: 12px;margin-bottom: 2mm;}
+			.stockout_card .box_one .textinner .store {font-size: 18px;font-weight: 500;overflow: hidden;line-height: 40px;}
+			.stockout_card .box_one .textinner .store .num {float: right;font-size: 32px;font-weight: 700;}
+			.stockout_card .box_one .textinner .ordernum {font-size: 14px;}
+			
+			
+			.stockout_card .box_two {height: 10mm;overflow: hidden;display: block;}
+			.stockout_card .box_two .itemarea {line-height: 12px;}
+			.stockout_card .box_two .itemarea span {margin-right: 2mm;font-size: 12px;}
+		</style>
+	</head>
+	<body>
+		<div class="stockout_card">
+			<div class="box_one">
+				<div class="qc">
+					<img src="upload/qc_stockout.jpg" />
+				</div>
+				<div class="textinner">
+					<div class="clothingnum">014000000012</div>
+					<div class="time">入厂时间：2015-09-05 14:30</div>
+					<div class="store">万达店 <span class="num">014</span></div>
+					<div class="ordernum">订单号：D20151112000086</div>
+				</div>
+			</div>
+			<div class="box_two">
+				<div class="itemarea">
+					<span>衣物：西装外套</span>
+					<span>服务：干洗</span>
+					<span>附加服务：织补8元</span>
+				</div>
+				<div class="itemarea">
+					<span>附件：帽子/腰带/</span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

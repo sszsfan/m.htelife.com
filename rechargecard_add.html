@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="Author" content="xiaoxiongdao.com Inc.">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>充值卡</title>
+		<link rel="icon" href="images/favicon.ico">
+		<link href="styles/common.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<!-- start pane_box -->
+		<div class="pane_box wc_view">
+			<!-- start pane -->
+			<div class="pane wc_view pane_row_2">
+				<!-- start pane_left -->
+				<div class="pane_left wc_view">
+					<div class="toolbar wc_view">
+						<div class="wc_controls wc_view selectno" id="js_openallnav">
+							<div class="nav_title">应用营销</div>
+							<div class="logo"></div>
+							<div class="icon_down" style="left:140px;"></div>
+						</div>
+						<div class="allnavbox wc_view selectno" style="display:none;" id="js_allnav">
+							<div class="allnav">
+								<a href="order_wash.html">
+									<div class="icon"><img src="images/allnav_001.png"></div>
+									<div class="text">订单管理</div>
+								</a>
+								<a href="goods.html">
+									<div class="icon"><img src="images/allnav_004.png"></div>
+									<div class="text">衣物管理</div>
+								</a>
+								
+								<a href="user.html">
+									<div class="icon"><img src="images/allnav_005.png"></div>
+									<div class="text">用户管理</div>
+								</a>
+								<a href="trade_recharge.html">
+									<div class="icon"><img src="images/allnav_008.png"></div>
+									<div class="text">充值记录</div>
+								</a>
+								<a href="stockin.html">
+									<div class="icon"><img src="images/stockin.png"></div>
+									<div class="text">入库</div>
+								</a>
+								<a href="stockout.html">
+									<div class="icon"><img src="images/stockout.png"></div>
+									<div class="text">出库</div>
+								</a>
+								<a href="leavefactory.html">
+									<div class="icon"><img src="images/stockout.png"></div>
+									<div class="text">出厂</div>
+								</a>
+								<a href="coupons.html" class="active">
+									<div class="icon"><img src="images/allnav_006.png"></div>
+									<div class="text">优惠券</div>
+								</a>
+								<a href="staff.html">
+									<div class="icon"><img src="images/allnav_007.png"></div>
+									<div class="text">员工管理</div>
+								</a>
+								<a href="community.html">
+									<div class="icon"><img src="images/allnav_002.png"></div>
+									<div class="text">小区管理</div>
+								</a>
+								<a href="srpersonnel.html">
+									<div class="icon"><img src="images/allnav_003.png"></div>
+									<div class="text">收送专员</div>
+								</a>
+								<a href="product.html">
+									<div class="icon"><img src="images/allnav_004.png"></div>
+									<div class="text">产品管理</div>
+								</a>
+								<a href="setup.html">
+									<div class="icon"><img src="images/allnav_0014.png"></div>
+									<div class="text">设置</div>
+								</a>
+								<a href="index.html">
+									<div class="icon"><img src="images/home.png"></div>
+									<div class="text">主页</div>
+								</a>
+								<a href="telephone.html">
+									<div class="icon"><img src="images/home.png"></div>
+									<div class="text">电话下单</div>
+								</a>
+							</div>
+							<div class="pointer wc_view"></div>
+						</div>
+					</div>
+					<div class="contentbody wc_view">
+						<div class="l_content">
+							<div class="memu" style="top:0px;">
+								<div class="menu_item" onclick="location.href='coupons.html'">
+									<div class="item_border"></div>
+									<div class="item_text">优惠券</div>
+								</div>
+								<div class="menu_item" onclick="location.href='coupons_gift.html'">
+									<div class="item_border"></div>
+									<div class="item_text">优惠券礼包</div>
+								</div>
+								<div class="menu_item active" onclick="location.href='rechargecard.html'">
+									<div class="item_border"></div>
+									<div class="item_text">充值卡</div>
+								</div>
+								<div class="menu_item" onclick="location.href='promocode.html'">
+									<div class="item_border"></div>
+									<div class="item_text">优惠码</div>
+								</div>
+								<div class="menu_item" onclick="location.href='cashier.html'">
+									<div class="item_border"></div>
+									<div class="item_text">收银台</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer wc_view">
+						<div class="l_footer wc_view">
+							<div class="icon icon_refresh wc_view"></div>
+						</div>
+					</div>
+				</div>
+				<!-- end pane_left -->
+				
+				<!-- start pane_left_line -->
+				<div class="pane_left_line wc_view"><div class="line"></div></div>
+				<!-- end pane_left_line -->
+					
+				<!-- start pane_right -->
+				<div class="pane_right wc_view">
+					<div class="toolbar wc_view selectno">
+						<div class="wc_controls wc_view">
+							<div class="nav_title" id="js_logout">超级管理员</div>
+							<div class="icon_down"></div>
+							<ul class="selectnav_son selectno" style="display:none;" id="js_logout_open">
+								<div class="pointer wc_view"></div>
+								<li>安全退出</li>
+							</ul>
+						</div>
+					</div>
+					<div class="contentbody wc_view" style="bottom:44px;">
+						<div class="detail_info">
+							<div class="pagetitle">
+								<a href="rechargecard.html">充值卡批次列表</a>
+								<span class="gegege">/</span>
+								<a href="rechargecard_add.html" class="on">批量制作充值卡</a>
+							</div>
+							<!-- // pagetitle -->
+							<div class="mobiformbox">
+								<div class="mobiform">
+									<div class="pointbox">
+										<div class="itembox">
+											<div class="formglobalbox_s">
+												<div class="formglobal">
+													
+													
+													<div class="itemgroup">
+														<div class="titlebox">
+															<div class="title">
+																<span class="must"></span>面值
+															</div>
+														</div>
+														<div class="contentbox">
+															<div class="content">
+																<div class="inputitem">
+													    			<input type="text" class="inputtext w_m"> <span class="textinfo">元</span>
+													    		</div>
+													    		<div class="info_text">每张卡的面值</div>
+															</div>
+														</div>
+													</div>
+													<div class="itemgroup">
+														<div class="titlebox">
+															<div class="title">
+																<span class="must"></span>制作总数量
+															</div>
+														</div>
+														<div class="contentbox">
+															<div class="content">
+																<div class="inputitem">
+													    			<input type="text" class="inputtext w_m"> <span class="textinfo">张</span>
+													    		</div>
+													    		<div class="info_text">制作多少张这样的卡</div>
+															</div>
+														</div>
+													</div>
+													
+													<div class="itemgroup">
+														<div class="titlebox">
+															<div class="title">
+																<span class="must"></span>每人限制使用
+															</div>
+														</div>
+														<div class="contentbox">
+															<div class="content">
+																<div class="radio_warp">
+																	<div class="radio_box">
+																		<label class="lsink"><input type="radio" name="getnum" value="0" checked="checked">
+																			不限制
+																		</label>
+																	</div>
+																	<div class="radio_box">
+																		<label class="lsink"><input type="radio" name="getnum" value="1">
+																			 每人限制使用 <input type="text" class="inputtext" style="width:60px;">张
+																		</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="itemgroup">
+														<div class="titlebox">
+															<div class="title">
+																<span class="must"></span>生效时间
+															</div>
+														</div>
+														<div class="contentbox">
+															<div class="content">
+																<div class="inputitem">
+													    			<input type="date" class="inputtext w_m">
+													    		</div>
+															</div>
+														</div>
+													</div>
+													<div class="itemgroup">
+														<div class="titlebox">
+															<div class="title">
+																<span class="must"></span>失效时间
+															</div>
+														</div>
+														<div class="contentbox">
+															<div class="content">
+																<div class="inputitem">
+													    			<input type="date" class="inputtext w_m">
+													    		</div>
+															</div>
+														</div>
+													</div>
+													<div class="itemgroup">
+														<div class="titlebox">
+															<div class="title">
+																兑换同步打标签
+															</div>
+														</div>
+														<div class="contentbox">
+															<div class="content">
+																<div class="taged">
+																	<div class="tagitem">领取了优惠券<span class="remove"></span></div>
+																	<div class="tagitem">领取了优惠券<span class="remove"></span></div>
+																	<div class="tagitem">领取了优惠券<span class="remove"></span></div>
+																	<div class="tagitem">领取了优惠券<span class="remove"></span></div>
+																	<div class="tagitem">领取了优惠券<span class="remove"></span></div>
+																	<div class="tagitem">领取了优惠券<span class="remove"></span></div>
+																</div>
+																<a href="javascript:void(0);" class="color_blue js_button_005">添加</a>
+															</div>
+														</div>
+													</div>
+													
+													<div class="itemgroup">
+														<div class="titlebox">
+															<div class="title">
+																备注
+															</div>
+														</div>
+														<div class="contentbox">
+															<div class="content">
+																<div class="textareaitem">
+																	<textarea name="description" class="textarea" cols="30" rows="2" placeholder="请填写制作充值卡的备注，支持换行;"></textarea>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- //formglobal -->
+												
+											</div>
+											<!-- //formglobalbox -->
+											<div class="showpoint"></div>
+										</div>
+										
+									</div>
+									<!-- //pointbox -->
+									<div class="cardbox">
+										<div class="card_inner">
+											<div class="name">充值卡</div>
+											<div class="money">2000 <i>元</i></div>
+											<div class="tips">每人限制使用1张</div>
+											<div class="time">2016-04-08 00:00:00 至 2017-04-07 24:00:00 有效</div>
+										</div>
+										<!-- //card_inner -->
+										<div class="card_num">
+											制作 <span class="num">500</span> 张卡
+											<div class="showpoint"></div>
+										</div>
+										<!-- //card_num -->
+									</div>
+									<!-- //cardbox -->
+								</div>
+								<!-- //couponsgift -->
+							</div>
+							<!-- //mobiformbox -->
+						</div>
+						<!-- //detail_info -->
+					</div>
+					<!-- end contentbody -->
+					<div class="footer wc_view">
+						<div class="buttonbar center">
+							<div class="button_item"><button class="btn btn_blue" onclick="location.href='rechargecard.html'">确定</button></div>
+							<div class="button_item"><button class="btn btn_grey" onclick="location.href='rechargecard.html'">取消</button></div>
+						</div>
+					</div>
+				</div>
+				<!-- end pane_right -->
+			</div>
+			<!-- end pane -->
+		</div>
+		<!-- end pane_box -->
+		
+		<!-- //输入框 开始 -->
+		<div class="modal" id="modal_005" style="display: none;">
+		  <div class="modal_dialog_tips" id="modal_t_005">
+		    <div class="modal_content">
+		    	<div class="mc_head">
+		    		同步打标签
+		    	</div>
+		    	<div class="mc_body">
+					123
+		    	</div>
+		    	<div class="mc_foot">
+		    		<div class="buttonbar">
+						<div class="button_item"><button class="btn btn_grey js_drop_005">取消</button></div>
+						<div class="button_item"><button class="btn btn_blue js_drop_005">确认派送</button></div>
+					</div>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="modal_cover"></div>
+		</div>
+		<!-- //输入框 结束 -->
+		
+	
+		<!-- start javascript -->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/common.js"></script>
+		<!-- end javascript -->
+	</body>
+</html>

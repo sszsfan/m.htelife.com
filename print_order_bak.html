@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="Author" content="WeCheerful Inc.">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>打印订单</title>
+		<link rel="icon" href="images/favicon.ico">
+		<style type="text/css">
+			*{-webkit-tap-highlight-color:transparent;outline:0}
+	        body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;vertical-align:baseline;}
+	        body {margin:0;font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","华文细黑","STHeiti","微软雅黑","Microsoft YaHei",SimHei,sans-serif !important;color:#000;-webkit-text-size-adjust: 100% !important;background: #fff;font-smoothing: antialiased;-webkit-font-smoothing: antialiased;-o-font-smoothing: antialiased;-moz-font-smoothing: antialiased;font-weight: 300;font-size: 12px;line-height:1.2;display: block;}
+	        table{border-collapse:collapse;border-spacing:0}
+	        body,html {
+	            height: auto;
+	            padding: 2mm;}
+	        .container {padding:0px;}
+	        /* 通用表格 开始 */
+	        .table {width: 100%;height: auto; margin: 0;padding: 0;border: 0px solid #e7e7e7;}
+	        .table th {font-weight: normal;text-align: left;vertical-align: middle;font-size: 14px;border-bottom: 1px solid #e7e7e7;padding: 3px;word-break:break-all; word-wrap:break-word;}
+	        .table td {padding: 3px;font-size: 14px;;color:#333;word-break:break-all; word-wrap:break-word;border-bottom: 1px solid #e7e7e7;}
+	        /* 通用表格 结束 */
+	
+	
+	        .center {text-align: center;}
+	        .mt10 {margin-top: 10px;}
+	        .mt40 {margin-top: 40px;}
+	        .bigfs {font-size: 20px;}
+	        .bold {font-weight: bold;}
+	
+	        .p_order {width: 100%;height: auto;display: block;border-bottom: 4px dashed #000;padding: 3mm 0;}
+	        .p_order .qr {padding:0;}
+	        .p_order .qr img {width: 22mm;height: 22mm;margin: 0 auto;}
+	        .p_order .bignum {font-size: 16px;font-weight: bold;}
+	        .p_order .text {font-size: 12px;}
+	
+	        .listbox {display: block;border-bottom: 3px solid #000;border-top: 3px solid #000;}
+	        .listbox .itemarea {display: block;width: 100%;border-bottom: 1px solid #000;border-top: 1px solid #000;padding:8px 0;font-size: 12px;}
+	        .listbox .itemarea .title {font-size: 12px;font-weight: bold;margin-bottom: 4px;}
+	
+	        .totalbox {display: block;}
+	        .totalbox .itemarea {display: block;width: 100%;padding:3px 0;font-size: 12px;text-align: right;}
+	
+	        .userbox {display: block;border: 1px dashed #000;border-radius: 6px;padding:0 10px;}
+	        .userbox .itemarea {display: block;width: 100%;padding:3px 0;font-size: 12px;}
+	
+	        .infobox {display: block;border-top: 4px solid #000;padding:8px 0;}
+	        .infobox .itemarea {display: block;width: 100%;padding:3px 0;font-size: 12px;}
+
+		</style>
+	</head>
+	<body>
+		<div class="container p_order">
+			<div class="center bigfs bold">华天e生活订单</div>
+			<div class="text center mt10">（留底联）</div>
+			<div class="bignum center mt10">货架号：854</div>
+			<div class="qr center mt10"><img src="images/p_clothing_qr.png"></div>
+			<div class="bignum center">W20150705032446</div>
+			<div class="text mt10">入库时间：2015-06-29 14:30:09</div>
+			<div class="text">衣物件数：4件</div>
+			
+			<div class="listbox mt10">
+				<div class="itemarea">
+					<p class="title">西服 38847433988</p>
+					<p class="itext">服务：干洗</p>
+					<p class="itext">特征：白色/磨损/污渍</p>
+					<p class="itext">附加：加急/缝补</p>
+					<p class="itext">原价：￥48.00</p>
+				</div>
+				<div class="itemarea">
+					<p class="title">光面皮衣加脂复柔 38847433988</p>
+					<p class="itext">服务：干洗</p>
+					<p class="itext">特征：白色/磨损/污渍/白色/磨损/污渍/白色/磨损/污渍/白色/磨损/污渍</p>
+					<p class="itext">附加：加急/缝补</p>
+					<p class="itext">原价：￥40.00</p>
+				</div>
+				<div class="itemarea">
+					<p class="title">光面皮衣加脂复柔 38847433988</p>
+					<p class="itext">服务：干洗</p>
+					<p class="itext">特征：白色/磨损/污渍/白色/磨损/污渍/白色/磨损/污渍/白色/磨损/污渍</p>
+					<p class="itext">附加：加急/缝补</p>
+					<p class="itext">原价：￥40.00</p>
+				</div>
+				<div class="itemarea">
+					<p class="title">光面皮衣加脂复柔 38847433988</p>
+					<p class="itext">服务：干洗</p>
+					<p class="itext">特征：白色/磨损/污渍/白色/磨损/污渍/白色/磨损/污渍/白色/磨损/污渍</p>
+					<p class="itext">附加：加急/缝补</p>
+					<p class="itext">原价：￥40.00</p>
+				</div>
+			</div>
+			
+			<div class="totalbox mt10">
+				<div class="itemarea">
+					<p class="itext bold">总金额：320.00</p>
+				</div>
+				<div class="itemarea">
+					<p class="itext">折扣：50%</p>
+				</div>
+				<div class="itemarea">
+					<p class="itext bold">应付：160.00</p>
+				</div>
+				<div class="itemarea">
+					<p class="itext">已付：0.00</p>
+				</div>
+				<div class="itemarea">
+					<p class="itext">未收：160.00</p>
+				</div>
+			</div>
+			<div class="userbox mt10">
+				<div class="itemarea">
+					<p class="itext">客户：张三</p>
+					<p class="bigfs bold">18678789898</p>
+					<p class="itext">地址：长沙市-雨花区-城南故事-3栋东西单元802</p>
+					<p class="itext">会员余额：0.00</p>
+				</div>
+			</div>
+			
+			<div class="text mt10">注意：</div>
+			<div class="infobox">
+				<div class="itemarea">
+					<p class="itext">1、高档品牌价格在1000元以上的贵重衣物，请选择保值精洗，按保价的5%收取。</p>
+					<p class="itext">2、衣物局部有轻微褪色，本店负责修复，赔偿最高不超过洗涤费的10倍。</p>
+					
+					<p class="itext mt10">客服电话：0731-89748960</p>
+					<p class="itext">微信号：xiaoxiongdaocom</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="Author" content="xiaoxiongdao.com Inc.">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>电话下单</title>
+		<link rel="icon" href="images/favicon.ico">
+		<link href="styles/common.css" rel="stylesheet" type="text/css">
+	</head>
+	<body class="bg_black_toolbar">
+		<!-- start pane_box -->
+		<div class="pane_box wc_view skin_grey">
+			<!-- start pane -->
+			<div class="pane wc_view pane_row_1">	
+				<!-- start pane_right -->
+				<div class="pane_right wc_view">
+					<div class="toolbar wc_view selectno">
+						<div class="wc_controls wc_view selectno" id="js_openallnav">
+							<div class="nav_title">电话下单</div>
+							<div class="logo"></div>
+							<div class="icon_down"></div>
+						</div>
+						<div class="allnavbox wc_view selectno" style="display:none;" id="js_allnav">
+							<div class="allnav">
+								<a href="order_wash.html">
+									<div class="icon"><img src="images/allnav_001.png"></div>
+									<div class="text">订单管理</div>
+								</a>
+								<a href="goods.html">
+									<div class="icon"><img src="images/allnav_004.png"></div>
+									<div class="text">衣物管理</div>
+								</a>
+								
+								<a href="user.html">
+									<div class="icon"><img src="images/allnav_005.png"></div>
+									<div class="text">用户管理</div>
+								</a>
+								<a href="trade_recharge.html">
+									<div class="icon"><img src="images/allnav_008.png"></div>
+									<div class="text">充值记录</div>
+								</a>
+								<a href="stockin.html" class="active">
+									<div class="icon"><img src="images/stockin.png"></div>
+									<div class="text">入库</div>
+								</a>
+								<a href="stockout.html">
+									<div class="icon"><img src="images/stockout.png"></div>
+									<div class="text">出库</div>
+								</a>
+								<a href="leavefactory.html">
+									<div class="icon"><img src="images/stockout.png"></div>
+									<div class="text">出厂</div>
+								</a>
+								<a href="coupons.html">
+									<div class="icon"><img src="images/allnav_006.png"></div>
+									<div class="text">优惠券</div>
+								</a>
+								<a href="staff.html">
+									<div class="icon"><img src="images/allnav_007.png"></div>
+									<div class="text">员工管理</div>
+								</a>
+								<a href="community.html">
+									<div class="icon"><img src="images/allnav_002.png"></div>
+									<div class="text">小区管理</div>
+								</a>
+								<a href="srpersonnel.html">
+									<div class="icon"><img src="images/allnav_003.png"></div>
+									<div class="text">收送专员</div>
+								</a>
+								<a href="product.html">
+									<div class="icon"><img src="images/allnav_004.png"></div>
+									<div class="text">产品管理</div>
+								</a>
+								<a href="setup.html">
+									<div class="icon"><img src="images/allnav_0014.png"></div>
+									<div class="text">设置</div>
+								</a>
+								<a href="index.html">
+									<div class="icon"><img src="images/home.png"></div>
+									<div class="text">主页</div>
+								</a>
+								<a href="telephone.html">
+									<div class="icon"><img src="images/home.png"></div>
+									<div class="text">电话下单</div>
+								</a>
+							</div>
+							<div class="pointer wc_view"></div>
+						</div>
+						<div class="t_menu wc_view">
+							<div class="t_menu_item">
+								<a href="telephone.html" class="btn btn_blue">返回</a>
+							</div>
+						</div>
+						<div class="wc_controls_right wc_view">
+							<div class="nav_title" id="js_logout">客服-刘诗诗</div>
+							<div class="icon_down"></div>
+							<ul class="selectnav_son selectno" style="display:none;" id="js_logout_open">
+								<div class="pointer wc_view"></div>
+								<li>安全退出</li>
+							</ul>
+						</div>
+					</div>
+					<div class="contentbody wc_view">
+						<div class="detail_info">
+							<div class="item">
+								<div class="bh">
+									<div class="i_title bigfs">18674862888 张三 <span class="color_green">是常客</span></div>
+								</div>
+								<div class="i_describe">
+									<i>会员卡号：</i>88800482 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<i>级别：</i>VIP用户 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<i>折扣：</i>75% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<i>积分：</i>120 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<i>共计消费金额：</i>￥0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<i>当前余额：</i>￥0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<i>账号创建时间：</i>2015-07-04 08:10:22
+								</div>
+							</div>
+							<div class="formgroup">
+								<div class="f_left">
+									<div class="item_area">
+										<div class="title">联系电话</div>
+										<div class="content">
+											<div class="inputitem">
+								    			<input type="text" class="inputtext" value="18674862888">
+								    			<div class="delete"></div>
+								    		</div>
+										</div>
+									</div>
+									<div class="item_area">
+										<div class="title">姓名</div>
+										<div class="content">
+											<div class="inputitem">
+								    			<input type="text" class="inputtext" value="张三">
+								    			<div class="delete"></div>
+								    		</div>
+										</div>
+									</div>
+									<div class="item_area">
+										<div class="title">性别</div>
+										<div class="content">
+											<div class="tab_select">
+												<a href="javascript:void(0);" class="active">女</a>
+												<a href="javascript:void(0);">男</a>
+												<a href="javascript:void(0);">未知</a>
+											</div>
+										</div>
+									</div>
+									<div class="item_area">
+										<div class="title">折扣</div>
+										<div class="content">
+											<div class="selectbox">
+								    			<div class="dropdown_menu left">
+									    			<a href="javascript:void(0);" class="dropdown_a">
+									    				<label>VIP用户75%</label>
+									    				<i class="arrow"></i>
+									    			</a>
+													<div class="dropdown_data_container" style="display: none;">
+														<div class="pointer wc_view"></div>
+													    <ul class="dropdown_data_list">
+												            <li class="dropdown_data_item ">  
+												                <a href="javascript:void(0);">VIP用户75%</a>
+												            </li>
+												            <li class="dropdown_data_item ">  
+												                <a href="javascript:void(0);">VIP用户75%</a>
+												            </li>
+												            <li class="dropdown_data_item ">  
+												                <a href="javascript:void(0);">VIP用户75%</a>
+												            </li>
+													    </ul>
+													</div>
+												</div>
+								    		</div>
+										</div>
+									</div>
+									<div class="buttonbar" style="padding-left: 170px;">
+										<div class="button_item"><button class="btn_s btn_blue js_button_fast">保存用户信息</button></div>
+									</div>
+								</div>
+								<!-- f_left -->
+								<div class="f_right">
+									<div class="item_area">
+										<div class="title">门店</div>
+										<div class="content">
+											<div class="selectbox">
+												<div class="dropdown_menu left">
+									    			<a href="javascript:void(0);" class="dropdown_a">
+									    				<label>水立方店</label>
+									    				<i class="arrow"></i>
+									    			</a>
+													<div class="dropdown_data_container" style="display: block;">
+														<div class="pointer wc_view"></div>
+													    <ul class="dropdown_data_list">
+												            <li class="dropdown_data_item ">  
+												                <a href="javascript:void(0);">国家体院馆店</a>
+												            </li>
+												            <li class="dropdown_data_item ">  
+												                <a href="javascript:void(0);">望京店</a>
+												            </li>
+												            <li class="dropdown_data_item ">  
+												                <a href="javascript:void(0);">国家体院馆店</a>
+												            </li>
+												            <li class="dropdown_data_item ">  
+												                <a href="javascript:void(0);">望京店</a>
+												            </li>
+													    </ul>
+													</div>
+												</div>
+								    		</div>
+										</div>
+									</div>
+									<div class="item_area">
+										<div class="title">订单金额</div>
+										<div class="content">
+											<div class="inputitem">
+								    			<input type="text" class="inputtext" placeholder="订单金额">
+								    			<div class="delete"></div>
+								    		</div>
+										</div>
+									</div>
+									<div class="item_area">
+										<div class="title">订单备注</div>
+										<div class="content">
+											<div class="inputitem">
+								    			<input type="text" class="inputtext" placeholder="订单备注">
+								    			<div class="delete"></div>
+								    		</div>
+										</div>
+									</div>
+									<div class="item_area">
+										<div class="title">收送方式</div>
+										<div class="content">
+											<div class="tab_select">
+												<a href="javascript:void(0);" class="active">上门取送</a>
+												<a href="javascript:void(0);">只取不送</a>
+												<a href="javascript:void(0);">不取只送</a>
+												<a href="javascript:void(0);">不取不送</a>
+											</div>
+										</div>
+									</div>
+									<div class="item_area">
+										<div class="title">洗衣方式</div>
+										<div class="content">
+											<div class="tab_select">
+												<a href="javascript:void(0);" class="active">件洗</a>
+												<a href="javascript:void(0);">袋洗</a>
+											</div>
+										</div>
+									</div>
+									
+									<div class="item_area bordernone">
+										<div class="bh">
+											<div class="i_title">选择地址</div>
+											<div class="right"><button class="btn_s btn_blue js_button_005">添加地址</button></div>
+										</div>
+										<div class="selectedbox">
+							    			<div class="selected_item active bg_white">
+												<div class="name">
+													湖南省长沙市天心区福邸雅苑1栋2单元1906
+												</div>
+												<div class="checked_icon"></div>
+											</div>
+											<div class="selected_item bg_white">
+												<div class="name">
+													湖南省长沙市天心区星语林.名园4栋1单元807
+												</div>
+												<div class="checked_icon"></div>
+											</div>
+											<div class="selected_item bg_white">
+												<div class="name">
+													湖南省 长沙市 天心区 湘府华城北 11栋1单元 802
+												</div>
+												<div class="checked_icon"></div>
+											</div>
+											<div class="data_none_s">暂无数据</div>
+							    		</div>
+									</div>
+								</div>
+								<!-- //f_right -->
+							</div>
+							<!-- //formgroup -->
+							<div class="buttonbar center">
+								<div class="button_item"><button class="btn btn_green js_button_open js_button_006">确认提交下单</button></div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<!-- end pane_right -->
+			</div>
+			<!-- end pane -->
+		</div>
+		<!-- end pane_box -->
+		
+		<!-- //列表选定 开始 -->
+		<div class="modal" id="modal_005" style="display: none;">
+		  <div class="modal_dialog_tips" id="modal_t_005">
+		    <div class="modal_content">
+		    	<div class="mc_head">
+		    		添加地址
+		    	</div>
+		    	<div class="mc_body">
+		    		<div class="controlarea">
+			    		<div class="inputtitle">省/市/区（县）：</div>
+			    		<div class="selectbox">
+			    			<div class="dropdown_menu left">
+				    			<a href="javascript:;" class="dropdown_a">
+				    				<label>请选择</label>
+				    				<i class="arrow"></i>
+				    			</a>
+								<div class="dropdown_data_container" style="display: none;">
+									<div class="pointer wc_view"></div>
+								    <ul class="dropdown_data_list">
+							            <li class="dropdown_data_item ">  
+							                <a href="javascript:void(0);">湖南省</a>
+							            </li>
+							            <li class="dropdown_data_item ">  
+							                <a href="javascript:void(0);">广东省</a>
+							            </li>
+							            <li class="dropdown_data_item ">  
+							                <a href="javascript:void(0);">北京市</a>
+							            </li>
+								    </ul>
+								</div>
+							</div>
+							<div class="dropdown_menu left">
+				    			<a href="javascript:;" class="dropdown_a">
+				    				<label>请选择</label>
+				    				<i class="arrow"></i>
+				    			</a>
+								<div class="dropdown_data_container" style="display: none;">
+									<div class="pointer wc_view"></div>
+								    <ul class="dropdown_data_list">
+										<li class="dropdown_data_item ">  
+							                <a href="javascript:void(0);">长沙市</a>
+							            </li>
+							            <li class="dropdown_data_item ">  
+							                <a href="javascript:void(0);">株洲市</a>
+							            </li>
+							            <li class="dropdown_data_item ">  
+							                <a href="javascript:void(0);">衡阳市</a>
+							            </li>
+								    </ul>
+								</div>
+							</div>
+							<div class="dropdown_menu left">
+				    			<a href="javascript:;" class="dropdown_a">
+				    				<label>请选择</label>
+				    				<i class="arrow"></i>
+				    			</a>
+								<div class="dropdown_data_container" style="display: block;">
+									<div class="pointer wc_view"></div>
+								    <ul class="dropdown_data_list">
+										<li class="dropdown_data_item ">  
+							                <a href="javascript:void(0);">芙蓉区</a>
+							            </li>
+							            <li class="dropdown_data_item ">  
+							                <a href="javascript:void(0);">雨花区</a>
+							            </li>
+							            <li class="dropdown_data_item ">  
+							                <a href="javascript:void(0);">天心区</a>
+							            </li>
+								    </ul>
+								</div>
+							</div>
+			    		</div>
+		    		</div>
+		    		<div class="controlarea">
+			    		<div class="search">
+							<div class="inputinner wc_view">
+								<div class="icon_search wc_view"></div>
+								<input type="text" placeholder="快速搜索" class="inputtext wc_view">
+							</div>
+							<div class="buttoninner wc_view">
+								<button class="button wc_view">搜索</button>
+							</div>
+						</div>
+		    		</div>
+		    		<div class="selectedlist">
+		    			<div class="selected_item">
+							<div class="name">
+								湘腾商业广场 <span class="color_grey">（长沙市）</span>
+							</div>
+							<div class="checked_icon"></div>
+						</div>
+						<div class="selected_item active">
+							<div class="name">
+								东门壹号 <span class="color_grey">（长沙市）</span>
+							</div>
+							<div class="checked_icon"></div>
+						</div>
+						<div class="selected_item">
+							<div class="name">
+								湘府华城北 <span class="color_grey">（北京市）</span>
+							</div>
+							<div class="checked_icon"></div>
+						</div>
+						<div class="selected_item">
+							<div class="name">
+								金葳家园 <span class="color_grey">（长沙市）</span>
+							</div>
+							<div class="checked_icon"></div>
+						</div>
+						<div class="selected_item">
+							<div class="name">
+								湘腾商业广场 <span class="color_grey">（长沙市）</span>
+							</div>
+							<div class="checked_icon"></div>
+						</div>
+						<div class="selected_item">
+							<div class="name">
+								东门壹号 <span class="color_grey">（长沙市）</span>
+							</div>
+							<div class="checked_icon"></div>
+						</div>
+						<div class="selected_item">
+							<div class="name">
+								湘府华城北 <span class="color_grey">（北京市）</span>
+							</div>
+							<div class="checked_icon"></div>
+						</div>
+						<div class="selected_item">
+							<div class="name">
+								恒大雅苑 <span class="color_grey">（长沙市）</span>
+							</div>
+							<div class="checked_icon"></div>
+						</div>
+						<div class="selected_item">
+							<div class="name">
+								御院 <span class="color_grey">（长沙市）</span>
+							</div>
+							<div class="checked_icon"></div>
+						</div>
+						<div class="selected_item">
+							<div class="name">
+								万达广场 <span class="color_grey">（长沙市）</span>
+							</div>
+							<div class="checked_icon"></div>
+						</div>
+						<div class="loadingmore">正在加载更多 <img src="images/loading.gif"></div>
+						<div class="data_none">没有更多了</div>
+						<div class="loadingbox"><img src="images/loading.gif"></div>
+		    		</div>
+		    	</div>
+		    	<div class="mc_foot">
+		    		<div class="buttonbar">
+		    			<div class="button_item"><button class="btn btn_green">添加备注地址</button></div>
+						<div class="button_item"><button class="btn btn_grey js_drop_005">取消</button></div>
+						<div class="button_item"><button class="btn btn_blue js_drop_005">确定</button></div>
+					</div>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="modal_cover"></div>
+		</div>
+		<!-- //列表选定 结束 -->
+		
+		<!-- //数据提示 开始 -->
+		<div class="modal" id="modal_006" style="display: none;">
+		  <div class="modal_dialog_tips" id="modal_t_006">
+		    <div class="modal_content">
+		    	<div class="mc_head">
+		    		确认下单
+		    	</div>
+		    	<div class="mc_body">
+		    		<div class="show_info">
+		    			<dl>
+		    				<dt>客户</dt>
+		    				<dd>18674862888 张三 （75%）</dd>
+		    			</dl>
+		    			<dl>
+		    				<dt>订单备注</dt>
+		    				<dd>下午14:00来取。</dd>
+		    			</dl>
+		    			<dl>
+		    				<dt>收送方式</dt>
+		    				<dd><span class="color_red">上门收送</span></dd>
+		    			</dl>
+		    			<dl>
+		    				<dt>洗涤方式</dt>
+		    				<dd><span class="color_red">件洗</span></dd>
+		    			</dl>
+		    			<dl>
+		    				<dt>门店</dt>
+		    				<dd><span class="color_blue">水立方店</span></dd>
+		    			</dl>
+		    			<dl>
+		    				<dt>地址</dt>
+		    				<dd>湖南省长沙市天心区星语林.名园4栋1单元807</dd>
+		    			</dl>
+		    			
+		    		</div>
+		    	</div>
+		    	<div class="mc_foot">
+		    		<div class="buttonbar">
+						<div class="button_item"><button class="btn btn_grey js_drop_006">取消</button></div>
+						<div class="button_item"><button class="btn btn_blue" onclick="location.href='order_wash.html'">确认下单</button></div>
+					</div>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="modal_cover"></div>
+		</div>
+		<!-- //数据提示  结束 -->
+		
+		<!-- //提示 开始 -->
+		<div class="modal" id="modal_fast" style="display: none;">
+		  <div class="modal_dialog_tips" id="modal_t_fast">
+		    <div class="modal_content">
+		    	<div class="mc_body center">
+		    		<span class="color_green">修改成功</span>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="modal_cover"></div>
+		</div>
+		<!-- //提示 结束 -->
+	
+		<!-- start javascript -->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/common.js"></script>
+		<!-- end javascript -->
+	</body>
+</html>

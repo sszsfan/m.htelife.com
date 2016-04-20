@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="Author" content="xiaoxiongdao.com Inc.">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>衣物管理</title>
+		<link rel="icon" href="images/favicon.ico">
+		<link href="styles/common.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<!-- start pane_box -->
+		<div class="pane_box wc_view">
+			<!-- start pane -->
+			<div class="pane wc_view pane_row_2">
+				<!-- start pane_left -->
+				<div class="pane_left wc_view">
+					<div class="toolbar wc_view">
+						<div class="wc_controls wc_view selectno" id="js_openallnav">
+							<div class="nav_title">衣物管理</div>
+							<div class="logo"></div>
+							<div class="icon_down" style="left:140px;"></div>
+						</div>
+						<div class="allnavbox wc_view selectno" style="display:none;" id="js_allnav">
+							<div class="allnav">
+								<a href="order_wash.html">
+									<div class="icon"><img src="images/allnav_001.png"></div>
+									<div class="text">订单管理</div>
+								</a>
+								<a href="goods.html" class="active">
+									<div class="icon"><img src="images/allnav_004.png"></div>
+									<div class="text">衣物管理</div>
+								</a>
+								
+								<a href="user.html">
+									<div class="icon"><img src="images/allnav_005.png"></div>
+									<div class="text">用户管理</div>
+								</a>
+								<a href="trade.html">
+									<div class="icon"><img src="images/allnav_008.png"></div>
+									<div class="text">交易记录</div>
+								</a>
+								<a href="stockin.html">
+									<div class="icon"><img src="images/stockin.png"></div>
+									<div class="text">入库</div>
+								</a>
+								<a href="stockout.html">
+									<div class="icon"><img src="images/stockout.png"></div>
+									<div class="text">出库</div>
+								</a>
+								<a href="leavefactory.html">
+									<div class="icon"><img src="images/leavefactory.png"></div>
+									<div class="text">出厂</div>
+								</a>
+								<a href="coupons.html">
+									<div class="icon"><img src="images/allnav_006.png"></div>
+									<div class="text">优惠券</div>
+								</a>
+								<a href="staff.html">
+									<div class="icon"><img src="images/allnav_007.png"></div>
+									<div class="text">员工管理</div>
+								</a>
+								<a href="community.html">
+									<div class="icon"><img src="images/allnav_002.png"></div>
+									<div class="text">小区管理</div>
+								</a>
+								<a href="store.html">
+									<div class="icon"><img src="images/allnav_store.png"></div>
+									<div class="text">门店管理</div>
+								</a>
+								<a href="store_owner.html">
+									<div class="icon"><img src="images/allnav_storeowner.png"></div>
+									<div class="text">店主管理</div>
+								</a>
+								<a href="operation.html">
+									<div class="icon"><img src="images/allnav_operation.png"></div>
+									<div class="text">运营中心</div>
+								</a>
+								<a href="srpersonnel.html">
+									<div class="icon"><img src="images/allnav_003.png"></div>
+									<div class="text">收送专员</div>
+								</a>
+								<a href="product.html">
+									<div class="icon"><img src="images/product.png"></div>
+									<div class="text">产品管理</div>
+								</a>
+								<a href="setup.html">
+									<div class="icon"><img src="images/allnav_0014.png"></div>
+									<div class="text">设置</div>
+								</a>
+								<a href="index.html">
+									<div class="icon"><img src="images/home.png"></div>
+									<div class="text">主页</div>
+								</a>
+								<a href="telephone.html">
+									<div class="icon"><img src="images/telephone.png"></div>
+									<div class="text">电话下单</div>
+								</a>
+								<a href="waybill.html">
+									<div class="icon"><img src="images/icon_waybill.png"></div>
+									<div class="text">运单码</div>
+								</a>
+							</div>
+							<div class="pointer wc_view"></div>
+						</div>
+					</div>
+					<div class="contentbody wc_view" style="bottom:0px;">
+						<div class="l_content">
+							<div class="memu" style="top:0px;">
+								<div class="menu_item" onclick="location.href='goods.html'">
+									<div class="item_border"></div>
+									<div class="item_text">所有</div>
+								</div>
+								<div class="menu_item" onclick="location.href='goods_batch_in.html'">
+									<div class="item_border"></div>
+									<div class="item_text">进厂批次</div>
+								</div>
+								<div class="menu_item active" onclick="location.href='goods_batch_out.html'">
+									<div class="item_border"></div>
+									<div class="item_text">出厂批次</div>
+								</div>
+								<div class="menu_item" onclick="location.href='goods_batch_get.html'">
+									<div class="item_border"></div>
+									<div class="item_text">接收批次</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end pane_left -->
+				
+				<!-- start pane_left_line -->
+				<div class="pane_left_line wc_view"><div class="line"></div></div>
+				<!-- end pane_left_line -->
+					
+				<!-- start pane_right -->
+				<div class="pane_right wc_view">
+					<div class="toolbar wc_view selectno">
+						<div class="t_menu_normal wc_view">
+							<div class="t_menu_item">
+								<a href="goods_batch_out_detail.html" class="btn_s btn_blue b_add"><span class="icon"></span>新建批次</a>
+							</div>
+						</div>
+						<div class="wc_controls wc_view">
+							<div class="nav_title" id="js_logout">超级管理员</div>
+							<div class="icon_down"></div>
+							<ul class="selectnav_son selectno" style="display:none;" id="js_logout_open">
+								<div class="pointer wc_view"></div>
+								<li>安全退出</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="contentbody wc_view">
+						<div class="detail_info">
+							<div class="screening">
+								
+								<div class="item_area">
+									<div class="title">门店</div>
+									<div class="content">
+										<div class="selectbox">
+							    			<div class="dropdown_menu left">
+								    			<a href="javascript:;" class="dropdown_a">
+								    				<label>所有</label>
+								    				<i class="arrow"></i>
+								    			</a>
+												<div class="dropdown_data_container" style="display: none;">
+													<div class="pointer wc_view"></div>
+												    <ul class="dropdown_data_list">
+											            <li class="dropdown_data_item ">  
+											                <a href="javascript:void(0);">华天e生活五一大道店</a>
+											            </li>
+											            <li class="dropdown_data_item ">  
+											                <a href="javascript:void(0);">华天e生活北京路店</a>
+											            </li>
+											            <li class="dropdown_data_item ">  
+											                <a href="javascript:void(0);">华天e生活梅溪湖店</a>
+											            </li>
+												    </ul>
+												</div>
+											</div>
+							    		</div>
+									</div>
+								</div>
+								<div class="item_area">
+									<div class="title">物流人员</div>
+									<div class="content">
+										<div class="selectbox">
+							    			<div class="dropdown_menu left">
+								    			<a href="javascript:;" class="dropdown_a">
+								    				<label>所有</label>
+								    				<i class="arrow"></i>
+								    			</a>
+												<div class="dropdown_data_container" style="display: none;">
+													<div class="pointer wc_view"></div>
+												    <ul class="dropdown_data_list">
+											            <li class="dropdown_data_item ">  
+											                <a href="javascript:void(0);">章三</a>
+											            </li>
+											            <li class="dropdown_data_item ">  
+											                <a href="javascript:void(0);">李四</a>
+											            </li>
+											            <li class="dropdown_data_item ">  
+											                <a href="javascript:void(0);">王五</a>
+											            </li>
+												    </ul>
+												</div>
+											</div>
+							    		</div>
+									</div>
+								</div>
+								<div class="item_area">
+									<div class="title">工厂</div>
+									<div class="content">
+										<div class="selectbox">
+							    			<div class="dropdown_menu left">
+								    			<a href="javascript:;" class="dropdown_a">
+								    				<label>所有</label>
+								    				<i class="arrow"></i>
+								    			</a>
+												<div class="dropdown_data_container" style="display: none;">
+													<div class="pointer wc_view"></div>
+												    <ul class="dropdown_data_list">
+											            <li class="dropdown_data_item ">  
+											                <a href="javascript:void(0);">朝阳一工厂</a>
+											            </li>
+											            <li class="dropdown_data_item ">  
+											                <a href="javascript:void(0);">朝阳二工厂</a>
+											            </li>
+												    </ul>
+												</div>
+											</div>
+							    		</div>
+									</div>
+								</div>
+								<div class="item_area">
+									<div class="title">批号</div>
+									<div class="content">
+										<div class="inputitem w_l">
+							    			<input type="text" class="inputtext" placeholder="请输入批号">
+							    			<div class="delete"></div>
+							    		</div>
+									</div>
+								</div>
+								<div class="buttonbar">
+									<div class="button_item"><button class="btn_s btn_blue">筛选</button></div>
+								</div>
+							</div>
+							
+							<div class="tabbarbox">
+								<div class="tabbar">
+									<ul>
+										<li class="active"><a href="javascript:void(0);">全部</a></li>
+										<li><a href="javascript:void(0);">待物流人员接收</a></li>
+										<li><a href="javascript:void(0);">送往门店途中</a></li>
+										<li><a href="javascript:void(0);">到门店</a></li>
+									</ul>
+								</div>
+								<!-- //tabbar -->
+							</div>
+							<!-- //tabbarbox -->
+							
+							<div class="tablebox">
+								<div class="row_box">
+									共有 <i class="color_blue bold">6</i> 条记录。
+								</div>
+								<table class="table_item_all">
+									<thead>
+								        <tr>
+								        	<th>
+										        <div>二维码</div>
+										    </th>
+										    <th>
+										        <div>衣物数</div>
+										    </th>
+								            
+									        <th>
+										        <div>工厂</div>
+										    </th>
+										    <th>
+										        <div>物流人员</div>
+										    </th>
+										    <th>
+										        <div>门店</div>
+										    </th>
+										    <th>
+										        <div>状态</div>
+										    </th>
+								        </tr>
+								    </thead>
+								    
+								    <tbody class="table_list_item">
+								    	<tr class="nothing_row">
+										    <td colspan="6"></td>
+										</tr>
+										<tr class="header_row">
+										    <td colspan="3">
+											    <span>批号：892</span>
+										    </td>
+										    <td colspan="3" class="text_right">
+										    	<a href="goods_batch_out_detail.html">查看详情</a>
+										    	<span class="gegege">-</span>
+										    	<a href="javascript:void(0);" class="color_red js_button_001">删除</a>
+										    </td>
+										</tr>
+								    	<tr class="content_row">
+								    		<td>
+										    	<div>
+										    		<div class="qrcode100"><img src="upload/qrcode.png"></div>
+										    	</div>
+										    </td>
+										    <td>
+										    	<div>
+										    		82
+										    	</div>
+										    </td>
+										    <td>
+										    	<div>
+										    		<p>第一工厂</p>
+										    		<p>李四</p>
+										    		<p>18789896767</p>
+										    		<p><span class="color_grey">2015-01-24 22:50</span></p>
+										    	</div>
+										    </td>
+										    
+										    <td>
+										    	-
+										    </td>
+										    <td>
+										    	-
+										    </td>
+										    <td>
+										    	<div>
+										    		<span class="color_red">待物流人员接收</span>
+										    	</div>
+										    </td>
+										</tr>
+								    </tbody>
+								    <tbody class="table_list_item">
+								    	<tr class="nothing_row">
+										    <td colspan="6"></td>
+										</tr>
+										<tr class="header_row">
+										    <td colspan="3">
+											    <span>批号：892</span>
+										    </td>
+										    <td colspan="3" class="text_right">
+										    	<a href="goods_batch_out_detail.html">查看详情</a>
+										    </td>
+										</tr>
+								    	<tr class="content_row">
+								    		<td>
+										    	<div>
+										    		<div class="qrcode100"><img src="upload/qrcode.png"></div>
+										    	</div>
+										    </td>
+										    <td>
+										    	<div>
+										    		82
+										    	</div>
+										    </td>
+										    <td>
+										    	<div>
+										    		<p>第一工厂</p>
+										    		<p>李四</p>
+										    		<p>18789896767</p>
+										    		<p><span class="color_grey">2015-01-24 22:50</span></p>
+										    	</div>
+										    </td>
+										    
+										    <td>
+										    	<div>
+										    		<p>王五</p>
+										    		<p>18789896767</p>
+										    		<p><span class="color_grey">2015-01-24 22:50</span></p>
+										    	</div>
+										    </td>
+										    <td>
+										    	-
+										    </td>
+										    <td>
+										    	<div>
+										    		<span class="color_red">送往门店途中</span>
+										    	</div>
+										    </td>
+										</tr>
+								    </tbody>
+								    <tbody class="table_list_item">
+								    	<tr class="nothing_row">
+										    <td colspan="6"></td>
+										</tr>
+										<tr class="header_row">
+										    <td colspan="3">
+											    <span>批号：892</span>
+										    </td>
+										    <td colspan="3" class="text_right">
+										    	<a href="goods_batch_out_detail.html">查看详情</a>
+										    </td>
+										</tr>
+								    	<tr class="content_row">
+								    		<td>
+										    	<div>
+										    		<div class="qrcode100"><img src="upload/qrcode.png"></div>
+										    	</div>
+										    </td>
+										    <td>
+										    	<div>
+										    		82
+										    	</div>
+										    </td>
+										    <td>
+										    	<div>
+										    		<p>第一工厂</p>
+										    		<p>李四</p>
+										    		<p>18789896767</p>
+										    		<p><span class="color_grey">2015-01-24 22:50</span></p>
+										    	</div>
+										    </td>
+										    
+										    <td>
+										    	<div>
+										    		<p>王五</p>
+										    		<p>18789896767</p>
+										    		<p><span class="color_grey">2015-01-24 22:50</span></p>
+										    	</div>
+										    </td>
+										    <td>
+										    	<div>
+										    		<p>华天e生活五一大道店</p>
+										    		<p>王五（383747）</p>
+										    		<p><span class="color_grey">2015-01-24 22:50</span></p>
+										    	</div>
+										    </td>
+										    <td>
+										    	<div>
+										    		<span class="color_green">到门店</span>
+										    	</div>
+										    </td>
+										</tr>
+								    </tbody>
+								    
+								</table>
+								<div class="hb">
+									<div class="left">
+										<button type="button" class="btn_s btn_grey">导出</button>
+									</div>
+									<div class="pagination">
+									    <span class="page_nav_area">
+									        <a href="javascript:void(0);" class="btn page_first" style="display: none;"></a>
+									        <a href="javascript:void(0);" tag="prepage" class="btn page_prev"><i class="arrow"></i></a>
+									            <span class="page_num">
+									                <label>1</label>
+									                <span class="num_gap">/</span>
+									                <label id="tpage">3</label>
+									            </span>
+									        <a href="javascript:void(0);" tag="nextpage" class="btn page_next"><i class="arrow"></i></a>
+									        <a href="javascript:void(0);" class="btn page_last" style="display: none;"></a>            
+									    </span>
+									    <span class="goto_area">
+									        <input type="text">
+									        <a href="javascript:void(0);" tag="pagego" class="btn page_go">跳转</a>
+									    </span>
+									</div>
+								</div>
+							</div>
+							<!-- //tablebox -->
+							<div class="data_none">暂无数据</div>
+							<div class="loadingbox"><img src="images/loading.gif"></div>
+						</div>
+					</div>
+				</div>
+				<!-- end pane_right -->
+			</div>
+			<!-- end pane -->
+		</div>
+		<!-- end pane_box -->
+		
+		<!-- //输入框 开始 -->
+		<div class="modal" id="modal_002" style="display: none;">
+		  <div class="modal_dialog_tips" id="modal_t_002">
+		    <div class="modal_content">
+		    	<div class="mc_head">
+		    		备注
+		    		<div class="close"><a href="javascript:void(0);" class="js_drop_008">关闭</a></div>
+		    	</div>
+		    	<div class="mc_body">
+		    		<div class="inputitem">
+		    			<input type="text" class="inputtext" placeholder="请输入备注" autofocus="">
+		    		</div>
+		    	</div>
+		    	<div class="mc_foot">
+		    		<div class="buttonbar">
+						<div class="button_item"><button class="btn btn_grey js_drop_002">取消</button></div>
+						<div class="button_item"><button class="btn btn_blue js_drop_002">确定</button></div>
+					</div>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="modal_cover"></div>
+		</div>
+		<!-- //输入框 结束 -->
+		
+		<!-- //输入框 开始 -->
+		<div class="modal" id="modal_008" style="display: none;">
+		  <div class="modal_dialog_tips" id="modal_t_008">
+		    <div class="modal_content">
+		    	<div class="mc_head">
+		    		收款
+		    		<div class="close"><a href="javascript:void(0);" class="js_drop_008">关闭</a></div>
+		    	</div>
+		    	<div class="mc_toolbarbox">
+		    		<div class="mc_toolbar">
+			    		<div class="tabnav two">
+							<div class="tabnav_item active"><span class="t first">卡余额收款</span></div>
+							<div class="tabnav_item"><span class="t last">现金收款</span></div>
+						</div>
+		    		</div>
+		    	</div>
+		    	<div class="mc_body">
+		    		<div class="show_info">
+		    			<dl>
+		    				<dt>客户当前余额：</dt>
+		    				<dd><span class="color_green fsize30 bold">800.00</span> 元</dd>
+		    			</dl>
+		    			<dl>
+		    				<dt>本次订单收款：</dt>
+		    				<dd><span class="color_red fsize30 bold">60.00</span> 元</dd>
+		    			</dl>
+		    		</div>
+		    	</div>
+		    	<div class="mc_foot">
+		    		<div class="buttonbar">
+						<div class="button_item"><button class="btn btn_grey js_drop_008">取消</button></div>
+						<div class="button_item"><button class="btn btn_blue js_drop_008">确定收款</button></div>
+					</div>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="modal_cover"></div>
+		</div>
+		<!-- //输入框 结束 -->
+		
+		<!-- //提示 开始 -->
+		<div class="modal" id="modal_001" style="display: none;">
+		  <div class="modal_dialog_tips" id="modal_t_001">
+		    <div class="modal_content">
+		    	<div class="mc_body center">
+		    		<span class="color_red">确认删除吗？删除。</span>
+		    	</div>
+		    	<div class="mc_foot">
+		    		<div class="buttonbar">
+						<div class="button_item"><button class="btn btn_grey js_drop_001">取消</button></div>
+						<div class="button_item"><button class="btn btn_blue js_drop_001">确定</button></div>
+					</div>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="modal_cover"></div>
+		</div>
+		<!-- //提示 结束 -->
+	
+		<!-- start javascript -->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/common.js"></script>
+		<!-- end javascript -->
+	</body>
+</html>

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="Author" content="xiaoxiongdao.com Inc.">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>衣物管理</title>
+		<link rel="icon" href="images/favicon.ico">
+		<link href="styles/common.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<!-- start pane_box -->
+		<div class="pane_box wc_view">
+			<!-- start pane -->
+			<div class="pane wc_view pane_row_2">
+				<!-- start pane_left -->
+				<div class="pane_left wc_view">
+					<div class="toolbar wc_view">
+						<div class="wc_controls wc_view selectno" id="js_openallnav">
+							<div class="nav_title">衣物管理</div>
+							<div class="logo"></div>
+							<div class="icon_down" style="left:140px;"></div>
+						</div>
+						<div class="allnavbox wc_view selectno" style="display:none;" id="js_allnav">
+							<div class="allnav">
+								<a href="order_wash.html">
+									<div class="icon"><img src="images/allnav_001.png"></div>
+									<div class="text">订单管理</div>
+								</a>
+								<a href="goods.html" class="active">
+									<div class="icon"><img src="images/allnav_004.png"></div>
+									<div class="text">衣物管理</div>
+								</a>
+								
+								<a href="user.html">
+									<div class="icon"><img src="images/allnav_005.png"></div>
+									<div class="text">用户管理</div>
+								</a>
+								<a href="trade.html">
+									<div class="icon"><img src="images/allnav_008.png"></div>
+									<div class="text">交易记录</div>
+								</a>
+								<a href="stockin.html">
+									<div class="icon"><img src="images/stockin.png"></div>
+									<div class="text">入库</div>
+								</a>
+								<a href="stockout.html">
+									<div class="icon"><img src="images/stockout.png"></div>
+									<div class="text">出库</div>
+								</a>
+								<a href="leavefactory.html">
+									<div class="icon"><img src="images/leavefactory.png"></div>
+									<div class="text">出厂</div>
+								</a>
+								<a href="coupons.html">
+									<div class="icon"><img src="images/allnav_006.png"></div>
+									<div class="text">优惠券</div>
+								</a>
+								<a href="staff.html">
+									<div class="icon"><img src="images/allnav_007.png"></div>
+									<div class="text">员工管理</div>
+								</a>
+								<a href="community.html">
+									<div class="icon"><img src="images/allnav_002.png"></div>
+									<div class="text">小区管理</div>
+								</a>
+								<a href="store.html">
+									<div class="icon"><img src="images/allnav_store.png"></div>
+									<div class="text">门店管理</div>
+								</a>
+								<a href="store_owner.html">
+									<div class="icon"><img src="images/allnav_storeowner.png"></div>
+									<div class="text">店主管理</div>
+								</a>
+								<a href="operation.html">
+									<div class="icon"><img src="images/allnav_operation.png"></div>
+									<div class="text">运营中心</div>
+								</a>
+								<a href="srpersonnel.html">
+									<div class="icon"><img src="images/allnav_003.png"></div>
+									<div class="text">收送专员</div>
+								</a>
+								<a href="product.html">
+									<div class="icon"><img src="images/product.png"></div>
+									<div class="text">产品管理</div>
+								</a>
+								<a href="setup.html">
+									<div class="icon"><img src="images/allnav_0014.png"></div>
+									<div class="text">设置</div>
+								</a>
+								<a href="index.html">
+									<div class="icon"><img src="images/home.png"></div>
+									<div class="text">主页</div>
+								</a>
+								<a href="telephone.html">
+									<div class="icon"><img src="images/telephone.png"></div>
+									<div class="text">电话下单</div>
+								</a>
+								<a href="waybill.html">
+									<div class="icon"><img src="images/icon_waybill.png"></div>
+									<div class="text">运单码</div>
+								</a>
+							</div>
+							<div class="pointer wc_view"></div>
+						</div>
+					</div>
+					<div class="contentbody wc_view" style="bottom:0px;">
+						<div class="l_content">
+							<div class="memu" style="top:0px;">
+								<div class="menu_item" onclick="location.href='goods.html'">
+									<div class="item_border"></div>
+									<div class="item_text">所有</div>
+								</div>
+								<div class="menu_item active" onclick="location.href='goods_batch_in.html'">
+									<div class="item_border"></div>
+									<div class="item_text">进厂批次</div>
+								</div>
+								<div class="menu_item" onclick="location.href='goods_batch_out.html'">
+									<div class="item_border"></div>
+									<div class="item_text">出厂批次</div>
+								</div>
+								<div class="menu_item" onclick="location.href='goods_batch_get.html'">
+									<div class="item_border"></div>
+									<div class="item_text">接收批次</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end pane_left -->
+				
+				<!-- start pane_left_line -->
+				<div class="pane_left_line wc_view"><div class="line"></div></div>
+				<!-- end pane_left_line -->
+					
+				<!-- start pane_right -->
+				<div class="pane_right wc_view">
+					<div class="toolbar wc_view selectno">
+						<div class="wc_controls wc_view">
+							<div class="nav_title" id="js_logout">超级管理员</div>
+							<div class="icon_down"></div>
+							<ul class="selectnav_son selectno" style="display:none;" id="js_logout_open">
+								<div class="pointer wc_view"></div>
+								<li>安全退出</li>
+							</ul>
+						</div>
+					</div>
+					<div class="contentbody wc_view">
+						<div class="detail_info">
+						
+							<div class="pagetitle">
+								<a href="goods_batch_in.html">进厂批次</a>
+								<span class="gegege">/</span>
+								<a href="goods_batch_in_detail.html" class="on">批号768</a>
+								<span class="right"><a class="btn btn_green" href="print_goods_batch.html" target="_blank">批次完成，立即打印详单</a></span>
+							</div>
+							
+							<div class="tablebox">
+								<table class="table_item_all">
+									<thead>
+								        <tr>
+								        	<th>
+										        <div>批号</div>
+										    </th>
+								        	<th>
+										        <div>二维码</div>
+										    </th>
+										    <th>
+										        <div>衣物数</div>
+										    </th>
+									        <th>
+										        <div>门店</div>
+										    </th>
+										    <th>
+										        <div>物流人员</div>
+										    </th>
+										    <th>
+										        <div>工厂</div>
+										    </th>
+										    <th>
+										        <div>状态</div>
+										    </th>
+								        </tr>
+								    </thead>
+								    
+								    <tbody class="table_list_item">
+								    	<tr class="content_row">
+								    		<td>
+										    	<div>
+										    		768
+										    	</div>
+										    </td>
+								    		<td>
+										    	<div>
+										    		<div class="qrcode100"><img src="upload/qrcode.png"></div>
+										    	</div>
+										    </td>
+										    <td>
+										    	<div>
+										    		<p>7</p>
+										    		<p><span class="color_grey">6分拣</span></p>
+										    	</div>
+										    </td>
+										    <td>
+										    	<div>
+										    		<p>华天e生活五一大道店</p>
+										    		<p>王五（383747）</p>
+										    		<p><span class="color_grey">2015-01-24 22:50</span></p>
+										    	</div>
+										    </td>
+										    <td>
+										    	<div>
+										    		-
+										    	</div>
+										    </td>
+										    <td>
+										    	<div>
+										    		-
+										    	</div>
+										    </td>
+										    <td>
+										    	<div>
+										    		<span class="color_red">待物流人员接收</span>
+										    	</div>
+										    </td>
+										</tr>
+								    </tbody>
+								    
+								    
+								</table>
+
+							</div>
+							<!-- //tablebox -->
+							
+							<div class="search_box" style="padding:0 20px;">
+								<div class="search">
+									<div class="inputinner wc_view">
+										<div class="icon_search wc_view"></div>
+										<input type="text" placeholder="请输入或扫码" class="inputtext wc_view" autofocus="">
+										<div class="delete"></div>
+									</div>
+									<div class="buttoninner wc_view">
+										<button class="button wc_view js_button_001">确定</button>
+									</div>
+								</div>
+							</div>
+							
+							<div class="tablebox">
+								<div class="row_box">
+									共有 <i class="color_blue bold">7</i> 条记录。
+								</div>
+								<table class="table_all">
+									<thead>
+								        <tr class="buttonbox">
+								        	<th>
+								                <div>名称</div>
+								            </th>
+											<th>
+								                <div>订单号/衣物条码号</div>
+								            </th>
+								            <th>
+								                <div>入库时间</div>
+								            </th>
+								            <th>
+									        	<div>所属用户</div>
+									        </th>
+									        <th>
+									        	<div>工厂分拣</div>
+									        </th>
+									        <th>
+									        	<div>操作</div>
+									        </th>
+								        </tr>
+								    </thead>
+								    <tbody>
+										<tr>
+											<td>
+										    	<div>外套</div>
+										    </td>
+										    <td>
+												<div>
+											   		<p><a href="javascript:void(0);">W20150808417210</a></p>
+											    	<p>201508071501</p>
+											    </div>
+										    </td>
+										    <td>
+										    	<div>
+											   		<p>2015-01-24</p>
+											    	<p>22:50</p>
+											    </div>
+										    </td>
+										    
+										    <td>
+										    	<div>
+											    	<p>18675876789</p>
+											        <p>小熊</p>
+											    </div>
+										    </td>
+										    <td>
+										    	<div><span class="color_green">已分拣</span></div>
+										    </td>
+										    <td>
+										    	<div>
+											    	<button class="btn_s btn_red">移除</button>
+											    </div>
+										    </td>
+										</tr>
+										<tr>
+											<td>
+										    	<div>外套</div>
+										    </td>
+										    <td>
+												<div>
+											   		<p><a href="javascript:void(0);">W20150808417210</a></p>
+											    	<p>201508071501</p>
+											    </div>
+										    </td>
+										    <td>
+										    	<div>
+											   		<p>2015-01-24</p>
+											    	<p>22:50</p>
+											    </div>
+										    </td>
+										    
+										    <td>
+										    	<div>
+											    	<p>18675876789</p>
+											        <p>小熊</p>
+											    </div>
+										    </td>
+										    <td>
+										    	<div><span class="color_green">已分拣</span></div>
+										    </td>
+										    <td>
+										    	<div>
+											    	<button class="btn_s btn_red">移除</button>
+											    </div>
+										    </td>
+										</tr>
+										<tr>
+											<td>
+										    	<div>外套</div>
+										    </td>
+										    <td>
+												<div>
+											   		<p><a href="javascript:void(0);">W20150808417210</a></p>
+											    	<p>201508071501</p>
+											    </div>
+										    </td>
+										    <td>
+										    	<div>
+											   		<p>2015-01-24</p>
+											    	<p>22:50</p>
+											    </div>
+										    </td>
+										    
+										    <td>
+										    	<div>
+											    	<p>18675876789</p>
+											        <p>小熊</p>
+											    </div>
+										    </td>
+										    <td>
+										    	<div><span class="color_green">已分拣</span></div>
+										    </td>
+										    <td>
+										    	<div>
+											    	<button class="btn_s btn_red">移除</button>
+											    </div>
+										    </td>
+										</tr>
+										<tr>
+											<td>
+										    	<div>外套</div>
+										    </td>
+										    <td>
+												<div>
+											   		<p><a href="javascript:void(0);">W20150808417210</a></p>
+											    	<p>201508071501</p>
+											    </div>
+										    </td>
+										    <td>
+										    	<div>
+											   		<p>2015-01-24</p>
+											    	<p>22:50</p>
+											    </div>
+										    </td>
+										    
+										    <td>
+										    	<div>
+											    	<p>18675876789</p>
+											        <p>小熊</p>
+											    </div>
+										    </td>
+										    <td>
+										    	<div><span class="color_green">已分拣</span></div>
+										    </td>
+										    <td>
+										    	<div>
+											    	<button class="btn_s btn_red">移除</button>
+											    </div>
+										    </td>
+										</tr>
+										<tr>
+											<td>
+										    	<div>外套</div>
+										    </td>
+										    <td>
+												<div>
+											   		<p><a href="javascript:void(0);">W20150808417210</a></p>
+											    	<p>201508071501</p>
+											    </div>
+										    </td>
+										    <td>
+										    	<div>
+											   		<p>2015-01-24</p>
+											    	<p>22:50</p>
+											    </div>
+										    </td>
+										    
+										    <td>
+										    	<div>
+											    	<p>18675876789</p>
+											        <p>小熊</p>
+											    </div>
+										    </td>
+										    <td>
+										    	<div><span class="color_green">已分拣</span></div>
+										    </td>
+										    <td>
+										    	<div>
+											    	<button class="btn_s btn_red">移除</button>
+											    </div>
+										    </td>
+										</tr>
+										<tr>
+											<td>
+										    	<div>外套</div>
+										    </td>
+										    <td>
+												<div>
+											   		<p><a href="javascript:void(0);">W20150808417210</a></p>
+											    	<p>201508071501</p>
+											    </div>
+										    </td>
+										    <td>
+										    	<div>
+											   		<p>2015-01-24</p>
+											    	<p>22:50</p>
+											    </div>
+										    </td>
+										    
+										    <td>
+										    	<div>
+											    	<p>18675876789</p>
+											        <p>小熊</p>
+											    </div>
+										    </td>
+										    <td>
+										    	<div><span class="color_red">未分拣</span></div>
+										    </td>
+										    <td>
+										    	<div>
+											    	<button class="btn_s btn_red">移除</button>
+											    </div>
+										    </td>
+										</tr>
+										<tr>
+											<td>
+										    	<div>外套</div>
+										    </td>
+										    <td>
+												<div>
+											   		<p><a href="javascript:void(0);">W20150808417210</a></p>
+											    	<p>201508071501</p>
+											    </div>
+										    </td>
+										    <td>
+										    	<div>
+											   		<p>2015-01-24</p>
+											    	<p>22:50</p>
+											    </div>
+										    </td>
+										    
+										    <td>
+										    	<div>
+											    	<p>18675876789</p>
+											        <p>小熊</p>
+											    </div>
+										    </td>
+										    <td>
+										    	<div><span class="color_green">已分拣</span></div>
+										    </td>
+										    <td>
+										    	<div>
+											    	<button class="btn_s btn_red">移除</button>
+											    </div>
+										    </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- //tablebox -->
+							<div class="data_none">暂无数据</div>
+							<div class="loadingbox"><img src="images/loading.gif"></div>
+						</div>
+					</div>
+				</div>
+				<!-- end pane_right -->
+			</div>
+			<!-- end pane -->
+		</div>
+		<!-- end pane_box -->
+		
+		<!-- //提示 开始 -->
+		<div class="modal" id="modal_001" style="display: none;">
+		  <div class="modal_dialog_tips" id="modal_t_001">
+		    <div class="modal_content">
+		    	<div class="mc_body center">
+		    		<div class="loadingbox"><img src="images/loading.gif"></div>
+		    		<div class="loading_text">正在处理中…</div>
+		    		<div class="loadingbox"><img src="images/icon_ok.png"></div>
+		    		<div class="loading_text color_green">处理成功</div>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="modal_cover"></div>
+		</div>
+		<!-- //提示 结束 -->
+		
+	
+		<!-- start javascript -->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/common.js"></script>
+		<!-- end javascript -->
+	</body>
+</html>

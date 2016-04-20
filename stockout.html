@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="Author" content="xiaoxiongdao.com Inc.">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>工厂出库</title>
+		<link rel="icon" href="images/favicon.ico">
+		<link href="styles/common.css" rel="stylesheet" type="text/css">
+	</head>
+	<body class="bg_black_toolbar">
+		<!-- start pane_box -->
+		<div class="pane_box wc_view skin_grey">
+			<!-- start pane -->
+			<div class="pane wc_view pane_row_1">	
+				<!-- start pane_right -->
+				<div class="pane_right wc_view">
+					<div class="toolbar wc_view selectno">
+						<div class="wc_controls wc_view selectno" id="js_openallnav">
+							<div class="nav_title">工厂出库</div>
+							<div class="logo"></div>
+							<div class="icon_down" style="right:20px;"></div>
+						</div>
+						<div class="allnavbox wc_view selectno" style="display:none;" id="js_allnav">
+							<div class="allnav">
+								<a href="order_wash.html">
+									<div class="icon"><img src="images/allnav_001.png"></div>
+									<div class="text">订单管理</div>
+								</a>
+								<a href="goods.html">
+									<div class="icon"><img src="images/allnav_004.png"></div>
+									<div class="text">衣物管理</div>
+								</a>
+								
+								<a href="user.html">
+									<div class="icon"><img src="images/allnav_005.png"></div>
+									<div class="text">用户管理</div>
+								</a>
+								<a href="trade_recharge.html">
+									<div class="icon"><img src="images/allnav_008.png"></div>
+									<div class="text">充值记录</div>
+								</a>
+								<a href="stockin.html">
+									<div class="icon"><img src="images/stockin.png"></div>
+									<div class="text">入库</div>
+								</a>
+								<a href="bracket.html">
+									<div class="icon"><img src="images/stockout.png"></div>
+									<div class="text">衣物上架</div>
+								</a>
+								<a href="stockout.html" class="active">
+									<div class="icon"><img src="images/stockout.png"></div>
+									<div class="text">工厂出库</div>
+								</a>
+								<a href="leavefactory.html">
+									<div class="icon"><img src="images/stockout.png"></div>
+									<div class="text">出厂</div>
+								</a>
+								<a href="coupons.html">
+									<div class="icon"><img src="images/allnav_006.png"></div>
+									<div class="text">优惠券</div>
+								</a>
+								<a href="staff.html">
+									<div class="icon"><img src="images/allnav_007.png"></div>
+									<div class="text">员工管理</div>
+								</a>
+								<a href="community.html">
+									<div class="icon"><img src="images/allnav_002.png"></div>
+									<div class="text">小区管理</div>
+								</a>
+								<a href="srpersonnel.html">
+									<div class="icon"><img src="images/allnav_003.png"></div>
+									<div class="text">收送专员</div>
+								</a>
+								<a href="product.html">
+									<div class="icon"><img src="images/allnav_004.png"></div>
+									<div class="text">产品管理</div>
+								</a>
+								<a href="setup.html">
+									<div class="icon"><img src="images/allnav_0014.png"></div>
+									<div class="text">设置</div>
+								</a>
+								<a href="index.html">
+									<div class="icon"><img src="images/home.png"></div>
+									<div class="text">主页</div>
+								</a>
+							</div>
+							<div class="pointer wc_view"></div>
+						</div>
+						<div class="input_scan wc_view">
+							<div class="is_search_box">
+								<div class="search">
+									<div class="inputinner wc_view">
+										<form>
+										<input type="text" placeholder="请扫码或输入" class="inputtext wc_view" autofocus="">
+										<div class="delete"></div>
+										</form>
+									</div>
+									<div class="buttoninner wc_view">
+										<button class="button wc_view js_button_006">确认</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="wc_controls_right wc_view">
+							<div class="nav_title" id="js_logout">北京新国展店<span class="gegege">-</span>李美华</div>
+							<div class="icon_down"></div>
+							<ul class="selectnav_son selectno" style="display:none;" id="js_logout_open">
+								<div class="pointer wc_view"></div>
+								<li>安全退出</li>
+							</ul>
+						</div>
+					</div>
+					<div class="contentbody wc_view">
+						<div class="detail_info">
+							
+							<div class="bracket_clotning_box">
+								<table class="table_global active" cellpadding="0" cellspacing="0">
+									<thead>
+								        <tr class="top">
+											<td colspan="9">
+								                <div class="bh">
+								                	<span class="itemarea">衣物条码：<i class="num_m">014000000012</i></span>
+													<span class="itemarea">上架情况：<i class="num_m">5/3</i></span>
+													
+													<span class="itemarea right">上架号：<i class="num_l">222</i></span>
+								                </div>
+								                <div class="bh mt10">
+													<span class="itemarea">入厂时间：2015-09-05 14:30</span>
+													<span class="itemarea">读码时间：2015-09-06 10:30</span>
+													<span class="itemarea">订单号：<a href="order_detail.html" target="_blank">D20151112000086</a></span>
+													<span class="itemarea right"><button class="btn_s btn_red js_button_001">返工</button> <a class="btn_s btn_grey" href="print_stockout.html" target="_blank">打印</a></span>
+								                </div>
+								            </td>
+								        </tr>
+								    </thead>
+								    <thead>
+								        <tr class="title">
+											<th>
+								                <div>衣物</div>
+								            </th>
+								            <th>
+									        	<div>服务</div>
+									        </th>
+								            <th>
+								                <div>布料</div>
+								            </th>
+								            
+									        <th>
+										        <div>颜色</div>
+										    </th>
+										    <th>
+										        <div>瑕疵</div>
+										    </th>
+										    <th>
+										        <div>洗后</div>
+										    </th>
+										    <th>
+										        <div>品牌</div>
+										    </th>
+										    <th>
+										        <div>附加服务</div>
+										    </th>
+										    <th>
+										        <div>附件</div>
+										    </th>
+								        </tr>
+								    </thead>
+								    <tbody>
+								    	<tr>
+										    <td>
+											    <div>
+											    	<p>外套</p>
+											    </div>
+										    </td>
+										    <td>
+										    	<div>
+											    	<p>干洗</p>
+										    	</div>
+										    </td>
+										    <td>
+										    	<div>
+											    	<p>棉</p>
+										    	</div>
+										    </td>
+										    <td>
+										    	<div>
+											    	<p>米黄</p>
+											    	<p>米黄</p>
+													<p>玫瑰红</p>
+													<p>米黄</p>
+													<p>米黄</p>
+										    	</div>
+										    </td>
+										    <td>
+										    	<div>
+											    	<p>污渍</p>
+													<p>气球</p>
+													<p>皮毛发硬</p>
+													<p>发霉</p>
+										    	</div>
+										    </td>
+										    <td>
+										    	<div>
+											    	<p>洗后颜色加深</p>
+													<p>洗后装饰物易掉</p>
+													<p>洗后常磨处会发白</p>
+													<p>洗后手感会有变化洗后手感会有变化</p>
+										    	</div>
+										    </td>
+										    <td>
+										    	<div>
+											    	<p>Nike</p>
+										    	</div>
+										    </td>
+										    <td>
+										    	<div>
+											    	<p>加急10元</p>
+													<p>织补8元</p>
+										    	</div>
+										    </td>
+										    <td>
+										    	<div>
+											    	<p>帽边</p>
+													<p>内胆</p>
+													<p>腰带</p>
+										    	</div>
+										    </td>
+										</tr>
+									</tbody>
+								</table><!-- //station_table -->
+							</div>
+							
+							<div class="data_none">请扫码或者输入衣物编号</div>
+							<div class="loadingbox"><img src="images/loading.gif"></div>
+						</div>
+					</div>
+				</div>
+				<!-- end pane_right -->
+			</div>
+			<!-- end pane -->
+		</div>
+		<!-- end pane_box -->
+		
+		<!-- //输入框 开始 -->
+		<div class="modal" id="modal_006" style="display: none;">
+		  <div class="modal_dialog_tips" id="modal_t_006">
+		    <div class="modal_content">
+		    	<div class="mc_body">
+		    		<div class="main_bd">
+		    			<div class="imginner">
+				    		<div class="show_tips">
+								<div class="imgbox"><img src="images/ok.png"></div>
+								<div class="text">已出库</div>
+							</div>
+			    		</div>
+		    		</div>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="modal_cover"></div>
+		</div>
+		<!-- //输入框 结束 -->
+		
+	
+		<!-- start javascript -->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/common.js"></script>
+		<!-- end javascript -->
+	</body>
+</html>

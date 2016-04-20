@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="Author" content="xiaoxiongdao.com Inc.">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>所有客户</title>
+		<link rel="icon" href="images/favicon.ico">
+		<link href="styles/common.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<!-- start pane_box -->
+		<div class="pane_box wc_view">
+			<!-- start pane -->
+			<div class="pane wc_view pane_row_2">
+				<!-- start pane_left -->
+				<div class="pane_left wc_view">
+					<div class="toolbar wc_view">
+						<div class="wc_controls wc_view selectno" id="js_openallnav">
+							<div class="nav_title">客户管理</div>
+							<div class="logo"></div>
+							<div class="icon_down" style="left:140px;"></div>
+						</div>
+						<div class="allnavbox wc_view selectno" style="display:none;" id="js_allnav">
+							<div class="allnav">
+								<a href="order_wash.html">
+									<div class="icon"><img src="images/allnav_001.png"></div>
+									<div class="text">订单管理</div>
+								</a>
+								<a href="goods.html">
+									<div class="icon"><img src="images/allnav_004.png"></div>
+									<div class="text">衣物管理</div>
+								</a>
+								<a href="user.html" class="active">
+									<div class="icon"><img src="images/allnav_005.png"></div>
+									<div class="text">客户管理</div>
+								</a>
+								<a href="trade.html">
+									<div class="icon"><img src="images/allnav_008.png"></div>
+									<div class="text">交易记录</div>
+								</a>
+								<a href="stockin.html">
+									<div class="icon"><img src="images/stockin.png"></div>
+									<div class="text">订单入库</div>
+								</a>
+								<a href="check.html">
+									<div class="icon"><img src="images/clothing_stockin.png"></div>
+									<div class="text">衣物分拣</div>
+								</a>
+								<a href="stockout.html">
+									<div class="icon"><img src="images/stockout.png"></div>
+									<div class="text">出库</div>
+								</a>
+								<a href="leavefactory.html">
+									<div class="icon"><img src="images/leavefactory.png"></div>
+									<div class="text">出厂</div>
+								</a>
+								<a href="coupons.html">
+									<div class="icon"><img src="images/allnav_006.png"></div>
+									<div class="text">应用营销</div>
+								</a>
+								<a href="staff.html">
+									<div class="icon"><img src="images/allnav_007.png"></div>
+									<div class="text">员工管理</div>
+								</a>
+								<a href="community.html">
+									<div class="icon"><img src="images/allnav_002.png"></div>
+									<div class="text">小区管理</div>
+								</a>
+								<a href="store.html">
+									<div class="icon"><img src="images/allnav_store.png"></div>
+									<div class="text">门店管理</div>
+								</a>
+								<a href="factory.html">
+									<div class="icon"><img src="images/factory.png"></div>
+									<div class="text">工厂管理</div>
+								</a>
+								<a href="store_owner.html">
+									<div class="icon"><img src="images/allnav_storeowner.png"></div>
+									<div class="text">店主管理</div>
+								</a>
+								<a href="operation.html">
+									<div class="icon"><img src="images/allnav_operation.png"></div>
+									<div class="text">运营中心</div>
+								</a>
+								<a href="srpersonnel.html">
+									<div class="icon"><img src="images/allnav_003.png"></div>
+									<div class="text">收送专员</div>
+								</a>
+								<a href="logistic.html">
+									<div class="icon"><img src="images/logistic.png"></div>
+									<div class="text">物流人员</div>
+								</a>
+								<a href="product.html">
+									<div class="icon"><img src="images/product.png"></div>
+									<div class="text">产品管理</div>
+								</a>
+								<a href="setup.html">
+									<div class="icon"><img src="images/allnav_0014.png"></div>
+									<div class="text">设置</div>
+								</a>
+								<a href="index.html">
+									<div class="icon"><img src="images/home.png"></div>
+									<div class="text">主页</div>
+								</a>
+								<a href="telephone.html">
+									<div class="icon"><img src="images/order_stockincloting.png"></div>
+									<div class="text">下单收衣</div>
+								</a>
+								<a href="waybill.html">
+									<div class="icon"><img src="images/icon_waybill.png"></div>
+									<div class="text">运单码</div>
+								</a>
+								<a href="station.html">
+									<div class="icon"><img src="images/station.png"></div>
+									<div class="text">工作站</div>
+								</a>
+							</div>
+							<div class="pointer wc_view"></div>
+						</div>
+					</div>
+					<div class="contentbody wc_view" style="bottom:0px;">
+						<div class="l_content">
+							<div class="memu" style="top:0px;">
+								<div class="menu_item" onclick="location.href='user.html'">
+									<div class="item_border"></div>
+									<div class="item_text">客户概况</div>
+								</div>
+								<div class="menu_item active" onclick="location.href='user_all.html'">
+									<div class="item_border"></div>
+									<div class="item_text">所有客户</div>
+								</div>
+								<div class="menu_item" onclick="location.href='user_group.html'">
+									<div class="item_border"></div>
+									<div class="item_text">分组管理</div>
+								</div>
+								<div class="menu_item" onclick="location.href='user_cards.html'">
+									<div class="item_border"></div>
+									<div class="item_text">客户等级</div>
+								</div>
+								<div class="menu_item" onclick="location.href='user_tag.html'">
+									<div class="item_border"></div>
+									<div class="item_text">标签管理</div>
+								</div>
+								<div class="menu_item" onclick="location.href='user_points.html'">
+									<div class="item_border"></div>
+									<div class="item_text">积分管理</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end pane_left -->
+				
+				<!-- start pane_left_line -->
+				<div class="pane_left_line wc_view"><div class="line"></div></div>
+				<!-- end pane_left_line -->
+					
+				<!-- start pane_right -->
+				<div class="pane_right wc_view">
+					<div class="toolbar wc_view selectno">
+						<div class="t_menu_normal wc_view">
+							<div class="t_menu_item">
+								<a href="user_add.html" class="btn_s btn_blue b_add"><span class="icon"></span>新建客户</a>
+							</div>
+						</div>
+						<div class="wc_controls wc_view">
+							<div class="nav_title" id="js_logout">超级管理员</div>
+							<div class="icon_down"></div>
+							<ul class="selectnav_son selectno" style="display:none;" id="js_logout_open">
+								<div class="pointer wc_view"></div>
+								<li>安全退出</li>
+							</ul>
+						</div>
+					</div>
+					<div class="contentbody wc_view">
+						<div class="detail_info">
+							<div class="screening">
+								<div class="item_area">
+									<div class="title">创建时间</div>
+									<div class="content">
+										<div class="inputitem">
+							    			<input type="date" class="inputtext" placeholder="开始日期" style="width:150px;"> &nbsp;至&nbsp; <input type="date" class="inputtext" placeholder="结束日期" style="width:150px;">
+							    			<span class="quicklook">
+												<em>快速查看：</em>
+												<ul class="items_ul" id="sel_date">
+							               			<li data-tag="today"><span>今天</span></li>
+													<li data-tag="sevendays" class="active"><span>最近7天</span></li>
+													<li data-tag="thirtydays"><span>最近30天</span></li>
+													<li data-tag="alldays"><span>所有</span></li>
+												</ul>
+											</span>
+							    		</div>
+									</div>
+								</div>
+								<div class="item_area">
+									<div class="title">所属门店</div>
+									<div class="content">
+										<div class="selectbox">
+							    			<div class="dropdown_menu left">
+								    			<a href="javascript:;" class="dropdown_a">
+								    				<label>所有</label>
+								    				<i class="arrow"></i>
+								    			</a>
+												<div class="dropdown_data_container" style="display: none;">
+													<div class="pointer wc_view"></div>
+												    <ul class="dropdown_data_list">
+											            <li class="dropdown_data_item ">  
+											                <a href="javascript:void(0);">华天e生活五一大道店</a>
+											            </li>
+											            <li class="dropdown_data_item ">  
+											                <a href="javascript:void(0);">华天e生活北京路店</a>
+											            </li>
+											            <li class="dropdown_data_item ">  
+											                <a href="javascript:void(0);">华天e生活梅溪湖店</a>
+											            </li>
+												    </ul>
+												</div>
+											</div>
+							    		</div>
+									</div>
+								</div>
+								<div class="item_area">
+									<div class="title">性别</div>
+									<div class="content">
+										<div class="tab_select">
+											<li class="active"><span>所有</span></li>
+											<li><span>男</span></li>
+											<li><span>女</span></li>
+											<li><span>未知</span></li>
+										</div>
+									</div>
+								</div>
+								<div class="item_area">
+									<div class="title">帐户</div>
+									<div class="content">
+										<div class="tab_select">
+											<li class="active"><span>所有</span></li>
+											<li><span>关注微信</span></li>
+											<li><span>验证手机</span></li>
+											<li><span>用Android</span></li>
+											<li><span>用iOS</span></li>
+											<li><span>取消关注微信</span></li>
+											<li><span>未验证手机</span></li>
+										</div>
+									</div>
+								</div>
+								<div class="item_area">
+									<div class="title">关键字</div>
+									<div class="content">
+										<div class="inputitem">
+							    			<input type="text" class="inputtext" placeholder="请输入关键字">
+							    			<div class="delete"></div>
+							    		</div>
+									</div>
+								</div>
+								
+								<div class="item_area">
+									<div class="title">分组</div>
+									<div class="content">
+										<div class="tab_select">
+											<li class="active"><span>所有</span></li>
+											<li><span>默认分组</span></li>
+											<li><span>中国银行VIP</span></li>
+											<li><span>农业银行VIP</span></li>
+											<li><span>黑名单</span></li>
+											<li><span>已销户</span></li>
+											<li class="button js_button_004">
+												<span>自定义...</span>
+											</li>
+										</div>
+									</div>
+								</div>
+								<div class="item_area">
+									<div class="title">地域</div>
+									<div class="content">
+										<div class="selectbox">
+							    			<div class="dropdown_menu left">
+								    			<a href="javascript:;" class="dropdown_a">
+								    				<label>所有</label>
+								    				<i class="arrow"></i>
+								    			</a>
+												<div class="dropdown_data_container" style="display: none;">
+													<div class="pointer wc_view"></div>
+												    <ul class="dropdown_data_list">
+											            <li class="dropdown_data_item ">  
+											                <a href="javascript:void(0);">湖南省</a>
+											            </li>
+											            <li class="dropdown_data_item ">  
+											                <a href="javascript:void(0);">北京市</a>
+											            </li>
+											            <li class="dropdown_data_item ">  
+											                <a href="javascript:void(0);">深圳市</a>
+											            </li>
+												    </ul>
+												</div>
+											</div>
+											
+							    		</div>
+									</div>
+								</div>
+								
+								<div class="morescreening" id="js_morescreening">
+									<div class="item_area">
+										<div class="title">等级</div>
+										<div class="content">
+											<div class="tab_select">
+												<li class="active"><span>所有</span></li>
+												<li><span>金卡会员</span></li>
+												<li><span>银卡会员</span></li>
+												<li><span>VIP会员</span></li>
+												<li class="button"><span>自定义...</span></li>
+											</div>
+										</div>
+									</div>
+									<div class="item_area">
+										<div class="title">积分</div>
+										<div class="content">
+											<div class="tab_select">
+												<li class="active"><span>所有</span></li>
+												<li><span>0-100</span></li>
+												<li><span>101-200</span></li>
+												<li><span>201-500</span></li>
+												<li><span>501-1000</span></li>
+												<li><span>1000+</span></li>
+												<li class="button"><span>自定义...</span></li>
+											</div>
+										</div>
+									</div>
+									<div class="item_area">
+										<div class="title">标签</div>
+										<div class="content">
+											<div class="tab_select">
+												<li class="active"><span>所有</span></li>
+												<li><span>无标签</span></li>
+												<li><span>家有小孩</span></li>
+												<li><span>住别墅</span></li>
+												<li class="button"><span>自定义...</span></li>
+											</div>
+										</div>
+									</div>
+									<div class="item_area">
+										<div class="title">最近下单</div>
+										<div class="content">
+											<div class="inputitem">
+								    			<input type="date" class="inputtext" placeholder="开始日期" style="width:150px;"> &nbsp;至&nbsp; <input type="date" class="inputtext" placeholder="结束日期" style="width:150px;">
+								    			<span class="quicklook">
+													<em>快速查看：</em>
+													<ul class="items_ul" id="sel_date">
+								               			<li data-tag="today"><span>今天</span></li>
+														<li data-tag="sevendays" class="active"><span>最近7天</span></li>
+														<li data-tag="thirtydays"><span>最近30天</span></li>
+														<li data-tag="alldays"><span>所有</span></li>
+													</ul>
+												</span>
+								    		</div>
+										</div>
+									</div>
+									<div class="item_area">
+										<div class="title">余额</div>
+										<div class="content">
+											<div class="tab_select">
+												<li class="active"><span>所有</span></li>
+												<li><span>500内</span></li>
+												<li><span>500-1000</span></li>
+												<li><span>1000-2000</span></li>
+												<li><span>2000-5000</span></li>
+												<li><span>5000-10000</span></li>
+												<li><span>10000-20000</span></li>
+												<li><span>20000+</span></li>
+												<li class="button js_button_006">
+													<span>自定义...</span>
+													
+												</li>
+											</div>
+										</div>
+									</div>
+									<div class="item_area">
+										<div class="title">订单均价</div>
+										<div class="content">
+											<div class="tab_select">
+												<li class="active"><span>所有</span></li>
+												<li><span>50内</span></li>
+												<li><span>50-80</span></li>
+												<li><span>80-150</span></li>
+												<li><span>150-200</span></li>
+												<li><span>200-300</span></li>
+												<li><span>300-500</span></li>
+												<li><span>500-1000</span></li>
+												<li><span>1000+</span></li>
+												<li class="button"><span>自定义...</span></li>
+											</div>
+										</div>
+									</div>
+									
+									<div class="item_area">
+										<div class="title">下单次数</div>
+										<div class="content">
+											<div class="tab_select">
+												<li class="active"><span>所有</span></li>
+												<li><span>1+</span></li>
+												<li><span>2+</span></li>
+												<li><span>3+</span></li>
+												<li><span>4+</span></li>
+												<li><span>5+</span></li>
+												<li><span>10+</span></li>
+												<li><span>15+</span></li>
+												<li><span>20+</span></li>
+												<li><span>30+</span></li>
+												<li><span>50+</span></li>
+												<li class="button"><span>自定义...</span></li>
+											</div>
+										</div>
+									</div>
+									<div class="item_area">
+										<div class="title">消费总额</div>
+										<div class="content">
+											<div class="tab_select">
+												<li class="active"><span>所有</span></li>
+												<li><span>500内</span></li>
+												<li><span>500-1000</span></li>
+												<li><span>1000-3000</span></li>
+												<li><span>3000-5000</span></li>
+												<li><span>5000-10000</span></li>
+												<li><span>10000-20000</span></li>
+												<li><span>20000+</span></li>
+												<li class="button"><span>自定义...</span></li>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="buttonbar">
+									<div class="button_item"><button class="btn_s btn_blue">筛选</button></div>
+									<div class="button_item ml20"><a href="javascript:void(0);" id="js_open_morescreening">更多条件筛选</a></div>
+								</div>
+							</div>
+
+							
+							<div class="tablebox">
+								<div class="row_box">
+									共有 <i class="color_blue bold">3</i> 人，已选择了 <i class="color_yellow bold">1</i> 人。
+									
+								</div>
+								
+								<table class="table_item_all">
+									<thead>
+								        <tr>
+								        	<th class="checkbox_inner">
+								                <div><input type="checkbox" class="checkbox"></div>
+								            </th>
+								            <th class="avatar_inner">
+								                <div>头像</div>
+								            </th>
+								            <th>
+									        	<div>客户</div>
+									        </th>
+								            <th class="time_inner">
+								                <div>创建时间</div>
+								            </th>
+								            <th class="time_inner">
+								                <div>最近下单</div>
+								            </th>
+									        <th>
+										        <div>所属门店</div>
+										    </th>
+										    <th>
+										        <div>等级</div>
+										    </th>
+										    <th>
+										        <div>积分</div>
+										    </th>
+										    <th class="money_inner">
+										        <div>余额(元)</div>
+										    </th>
+										    <th>
+										        <div>均价/单次/总额</div>
+										    </th>
+								        </tr>
+								    </thead>
+								    
+								    
+								    <tbody class="table_list_item">
+								    	<tr class="nothing_row">
+										    <td colspan="10"></td>
+										</tr>
+										<tr class="header_row">
+										    <td colspan="6">
+											    <div class="usertype">
+											    	<span class="itemarea weixin"></span>
+											    	<span class="itemarea mobi"></span>
+											    	<span class="itemarea mobiok"></span>
+											    	<span class="itemarea android"></span>
+											    	<span class="itemarea ios"></span>
+											    </div>
+										    </td>
+										    <td colspan="4" class="text_right">
+										    	<span class="pointerbox">
+										    		默认分组<i class="pointer"></i>
+										    		<div class="dropdown_normal_container" style="display: block;">
+														<div class="pointer_ppp wc_view"></div>
+													    <ul class="dropdown_data_list">
+												            <li class="dropdown_data_item ">  
+												                <a href="javascript:void(0);">分组一分组一分组一分组一</a>
+												            </li>
+												            <li class="dropdown_data_item ">  
+												                <a href="javascript:void(0);">分组一</a>
+												            </li>
+												            <li class="dropdown_data_item ">  
+												                <a href="javascript:void(0);">分组一</a>
+												            </li>
+												            <li class="dropdown_data_item ">  
+												                <a href="javascript:void(0);">分组一</a>
+												            </li>
+													    </ul>
+													</div>
+													<!-- //dropdown_normal_container -->
+										    	</span>
+										    	<span class="gegege color_grey">-</span>
+										    	<a href="javascript:void(0);">改备注</a>
+										    	<span class="gegege color_grey">-</span>
+										    	<a href="javascript:void(0);">充值</a>
+										    	<span class="gegege color_grey">-</span>
+										    	<a href="user_detail.html">查看详情</a>
+										    	<span class="gegege color_grey">-</span>
+										    	<a href="javascript:void(0);" class="js_button_002">加标签</a>
+										    </td>
+										</tr>
+								    	<tr class="content_row">
+								    		<td class="checkbox_inner">
+										    	<div><input type="checkbox" class="checkbox"></div>
+										    </td>
+										    <td class="avatar_inner">
+										    	<div>
+										    		<a href="user_detail.html"><img src="upload/u002.jpg" class="img60"></a>
+										    	</div>
+										    </td>
+										    <td>
+										    	<div>
+										    		<p>军</p>
+										    		<p><a href="user_detail.html">18675876789</a></p>
+										    		<p>王军(王)</p>
+										    	</div>
+										    </td>
+										    <td class="time_inner">
+										    	<div>
+										    		<p>2015-11-06</p>
+										    		<p>22:50</p>
+										    	</div>
+										    </td>
+										    <td class="time_inner">
+										    	<div>
+										    		<p>2015-11-15</p>
+										    		<p>09:50</p>
+										    	</div>
+										    </td>
+										    <td>
+										    	<div>
+										    		<p>国家体育馆店</p>
+										    		<p>水立方店</p>
+										    	</div>
+										    </td>
+										    <td>
+										    	<div>
+											    	<p>金卡会员</p>
+										    		<p class="color_grey">6.5折</p>
+											    </div>
+										    </td>
+										    <td>
+										    	<div>109</div>
+										    </td>
+										    <td class="money_inner">
+										    	<div>
+										    		<span>2048.00</span>
+										    	</div>
+										    </td>
+										    <td class="money_inner">
+										    	<div>
+										    		<p>120.00</p>
+										    		<p>28</p>
+										    		<p>3360.00</p>
+										    	</div>
+										    </td>
+										</tr>
+								    </tbody>
+								    <tbody class="table_list_item">
+								    	<tr class="nothing_row">
+										    <td colspan="10"></td>
+										</tr>
+										<tr class="header_row">
+										    <td colspan="6">
+											    <div class="usertype left">
+											    	<span class="itemarea mobi"></span>
+											    </div>
+											    <div class="left ml20"><span class="color_red">微信已跑路</span></div>
+										    </td>
+										    <td colspan="4" class="text_right">
+										    	<span class="pointerbox">默认分组<i class="pointer"></i></span>
+										    	<span class="gegege color_grey">-</span>
+										    	<a href="javascript:void(0);">改备注</a>
+										    	<span class="gegege color_grey">-</span>
+										    	<a href="javascript:void(0);">充值</a>
+										    	<span class="gegege color_grey">-</span>
+										    	<a href="user_detail.html">查看详情</a>
+										    	<span class="gegege color_grey">-</span>
+										    	<a href="javascript:void(0);" class="js_button_002">加标签</a>
+										    </td>
+										</tr>
+								    	<tr class="content_row">
+								    		<td class="checkbox_inner">
+										    	<div><input type="checkbox" class="checkbox"></div>
+										    </td>
+										    <td class="avatar_inner">
+										    	<div>
+										    		<a href="user_detail.html"><img src="upload/u001.jpg" class="img60"></a>
+										    	</div>
+										    </td>
+										    <td>
+										    	<div>
+										    		<p>小胖纸</p>
+										    		<p><a href="user_detail.html">18698989221</a></p>
+										    	</div>
+										    </td>
+										    <td class="time_inner">
+										    	<div>
+										    		<p>2015-11-04</p>
+										    		<p>10:08</p>
+										    	</div>
+										    </td>
+										    <td class="time_inner">
+										    	<div>
+										    		<p>2015-11-04</p>
+										    		<p>21:00</p>
+										    	</div>
+										    </td>
+										    <td>
+										    	<div>
+										    		<p>国家体育馆店</p>
+										    	</div>
+										    </td>
+										    <td>
+										    	<div>
+											    	<p>金卡会员</p>
+										    		<p class="color_grey">6.5折</p>
+											    </div>
+										    </td>
+										    <td>
+										    	<div>1180</div>
+										    </td>
+										    <td class="money_inner">
+										    	<div>
+										    		<span>1000.00</span>
+										    	</div>
+										    </td>
+										    <td class="money_inner">
+										    	<div>
+										    		<p>118.00</p>
+										    		<p>10</p>
+										    		<p>1180.00</p>
+										    	</div>
+										    </td>
+										</tr>
+								    </tbody>
+								    <tbody class="table_list_item">
+								    	<tr class="nothing_row">
+										    <td colspan="10"></td>
+										</tr>
+										<tr class="header_row">
+										    <td colspan="6">
+											    <div class="usertype">
+											    	<span class="itemarea weixin"></span>
+											    </div>
+										    </td>
+										    <td colspan="4" class="text_right">
+										    	<span class="pointerbox">中国银行VIP<i class="pointer"></i></span>
+										    	<span class="gegege color_grey">-</span>
+										    	<a href="javascript:void(0);">改备注</a>
+										    	<span class="gegege color_grey">-</span>
+										    	<a href="javascript:void(0);">充值</a>
+										    	<span class="gegege color_grey">-</span>
+										    	<a href="user_detail.html">查看详情</a>
+										    	<span class="gegege color_grey">-</span>
+										    	<a href="javascript:void(0);" class="js_button_002">加标签</a>
+										    </td>
+										</tr>
+								    	<tr class="content_row">
+								    		<td class="checkbox_inner">
+										    	<div><input type="checkbox" class="checkbox"></div>
+										    </td>
+										    <td class="avatar_inner">
+										    	<div>
+										    		<a href="user_detail.html"><img src="upload/u003.jpg" class="img60"></a>
+										    	</div>
+										    </td>
+										    <td>
+										    	<div>
+										    		<p>狸猫009</p>
+										    		<p></p>
+										    	</div>
+										    </td>
+										    <td class="time_inner">
+										    	<div>
+										    		<p>2015-10-26</p>
+										    		<p>11:32</p>
+										    	</div>
+										    </td>
+										    <td class="time_inner">
+										    	<div>
+										    		<p>2015-10-26</p>
+										    		<p>11:33</p>
+										    	</div>
+										    </td>
+										    <td>
+										    	<div>
+										    		<p>水立方店</p>
+										    	</div>
+										    </td>
+										    <td>
+										    	<div></div>
+										    </td>
+										    <td>
+										    	<div>86</div>
+										    </td>
+										    <td class="money_inner">
+										    	<div>
+										    		<span>3000.00</span>
+										    	</div>
+										    </td>
+										    <td class="money_inner">
+										    	<div>
+										    		<p>86.00</p>
+										    		<p>1</p>
+										    		<p>86.00</p>
+										    	</div>
+										    </td>
+										</tr>
+								    </tbody>
+								</table>
+
+								<div class="">
+									<div class="table_buttonbar">
+										<span class="pointerbox">
+								    		设等级<i class="pointer"></i>
+								    		<div class="dropdown_normal_container" style="display: block;">
+												<div class="pointer_ppp wc_view"></div>
+											    <ul class="dropdown_data_list">
+										            <li class="dropdown_data_item ">  
+										                <a href="coupons_give.html">给选中的人设等级</a>
+										            </li>
+										            <li class="dropdown_data_item ">  
+										                <a href="coupons_give.html">给筛选出来的668人设等级</a>
+										            </li>
+											    </ul>
+											</div>
+											<!-- //dropdown_normal_container -->
+								    	</span>
+								    	<span class="gegege">-</span>
+										<span class="pointerbox">
+								    		给积分<i class="pointer"></i>
+								    		<div class="dropdown_normal_container" style="display: block;">
+												<div class="pointer_ppp wc_view"></div>
+											    <ul class="dropdown_data_list">
+										            <li class="dropdown_data_item ">  
+										                <a href="coupons_give.html">给选中的人给积分</a>
+										            </li>
+										            <li class="dropdown_data_item ">  
+										                <a href="coupons_give.html">给筛选出来的668人给积分</a>
+										            </li>
+											    </ul>
+											</div>
+											<!-- //dropdown_normal_container -->
+								    	</span>
+								    	<span class="gegege">-</span>
+										<span class="pointerbox">
+								    		打标签<i class="pointer"></i>
+								    		<div class="dropdown_normal_container" style="display: block;">
+												<div class="pointer_ppp wc_view"></div>
+											    <ul class="dropdown_data_list">
+										            <li class="dropdown_data_item ">  
+										                <a href="coupons_give.html">给选中的人打标签</a>
+										            </li>
+										            <li class="dropdown_data_item ">  
+										                <a href="coupons_give.html">给筛选出来的668人打标签</a>
+										            </li>
+											    </ul>
+											</div>
+											<!-- //dropdown_normal_container -->
+								    	</span>
+								    	<span class="gegege">-</span>
+										<span class="pointerbox">
+								    		给优惠券<i class="pointer"></i>
+								    		<div class="dropdown_normal_container" style="display: block;">
+												<div class="pointer_ppp wc_view"></div>
+											    <ul class="dropdown_data_list">
+										            <li class="dropdown_data_item ">  
+										                <a href="coupons_give.html">给选中的人发优惠券</a>
+										            </li>
+										            <li class="dropdown_data_item ">  
+										                <a href="coupons_give.html">给筛选出来的668人发优惠券</a>
+										            </li>
+											    </ul>
+											</div>
+											<!-- //dropdown_normal_container -->
+								    	</span>
+								    	<span class="gegege">-</span>
+										<span class="pointerbox">
+								    		拉黑<i class="pointer"></i>
+								    		<div class="dropdown_normal_container" style="display: block;">
+												<div class="pointer_ppp wc_view"></div>
+											    <ul class="dropdown_data_list">
+										            <li class="dropdown_data_item ">  
+										                <a href="coupons_give.html">将选中的人拉黑</a>
+										            </li>
+										            <li class="dropdown_data_item ">  
+										                <a href="coupons_give.html">将筛选出来的668人拉黑</a>
+										            </li>
+											    </ul>
+											</div>
+											<!-- //dropdown_normal_container -->
+								    	</span>
+								    	<span class="gegege">-</span>
+										<span class="pointerbox">
+								    		销户<i class="pointer"></i>
+								    		<div class="dropdown_normal_container" style="display: block;">
+												<div class="pointer_ppp wc_view"></div>
+											    <ul class="dropdown_data_list">
+										            <li class="dropdown_data_item ">  
+										                <a href="coupons_give.html">将选中的人销户</a>
+										            </li>
+										            <li class="dropdown_data_item ">  
+										                <a href="coupons_give.html">将筛选出来的668人销户</a>
+										            </li>
+											    </ul>
+											</div>
+											<!-- //dropdown_normal_container -->
+								    	</span>
+									</div>
+									<!-- //table_buttonbar -->
+									<div class="pagination">
+									    <span class="page_nav_area">
+									        <a href="javascript:void(0);" class="btn page_first" style="display: none;"></a>
+									        <a href="javascript:void(0);" tag="prepage" class="btn page_prev"><i class="arrow"></i></a>
+									            <span class="page_num">
+									                <label>1</label>
+									                <span class="num_gap">/</span>
+									                <label id="tpage">3</label>
+									            </span>
+									        <a href="javascript:void(0);" tag="nextpage" class="btn page_next"><i class="arrow"></i></a>
+									        <a href="javascript:void(0);" class="btn page_last" style="display: none;"></a>            
+									    </span>
+									    <span class="goto_area">
+									        <input type="text">
+									        <a href="javascript:void(0);" tag="pagego" class="btn page_go">跳转</a>
+									    </span>
+									</div>
+								</div>
+							</div>
+							<!-- //tablebox -->
+							<div class="data_none">暂无数据</div>
+							<div class="loadingbox"><img src="images/loading.gif"></div>
+						</div>
+					</div>
+				</div>
+				<!-- end pane_right -->
+			</div>
+			<!-- end pane -->
+		</div>
+		<!-- end pane_box -->
+		
+		<!-- //输入框 开始 -->
+		<div class="modal" id="modal_005" style="display: none;">
+		  <div class="modal_dialog_tips" id="modal_t_005">
+		    <div class="modal_content">
+		    	<div class="mc_head">
+		    		确认派送
+		    	</div>
+		    	<div class="mc_body">
+		    		<div class="show_info">
+		    			<dl>
+		    				<dt>人数</dt>
+		    				<dd>共选择68人</dd>
+		    			</dl>
+		    			<dl>
+		    				<dt>单额</dt>
+		    				<dd>每人派送20元优惠券</dd>
+		    			</dl>
+		    			<dl>
+		    				<dt>总金额</dt>
+		    				<dd><span class="color_red bold">￥1360.00</span></dd>
+		    			</dl>
+		    			<dl>
+		    				<dt>到期日期</dt>
+		    				<dd>2015-08-02 24:00</dd>
+		    			</dl>
+		    		</div>
+		    	</div>
+		    	<div class="mc_foot">
+		    		<div class="buttonbar">
+						<div class="button_item"><button class="btn btn_grey js_drop_005">取消</button></div>
+						<div class="button_item"><button class="btn btn_blue js_drop_005">确认派送</button></div>
+					</div>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="modal_cover"></div>
+		</div>
+		<!-- //输入框 结束 -->
+		
+		<!-- //输入框 开始 -->
+		<div class="modal" id="modal_006" style="display: none;">
+		  <div class="modal_dialog_tips" id="modal_t_006">
+		    <div class="modal_content">
+		    	<div class="mc_head">
+		    		自定义余额
+		    		<div class="close"><a href="javascript:void(0);" class="js_drop_006">关闭</a></div>
+		    	</div>
+		    	<div class="mc_body">
+		    		<div class="main_bd">
+						<div class="controlarea">
+				    		<div class="inputitem">
+				    			<input type="text" class="inputtext" autofocus="" style="width:120px;">
+				    			<span class="gegege"> 到 </span>
+				    			<input type="text" class="inputtext" style="width:120px;">
+				    		</div>
+				    		<div class="tips color_red">****错误，请重新输入</div>
+			    		</div>
+		    		</div>
+		    	</div>
+		    	<div class="mc_foot">
+		    		<div class="buttonbar">
+						<div class="button_item"><button class="btn btn_grey js_drop_006">取消</button></div>
+						<div class="button_item"><button class="btn btn_blue js_drop_006">确定</button></div>
+					</div>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="modal_cover"></div>
+		</div>
+		<!-- //输入框 结束 -->
+		<!-- //输入框 开始 -->
+		<div class="modal" id="modal_004" style="display: none;">
+		  <div class="modal_dialog_tips" id="modal_t_004">
+		    <div class="modal_content">
+		    	<div class="mc_head">
+		    		自定义分组
+		    		<div class="close"><a href="javascript:void(0);" class="js_drop_004">关闭</a></div>
+		    	</div>
+		    	<div class="mc_body">
+	    			<div class="sbl_content">
+	    				<div class="selectedlist">
+			    			<div class="selected_item">
+								<div class="name">
+									默认分组
+								</div>
+								<div class="checked_icon"></div>
+							</div>
+							<div class="selected_item active">
+								<div class="name">
+									分组一
+								</div>
+								<div class="checked_icon"></div>
+							</div>
+							<div class="selected_item">
+								<div class="name">
+									分组一
+								</div>
+								<div class="checked_icon"></div>
+							</div>
+							<div class="selected_item">
+								<div class="name">
+									分组一
+								</div>
+								<div class="checked_icon"></div>
+							</div>
+							<div class="selected_item">
+								<div class="name">
+									分组一
+								</div>
+								<div class="checked_icon"></div>
+							</div>
+							<div class="selected_item">
+								<div class="name">
+									分组一
+								</div>
+								<div class="checked_icon"></div>
+							</div>
+							<div class="selected_item">
+								<div class="name">
+									分组一
+								</div>
+								<div class="checked_icon"></div>
+							</div>
+							<div class="selected_item">
+								<div class="name">
+									分组一
+								</div>
+								<div class="checked_icon"></div>
+							</div>
+							<div class="loadingmore">正在加载更多 <img src="images/loading.gif"></div>
+							<div class="data_none">没有更多了</div>
+							<div class="loadingbox"><img src="images/loading.gif"></div>
+			    		</div>
+	    			</div>
+	    			<!-- //sbl_content -->
+		    	</div>
+		    	<div class="mc_foot">
+		    		<div class="buttonbar">
+						<div class="button_item"><button class="btn btn_grey js_drop_004">取消</button></div>
+						<div class="button_item"><button class="btn btn_blue js_drop_004">确定</button></div>
+					</div>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="modal_cover"></div>
+		</div>
+		<!-- //输入框 结束 -->
+		
+	
+		<!-- start javascript -->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/common.js"></script>
+		<!-- end javascript -->
+	</body>
+</html>

@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="Author" content="xiaoxiongdao.com Inc.">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>交易记录</title>
+		<link rel="icon" href="images/favicon.ico">
+		<link href="styles/common.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<!-- start pane_box -->
+		<div class="pane_box wc_view">
+			<!-- start pane -->
+			<div class="pane wc_view pane_row_2">
+				<!-- start pane_left -->
+				<div class="pane_left wc_view">
+					<div class="toolbar wc_view">
+						<div class="wc_controls wc_view selectno" id="js_openallnav">
+							<div class="nav_title">交易记录</div>
+							<div class="logo"></div>
+							<div class="icon_down" style="left:140px;"></div>
+						</div>
+						<div class="allnavbox wc_view selectno" style="display:none;" id="js_allnav">
+							<div class="allnav">
+								<a href="order_wash.html">
+									<div class="icon"><img src="images/allnav_001.png"></div>
+									<div class="text">订单管理</div>
+								</a>
+								<a href="goods.html">
+									<div class="icon"><img src="images/allnav_004.png"></div>
+									<div class="text">衣物管理</div>
+								</a>
+								
+								<a href="user.html">
+									<div class="icon"><img src="images/allnav_005.png"></div>
+									<div class="text">用户管理</div>
+								</a>
+								<a href="trade.html" class="active">
+									<div class="icon"><img src="images/allnav_008.png"></div>
+									<div class="text">交易记录</div>
+								</a>
+								<a href="stockin.html">
+									<div class="icon"><img src="images/stockin.png"></div>
+									<div class="text">入库</div>
+								</a>
+								<a href="stockout.html">
+									<div class="icon"><img src="images/stockout.png"></div>
+									<div class="text">出库</div>
+								</a>
+								<a href="leavefactory.html">
+									<div class="icon"><img src="images/stockout.png"></div>
+									<div class="text">出厂</div>
+								</a>
+								<a href="coupons.html">
+									<div class="icon"><img src="images/allnav_006.png"></div>
+									<div class="text">优惠券</div>
+								</a>
+								<a href="staff.html">
+									<div class="icon"><img src="images/allnav_007.png"></div>
+									<div class="text">员工管理</div>
+								</a>
+								<a href="community.html">
+									<div class="icon"><img src="images/allnav_002.png"></div>
+									<div class="text">小区管理</div>
+								</a>
+								<a href="srpersonnel.html">
+									<div class="icon"><img src="images/allnav_003.png"></div>
+									<div class="text">收送专员</div>
+								</a>
+								<a href="product.html">
+									<div class="icon"><img src="images/allnav_004.png"></div>
+									<div class="text">产品管理</div>
+								</a>
+								<a href="setup.html">
+									<div class="icon"><img src="images/allnav_0014.png"></div>
+									<div class="text">设置</div>
+								</a>
+								<a href="index.html">
+									<div class="icon"><img src="images/home.png"></div>
+									<div class="text">主页</div>
+								</a>
+								<a href="telephone.html">
+									<div class="icon"><img src="images/home.png"></div>
+									<div class="text">电话下单</div>
+								</a>
+							</div>
+							<div class="pointer wc_view"></div>
+						</div>
+					</div>
+					<div class="contentbody wc_view" style="bottom:0px;">
+						<div class="l_content">
+							<div class="memu" style="top:0px;">
+								<div class="menu_item" onclick="location.href='trade_income.html'">
+									<div class="item_border"></div>
+									<div class="item_text">收入概况</div>
+								</div>
+								<div class="menu_item active" onclick="location.href='trade.html'">
+									<div class="item_border"></div>
+									<div class="item_text">交易明细</div>
+								</div>
+								<div class="menu_item" onclick="location.href='trade_inout.html'">
+									<div class="item_border"></div>
+									<div class="item_text">收支明细</div>
+								</div>
+								<div class="menu_item" onclick="location.href='trade_recharge.html'">
+									<div class="item_border"></div>
+									<div class="item_text">充值记录</div>
+								</div>
+								<div class="menu_item" onclick="location.href='trade_withdraw.html'">
+									<div class="item_border"></div>
+									<div class="item_text">提现记录</div>
+								</div>
+								<div class="menu_item" onclick="location.href='trade_freeze.html'">
+									<div class="item_border"></div>
+									<div class="item_text">不可用余额</div>
+								</div>
+								<div class="menu_item" onclick="location.href='apply_withdrawal.html'">
+									<div class="item_border"></div>
+									<div class="item_text">申请提现审批</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end pane_left -->
+				
+				<!-- start pane_left_line -->
+				<div class="pane_left_line wc_view"><div class="line"></div></div>
+				<!-- end pane_left_line -->
+					
+				<!-- start pane_right -->
+				<div class="pane_right wc_view">
+					<div class="toolbar wc_view selectno">
+						<div class="wc_controls wc_view">
+							<div class="nav_title" id="js_logout">超级管理员</div>
+							<div class="icon_down"></div>
+							<ul class="selectnav_son selectno" style="display:none;" id="js_logout_open">
+								<div class="pointer wc_view"></div>
+								<li>安全退出</li>
+							</ul>
+						</div>
+					</div>
+					<div class="contentbody wc_view">
+						<div class="detail_info">
+							<div class="screening">
+								<div class="item_area">
+									<div class="title">支付方式</div>
+									<div class="content">
+										<div class="tab_select">
+											<a href="javascript:void(0);" class="active">所有</a>
+											<a href="javascript:void(0);">微信支付</a>
+											<a href="javascript:void(0);">支付宝支付</a>
+											<a href="javascript:void(0);">余额支付</a>
+											<a href="javascript:void(0);">现金支付</a>
+											<a href="javascript:void(0);">取送员代付－余额</a>
+											<a href="javascript:void(0);">取送员代付－微信支付</a>
+										</div>
+									</div>
+								</div>
+								<div class="item_area">
+									<div class="title">
+										<span class="pointerbox">
+										下单时间<i class="pointer"></i>
+											<div class="dropdown_normal_container" style="display: none;">
+												<div class="pointer_ppp wc_view"></div>
+											    <ul class="dropdown_data_list">
+										            <li class="dropdown_data_item ">  
+										                <a href="javascript:void(0);">付款时间</a>
+										            </li>
+											    </ul>
+											</div>
+											<!-- //dropdown_normal_container -->
+										</span>
+									</div>
+									<div class="content">
+										<div class="inputitem">
+							    			<input type="date" class="inputtext" placeholder="开始日期" style="width:150px;"> &nbsp;至&nbsp; <input type="date" class="inputtext" placeholder="结束日期" style="width:150px;">
+							    			<span class="quicklook">
+												<em>快速查看：</em>
+												<ul class="items_ul" id="sel_date">
+							               			<li data-tag="today"><span>今天</span></li>
+													<li data-tag="sevendays" class="active"><span>最近7天</span></li>
+													<li data-tag="thirtydays"><span>最近30天</span></li>
+													<li data-tag="alldays"><span>所有</span></li>
+												</ul>
+											</span>
+							    		</div>
+									</div>
+								</div>
+								<div class="item_area">
+									<div class="title">门店</div>
+									<div class="content">
+										<div class="selectbox">
+							    			<div class="dropdown_menu left">
+								    			<a href="javascript:;" class="dropdown_a">
+								    				<label>所有</label>
+								    				<i class="arrow"></i>
+								    			</a>
+												<div class="dropdown_data_container" style="display: none;">
+													<div class="pointer wc_view"></div>
+												    <ul class="dropdown_data_list">
+											            <li class="dropdown_data_item ">  
+											                <a href="javascript:void(0);">华天e生活五一大道店</a>
+											            </li>
+											            <li class="dropdown_data_item ">  
+											                <a href="javascript:void(0);">华天e生活北京路店</a>
+											            </li>
+											            <li class="dropdown_data_item ">  
+											                <a href="javascript:void(0);">华天e生活梅溪湖店</a>
+											            </li>
+												    </ul>
+												</div>
+											</div>
+							    		</div>
+									</div>
+								</div>
+								<div class="item_area">
+									<div class="title">关键字</div>
+									<div class="content">
+										<div class="inputitem">
+							    			<input type="text" class="inputtext" placeholder="请输入关键字">
+							    		</div>
+									</div>
+								</div>
+								<div class="buttonbar">
+									<div class="button_item"><button class="btn_s btn_blue">筛选</button></div>
+								</div>
+							</div>
+							<div class="tabbarbox">
+								<div class="tabbar">
+									<ul>
+										<li class="active"><a href="javascript:void(0);">全部</a></li>
+										<li><a href="javascript:void(0);">进行中</a></li>
+										<li><a href="javascript:void(0);">退款</a></li>
+										<li><a href="javascript:void(0);">成功</a></li>
+										<li><a href="javascript:void(0);">失败</a></li>
+									</ul>
+								</div>
+								<!-- //tabbar -->
+							</div>
+							<!-- //tabbarbox -->
+							
+							<div class="tablebox">
+								<div class="row_box">
+									共有 <i class="color_blue bold">5</i> 条记录。
+								</div>
+								<div class="box">
+									<table class="table_all">
+										<thead>
+									        <tr class="buttonbox">
+									        	<th>
+									                <div>下单时间</div>
+									            </th>
+									            <th>
+										        	<div>名称</div>
+										        </th>
+												<th>
+									                <div>订单号｜支付流水号</div>
+									            </th>
+									            
+									            <th>
+										        	<div>用户</div>
+										        </th>
+										        <th>
+											        <div>门店</div>
+											    </th>
+											    <th class="text_right">
+											        <div>金额｜详细</div>
+											    </th>
+											    <th>
+											        <div>支付方式</div>
+											    </th>
+											    <th>
+											        <div>状态</div>
+											    </th>
+
+									        </tr>
+									    </thead>
+									    <thead style="display:none;">
+									        <tr class="buttonbox">
+									        	<th>
+									                <div>付款时间</div>
+									            </th>
+									            <th>
+										        	<div>名称</div>
+										        </th>
+												<th>
+									                <div>订单号｜支付流水号</div>
+									            </th>
+									            
+									            <th>
+										        	<div>用户</div>
+										        </th>
+										        <th>
+											        <div>门店</div>
+											    </th>
+											    <th class="text_right">
+											        <div>金额｜详细</div>
+											    </th>
+											    <th>
+											        <div>支付方式</div>
+											    </th>
+											    <th>
+											        <div>状态</div>
+											    </th>
+
+									        </tr>
+									    </thead>
+										<tbody>
+											<tr>
+												<td>
+											    	<div>
+												   		<p>2015-01-24</p>
+												    	<p>22:50</p>
+												    </div>
+											    </td>
+											    <td>
+											    	<div>客户下单</div>
+											    </td>
+											    <td>
+													<div>
+												   		<p><a href="order_detail.html">W20150808417210</a></p>
+												    	<p><a href="order_detail.html#order_payinfo">20150807150104044136</a></p>
+												    </div>
+											    </td>
+											    
+											    <td>
+											    	<div>
+												    	<p>18675876789</p>
+												        <p>小熊</p>
+												    </div>
+											    </td>
+											    <td>
+											    	<div>华天e生活五一大道店</div>
+											    </td>
+											    <td class="text_right">
+											    	<div>
+											            <span class="money_in">+ 200.00</span>
+											        </div>
+											    </td>
+											    <td>
+											    	<div>
+												    	<p>余额支付</p>
+												    </div>
+											    </td>
+											    <td>
+											    	<div>交易成功</div>
+											    </td>
+											</tr>
+										</tbody>
+										<tbody>
+											<tr>
+												<td rowspan="4">
+											    	<div>
+												   		<p>2015-01-24</p>
+												    	<p>22:50</p>
+												    </div>
+											    </td>
+											    <td>
+											    	<div>客户下单</div>
+											    </td>
+											    <td>
+													<div>
+												   		<p><a href="order_detail.html">W20150808417210</a></p>
+												    	<p><a href="order_detail.html#order_payinfo">20150807150104044136</a></p>
+												    </div>
+											    </td>
+											    
+											    <td>
+											    	<div>
+												    	<p>18675876789</p>
+												    	<p>小熊</p>
+												    </div>
+											    </td>
+											    <td>
+											    	<div>华天e生活五一大道店</div>
+											    </td>
+											    <td class="text_right">
+											    	<div>
+											            <span class="money_in">+ 200.00</span>
+											        </div>
+											    </td>
+											    <td>
+											    	<div>
+												    	<p>余额支付</p>
+												    </div>
+											    </td>
+											    <td>
+											    	<div><span class="color_red">进行中</span></div>
+											    </td>
+											</tr>
+											<tr class="trade_son_item">
+											    <td colspan="4">退款</td>
+											    <td class="text_right">
+											        <div>
+											            <span class="money_out">- 5.00</span>
+											        </div>
+											    </td>
+											    <td colspan="2"></td>
+											</tr>
+											<tr class="trade_son_item">
+												
+											    <td colspan="4">退款</td>
+											    <td class="text_right">
+											        <div>
+											            <span class="money_out">- 5.00</span>
+											        </div>
+											    </td>
+											    <td colspan="2"></td>
+											</tr>
+											<tr class="trade_son_item">
+												
+											    <td colspan="4">退款</td>
+											    <td class="text_right">
+											        <div>
+											            <span class="money_out">- 5.00</span>
+											        </div>
+											    </td>
+											    <td colspan="2"></td>
+											</tr>
+										</tbody>
+										<tbody>
+											<tr>
+												<td>
+											    	<div>
+												   		<p>2015-01-24</p>
+												    	<p>22:50</p>
+												    </div>
+											    </td>
+											    <td>
+											    	<div>客户下单</div>
+											    </td>
+											    <td>
+													<div>
+												   		<p><a href="order_detail.html">W20150808417210</a></p>
+												    	<p><a href="order_detail.html#order_payinfo">20150807150104044136</a></p>
+												    </div>
+											    </td>
+											    
+											    <td>
+											    	<div>
+												    	<p>18675876789</p>
+												        <p>小熊</p>
+												    </div>
+											    </td>
+											    <td>
+											    	<div>华天e生活五一大道店</div>
+											    </td>
+											    <td class="text_right">
+											    	<div>
+											            <span class="money_in">+ 200.00</span>
+											        </div>
+											    </td>
+											    <td>
+											    	<div>
+												    	<p>余额支付</p>
+												    </div>
+											    </td>
+											    <td>
+											    	<div>交易成功</div>
+											    </td>
+											</tr>
+										</tbody>
+										<tbody>
+											<tr>
+												<td rowspan="2">
+											    	<div>
+												   		<p>2015-10-29</p>
+												    	<p>17:20</p>
+												    </div>
+											    </td>
+											    <td>
+											    	<div>客户下单</div>
+											    </td>
+											    <td>
+													<div>
+												   		<p><a href="order_detail.html">W20150808417210</a></p>
+												    	<p><a href="order_detail.html#order_payinfo"> 1509281744208254</a></p>
+												    </div>
+											    </td>
+											    
+											    <td>
+											    	<div>
+												    	<p>18675876789</p>
+												        <p>小熊</p>
+												    </div>
+											    </td>
+											    <td>
+											    	<div>华天e生活五一大道店</div>
+											    </td>
+											    <td class="text_right">
+											    	<div>
+											            <span class="money_out">- 5.00</span>
+											        </div>
+											    </td>
+											    <td>
+											    	<div>
+												    	
+												    </div>
+											    </td>
+											    <td>
+											    	<div>交易成功</div>
+											    </td>
+											</tr>
+											<tr class="trade_son_item">
+												
+											    <td colspan="4">退款</td>
+											    <td class="text_right">
+											        <div>
+											            <span class="money_out">- 5.00</span>
+											        </div>
+											    </td>
+											    <td colspan="2"></td>
+											</tr>
+										</tbody>
+										<tbody>
+											<tr>
+												<td>
+											    	<div>
+												   		<p>2015-10-24</p>
+												    	<p>10:50</p>
+												    </div>
+											    </td>
+											    <td>
+											    	<div>客户下单</div>
+											    </td>
+											    <td>
+													<div>
+												   		<p><a href="order_detail.html">W20150808417210</a></p>
+												    	<p><a href="order_detail.html#order_payinfo">20150807150104044136</a></p>
+												    </div>
+											    </td>
+											    
+											    <td>
+											    	<div>
+												    	<p>18675876789</p>
+												        <p>小熊</p>
+												    </div>
+											    </td>
+											    <td>
+											    	<div>华天e生活五一大道店</div>
+											    </td>
+											    <td class="text_right">
+											    	<div>
+											            <span class="money_in">+ 100.00</span>
+											        </div>
+											    </td>
+											    <td>
+											    	<div>
+												    	<p>微信支付</p>
+												    </div>
+											    </td>
+											    <td>
+											    	<div>交易成功</div>
+											    </td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="hb">
+									<div class="left">
+										<button type="button" class="btn_s btn_grey">导出</button>
+									</div>
+									<div class="pagination">
+									    <span class="page_nav_area">
+									        <a href="javascript:void(0);" class="btn page_first" style="display: none;"></a>
+									        <a href="javascript:void(0);" tag="prepage" class="btn page_prev"><i class="arrow"></i></a>
+									            <span class="page_num">
+									                <label>1</label>
+									                <span class="num_gap">/</span>
+									                <label id="tpage">3</label>
+									            </span>
+									        <a href="javascript:void(0);" tag="nextpage" class="btn page_next"><i class="arrow"></i></a>
+									        <a href="javascript:void(0);" class="btn page_last" style="display: none;"></a>            
+									    </span>
+									    <span class="goto_area">
+									        <input type="text">
+									        <a href="javascript:void(0);" tag="pagego" class="btn page_go">跳转</a>
+									    </span>
+									</div>
+								</div>
+							</div>
+							<!-- //tablebox -->
+							<div class="data_none">还没有相关数据</div>
+							<div class="loadingbox"><img src="images/loading.gif"></div>
+						</div>
+					</div>
+				</div>
+				<!-- end pane_right -->
+			</div>
+			<!-- end pane -->
+		</div>
+		<!-- end pane_box -->
+		
+		
+	
+		<!-- start javascript -->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/common.js"></script>
+		<!-- end javascript -->
+	</body>
+</html>

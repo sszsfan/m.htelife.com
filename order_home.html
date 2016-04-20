@@ -1,0 +1,537 @@
+	<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="Author" content="xiaoxiongdao.com Inc.">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>订单管理－家政</title>
+		<link rel="icon" href="images/favicon.ico">
+		<link href="styles/common.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<!-- start pane_box -->
+		<div class="pane_box wc_view">
+			<!-- start pane -->
+			<div class="pane wc_view pane_row_2">
+				<!-- start pane_left -->
+				<div class="pane_left wc_view">
+					<div class="toolbar wc_view">
+						<div class="wc_controls wc_view selectno" id="js_openallnav">
+							<div class="nav_title">订单管理</div>
+							<div class="logo"></div>
+							<div class="icon_down" style="left:140px;"></div>
+						</div>
+						<div class="allnavbox wc_view selectno" style="display:none;" id="js_allnav">
+							<div class="allnav">
+								<a href="order_wash.html" class="active">
+									<div class="icon"><img src="images/allnav_001.png"></div>
+									<div class="text">订单管理</div>
+								</a>
+								<a href="goods.html">
+									<div class="icon"><img src="images/allnav_004.png"></div>
+									<div class="text">衣物管理</div>
+								</a>
+								<a href="user.html">
+									<div class="icon"><img src="images/allnav_005.png"></div>
+									<div class="text">客户管理</div>
+								</a>
+								<a href="trade.html">
+									<div class="icon"><img src="images/allnav_008.png"></div>
+									<div class="text">财务中心</div>
+								</a>
+								<a href="stockin.html">
+									<div class="icon"><img src="images/stockin.png"></div>
+									<div class="text">收衣入库</div>
+								</a>
+								<a href="check.html">
+									<div class="icon"><img src="images/clothing_stockin.png"></div>
+									<div class="text">工厂分拣</div>
+								</a>
+								<a href="stockout.html">
+									<div class="icon"><img src="images/stockout.png"></div>
+									<div class="text">工厂出库</div>
+								</a>
+								<a href="bracket.html">
+									<div class="icon"><img src="images/stockout.png"></div>
+									<div class="text">衣物上架</div>
+								</a>
+								<a href="leavefactory.html">
+									<div class="icon"><img src="images/leavefactory.png"></div>
+									<div class="text">出厂</div>
+								</a>
+								<a href="coupons.html">
+									<div class="icon"><img src="images/allnav_006.png"></div>
+									<div class="text">应用营销</div>
+								</a>
+								<a href="staff.html">
+									<div class="icon"><img src="images/allnav_007.png"></div>
+									<div class="text">员工管理</div>
+								</a>
+								<a href="community.html">
+									<div class="icon"><img src="images/allnav_002.png"></div>
+									<div class="text">小区管理</div>
+								</a>
+								<a href="store.html">
+									<div class="icon"><img src="images/allnav_store.png"></div>
+									<div class="text">门店管理</div>
+								</a>
+								<a href="factory.html">
+									<div class="icon"><img src="images/factory.png"></div>
+									<div class="text">工厂管理</div>
+								</a>
+								<a href="store_owner.html">
+									<div class="icon"><img src="images/allnav_storeowner.png"></div>
+									<div class="text">店主管理</div>
+								</a>
+								<a href="operation.html">
+									<div class="icon"><img src="images/allnav_operation.png"></div>
+									<div class="text">运营中心</div>
+								</a>
+								<a href="srpersonnel.html">
+									<div class="icon"><img src="images/allnav_003.png"></div>
+									<div class="text">取送员</div>
+								</a>
+								<a href="logistic.html">
+									<div class="icon"><img src="images/logistic.png"></div>
+									<div class="text">物流人员</div>
+								</a>
+								<a href="product.html">
+									<div class="icon"><img src="images/product.png"></div>
+									<div class="text">产品管理</div>
+								</a>
+								<a href="setup.html">
+									<div class="icon"><img src="images/allnav_0014.png"></div>
+									<div class="text">设置</div>
+								</a>
+								<a href="index.html">
+									<div class="icon"><img src="images/home.png"></div>
+									<div class="text">主页</div>
+								</a>
+								<a href="telephone.html">
+									<div class="icon"><img src="images/order_stockincloting.png"></div>
+									<div class="text">下单收衣</div>
+								</a>
+								<a href="waybill.html">
+									<div class="icon"><img src="images/icon_waybill.png"></div>
+									<div class="text">运单码</div>
+								</a>
+								<a href="station.html">
+									<div class="icon"><img src="images/station.png"></div>
+									<div class="text">工作站</div>
+								</a>
+								<a href="businessfriends.html">
+									<div class="icon"><img src="images/station.png"></div>
+									<div class="text">友商中心</div>
+								</a>
+							</div>
+							<div class="pointer wc_view"></div>
+						</div>
+					</div>
+					<div class="contentbody wc_view" style="bottom:0px;">
+						<div class="l_content">
+							<div class="memu" style="top:0px;">
+								<div class="menu_item" onclick="location.href='order_home_index.html'">
+									<div class="item_border"></div>
+									<div class="item_text">订单概况</div>
+								</div>
+								<div class="menu_item active" onclick="location.href='order_home.html'">
+									<div class="item_border"></div>
+									<div class="item_text">所有订单</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end pane_left -->
+				
+				<!-- start pane_left_line -->
+				<div class="pane_left_line wc_view"><div class="line"></div></div>
+				<!-- end pane_left_line -->
+					
+				<!-- start pane_right -->
+				<div class="pane_right wc_view">
+					<div class="toolbar wc_view selectno">
+						<div class="service_category wc_view">
+							<a href="order_wash_index.html" class="sc_item">
+								<div class="name">洗涤</div>
+							</a>
+							<a href="order_home_index.html" class="sc_item active">
+								<div class="name">家政</div>
+							</a>
+							<a href="order_cook_index.html" class="sc_item">
+								<div class="name">厨师</div>
+							</a>
+						</div>
+						<!-- // service_category -->
+						<div class="wc_controls wc_view">
+							<div class="nav_title" id="js_logout">超级管理员</div>
+							<div class="icon_down"></div>
+							<ul class="selectnav_son selectno" style="display:none;" id="js_logout_open">
+								<div class="pointer wc_view"></div>
+								<li>安全退出</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="contentbody wc_view">
+						<div class="detail_info">
+							<div class="screening">
+								<div class="item_area">
+									<div class="title">付款状态</div>
+									<div class="content">
+										<div class="tab_select">
+											<a href="javascript:void(0);" class="active">所有</a>
+											<a href="javascript:void(0);">未付款</a>
+											<a href="javascript:void(0);">已付款</a>
+											<a href="javascript:void(0);">退款</a>
+										</div>
+									</div>
+								</div>
+								<div class="item_area">
+									<div class="title">下单时间</div>
+									<div class="content">
+										<div class="inputitem">
+							    			<input type="date" class="inputtext" placeholder="开始日期" style="width:150px;"> &nbsp;至&nbsp; <input type="date" class="inputtext" placeholder="结束日期" style="width:150px;">
+							    			<span class="quicklook">
+												<em>快速查看：</em>
+												<ul class="items_ul" id="sel_date">
+							               			<li data-tag="today"><span>今天</span></li>
+													<li data-tag="sevendays" class="active"><span>最近7天</span></li>
+													<li data-tag="thirtydays"><span>最近30天</span></li>
+													<li data-tag="alldays"><span>所有</span></li>
+												</ul>
+											</span>
+							    		</div>
+									</div>
+								</div>
+								
+								<div class="item_area">
+									<div class="title">关键字</div>
+									<div class="content">
+										<div class="inputitem">
+							    			<input type="text" class="inputtext" placeholder="请输入关键字">
+							    			<div class="delete"></div>
+							    		</div>
+									</div>
+								</div>
+								<div class="buttonbar">
+									<div class="button_item"><button class="btn_s btn_blue">筛选</button></div>
+								</div>
+							</div>
+							
+							
+							
+							
+							<div class="tablebox">
+								<div class="dib">
+									<div class="dropdown_menu_global_text left">
+						    			<span class="dropdown_t_a">
+						    				订单状态：
+						    			</span>
+									</div>
+					    			<div class="dropdown_menu_global left">
+						    			<a href="javascript:;" class="dropdown_a">
+						    				<label>全部</label>
+						    				<i class="arrow"></i>
+						    			</a>
+										<div class="dropdown_data_container" style="display: none;">
+										    <ul class="dropdown_data_list">
+									            <li class="dropdown_data_item ">  
+									                <a href="javascript:void(0);">客户下单</a>
+									            </li>
+									            <li class="dropdown_data_item ">  
+									                <a href="javascript:void(0);">已接单</a>
+									            </li>
+									            <li class="dropdown_data_item ">  
+									                <a href="javascript:void(0);">服务中</a>
+									            </li>
+									            <li class="dropdown_data_item ">  
+									                <a href="javascript:void(0);">服务完成</a>
+									            </li>
+									            <li class="dropdown_data_item ">  
+									                <a href="javascript:void(0);">已取消</a>
+									            </li>
+									            <li class="dropdown_data_item ">  
+									                <a href="javascript:void(0);">已作废</a>
+									            </li>
+										    </ul>
+										</div>
+									</div>
+								</div>
+					    		<!-- // -->
+								<div class="row_box">
+									共有 <i class="color_blue bold">7</i> 条记录，实付金额 <i class="color_blue bold">889.00</i> 元。
+								</div>
+								<table class="table_item_all">
+									<thead>
+								        <tr>
+								            <th class="time_inner">
+								                <div>下单时间</div>
+								            </th>
+								            <th class="user_inner">
+									        	<div>用户</div>
+									        </th>
+									        <th class="address_inner">
+									        	<div>地址</div>
+									        </th>
+									        <th class="time_inner">
+									        	<div>服务时间</div>
+									        </th>
+										        <th class="srpersonnel_inner">
+										        <div>服务人员</div>
+										    </th>
+										    <th class="money_inner">
+										        <div>金额（元）</div>
+										    </th>
+										    <th class="paystate_inner">
+										        <div>付款状态</div>
+										    </th>
+										    <th>
+										        <div>订单状态</div>
+										    </th>
+								        </tr>
+								    </thead>
+								    
+								    <tbody class="table_list_item">
+								    	<tr class="nothing_row">
+										    <td colspan="8"></td>
+										</tr>
+										<tr class="header_row">
+										    <td colspan="3">
+											    <div>订单号：W20150808417210  <span class="color_grey">微信下单（家庭保洁）</span></div><div>支付流水号号：W20150808417210</div>
+										    </td>
+										    <td colspan="5" class="text_right">
+										    	<a href="order_detail.html" class="btn_s btn_white">查看详情</a>
+										    	<span class="gegege js_button_001">-</span>
+										    	<a href="javascript:void(0);" class="btn_s btn_white">打印</a>
+										    	<span class="gegege js_button_001">-</span>
+										    	<a href="javascript:void(0);" class="color_red js_button_001">作废</a>
+										    	<span class="gegege js_button_001">-</span>
+										    	<a href="javascript:void(0);" class="js_button_002">备注</a>
+										    </td>
+										</tr>
+								    	<tr class="content_row">
+										    <td class="time_inner">
+										    	<div>
+										    		<p>2015-01-24</p>
+										    		<p>22:50</p>
+										    	</div>
+										    </td>
+										    
+										    <td class="user_inner">
+										    	<div>
+										    		<p><a href="javascript:void(0);">18675876789</a></p>
+										    		<p>张三</p>
+										    	</div>
+										    </td>
+										    <td class="address_inner">
+										    	<div>
+										    		<p>18675876789 张三</p>
+											    	<p>长沙市岳麓区金星大道888号河西王府井</p>
+										    	</div>
+										    </td>
+										    <td class="time_inner">
+										    	<div>
+										    		<p>2015-01-24</p>
+										    		<p>09:30-12:00</p>
+										    		<p><a href="javascript:void(0);">修改</a></p>
+										    	</div>
+										    </td>
+										    <td class="srpersonnel_inner">
+										    	<div>
+										    		<div class="s_item s_get">
+											    		<span class="name">张三</span>
+											    		<span class="gegege">-</span>
+											    		<a href="javascript:void(0);">指派</a>
+											    	</div>
+										    	</div>
+										    </td>
+										    
+										    <td class="money_inner">
+										    	<p>500.00</p>
+										    	<p><a href="order_refund_detail.html">有退款记录</a></p>
+										    </td>
+										    <td class="paystate_inner">
+										    	<div class="color_green">已付款</div>
+										    </td>
+										    <td>
+										    	<div>已接单，待服务</div>
+										    </td>
+										</tr>
+										<tr class="remark_row">
+										    <td colspan="8">
+										    	<span class="remark_user_row">用户备注：快来取衣。</span>
+										    	<span class="gegege">-</span>
+												<span class="remark_admin_row">管理备注：顾客要出差，要求尽快上门取衣。</span>
+										    </td>
+										</tr>
+								    </tbody>
+								    
+								</table>
+								<div class="hb">
+									<div class="left">
+										<button type="button" class="btn_s btn_grey">导出</button>
+									</div>
+									<div class="pagination">
+									    <span class="page_nav_area">
+									        <a href="javascript:void(0);" class="btn page_first" style="display: none;"></a>
+									        <a href="javascript:void(0);" tag="prepage" class="btn page_prev"><i class="arrow"></i></a>
+									            <span class="page_num">
+									                <label>1</label>
+									                <span class="num_gap">/</span>
+									                <label id="tpage">3</label>
+									            </span>
+									        <a href="javascript:void(0);" tag="nextpage" class="btn page_next"><i class="arrow"></i></a>
+									        <a href="javascript:void(0);" class="btn page_last" style="display: none;"></a>            
+									    </span>
+									    <span class="goto_area">
+									        <input type="text">
+									        <a href="javascript:void(0);" tag="pagego" class="btn page_go">跳转</a>
+									    </span>
+									</div>
+								</div>
+							</div>
+							<!-- //tablebox -->
+							<div class="data_none">暂无数据</div>
+							<div class="loadingbox"><img src="images/loading.gif"></div>
+						</div>
+					</div>
+				</div>
+				<!-- end pane_right -->
+			</div>
+			<!-- end pane -->
+		</div>
+		<!-- end pane_box -->
+		
+		<!-- //输入框 开始 -->
+		<div class="modal" id="modal_002" style="display: none;">
+		  <div class="modal_dialog_tips" id="modal_t_002">
+		    <div class="modal_content">
+		    	<div class="mc_head">
+		    		备注
+		    		<div class="close"><a href="javascript:void(0);" class="js_drop_008">关闭</a></div>
+		    	</div>
+		    	<div class="mc_body">
+		    		<div class="inputitem">
+		    			<input type="text" class="inputtext" placeholder="请输入备注" autofocus="">
+		    			<div class="delete"></div>
+		    		</div>
+		    	</div>
+		    	<div class="mc_foot">
+		    		<div class="buttonbar">
+						<div class="button_item"><button class="btn btn_grey js_drop_002">取消</button></div>
+						<div class="button_item"><button class="btn btn_blue js_drop_002">确定</button></div>
+					</div>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="modal_cover"></div>
+		</div>
+		<!-- //输入框 结束 -->
+		
+		<!-- //输入框 开始 -->
+		<div class="modal" id="modal_008" style="display: none;">
+		  <div class="modal_dialog_tips" id="modal_t_008">
+		    <div class="modal_content">
+		    	<div class="mc_head">
+		    		收款
+		    		<div class="close"><a href="javascript:void(0);" class="js_drop_008">关闭</a></div>
+		    	</div>
+		    	<div class="mc_toolbarbox">
+		    		<div class="mc_toolbar">
+			    		<div class="tabnav two">
+							<div class="tabnav_item active"><span class="t first">卡余额收款</span></div>
+							<div class="tabnav_item"><span class="t last">现金收款</span></div>
+						</div>
+		    		</div>
+		    	</div>
+		    	<div class="mc_body">
+		    		<div class="show_info">
+		    			<dl>
+		    				<dt>客户当前余额：</dt>
+		    				<dd><span class="color_green fsize30 bold">800.00</span> 元</dd>
+		    			</dl>
+		    			<dl>
+		    				<dt>本次订单收款：</dt>
+		    				<dd><span class="color_red fsize30 bold">60.00</span> 元</dd>
+		    			</dl>
+		    		</div>
+		    	</div>
+		    	<div class="mc_foot">
+		    		<div class="buttonbar">
+						<div class="button_item"><button class="btn btn_grey js_drop_008">取消</button></div>
+						<div class="button_item"><button class="btn btn_blue js_drop_008">确定收款</button></div>
+					</div>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="modal_cover"></div>
+		</div>
+		<!-- //输入框 结束 -->
+		
+		<!-- //提示 开始 -->
+		<div class="modal" id="modal_001" style="display: none;">
+		  <div class="modal_dialog_tips" id="modal_t_001">
+		    <div class="modal_content">
+		    	<div class="mc_body center">
+		    		<span class="color_red">确认作废吗？不可恢复。</span>
+		    	</div>
+		    	<div class="mc_foot">
+		    		<div class="buttonbar">
+						<div class="button_item"><button class="btn btn_grey js_drop_001">取消</button></div>
+						<div class="button_item"><button class="btn btn_blue js_drop_001">确定</button></div>
+					</div>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="modal_cover"></div>
+		</div>
+		<!-- //提示 结束 -->
+		
+		<!-- //输入框 开始 -->
+		<div class="modal" id="modal_005" style="display: none;">
+		  <div class="modal_dialog_tips" id="modal_t_005">
+		    <div class="modal_content">
+		    	<div class="mc_head">
+		    		取件时间
+		    		<div class="close"><a href="javascript:void(0);" class="js_drop_005">关闭</a></div>
+		    	</div>
+		    	<div class="mc_body">
+			    	<div class="main_bd">
+			    		<div class="tab_select bigshow">
+							<a href="javascript:void(0);" class="active">08:00-10:00</a>
+							<a href="javascript:void(0);">10:00-12:00</a>
+							<a href="javascript:void(0);">12:00-14:00</a>
+							<a href="javascript:void(0);">14:00-16:00</a>
+							<a href="javascript:void(0);" class="off">16:00-18:00</a>
+							<a href="javascript:void(0);">16:00-18:00</a>
+							<a href="javascript:void(0);">16:00-18:00</a>
+							<a href="javascript:void(0);">16:00-18:00</a>
+							<a href="javascript:void(0);">16:00-18:00</a>
+						</div>
+			    	</div>
+		    	</div>
+		    	<div class="mc_foot">
+		    		<div class="buttonbar">
+						<div class="button_item"><button class="btn btn_grey js_drop_005">取消</button></div>
+						<div class="button_item"><button class="btn btn_blue js_drop_005">确定</button></div>
+					</div>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="modal_cover"></div>
+		</div>
+		<!-- //输入框 结束 -->
+	
+		<!-- start javascript -->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/common.js"></script>
+		<!-- end javascript -->
+	</body>
+</html>

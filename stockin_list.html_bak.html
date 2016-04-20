@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="Author" content="xiaoxiongdao.com Inc.">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>衣物入库</title>
+		<link rel="icon" href="images/favicon.ico">
+		<link href="styles/common.css" rel="stylesheet" type="text/css">
+	</head>
+	<body class="bg_black_toolbar">
+		<!-- start pane_box -->
+		<div class="pane_box wc_view skin_grey">
+			<!-- start pane -->
+			<div class="pane wc_view pane_row_1">	
+				<!-- start pane_right -->
+				<div class="pane_right wc_view">
+					<div class="toolbar wc_view selectno">
+						<div class="wc_controls wc_view selectno" id="js_openallnav">
+							<div class="nav_title">入库</div>
+							<div class="logo"></div>
+							<div class="icon_down" style="right:60px;"></div>
+						</div>
+						<div class="allnavbox wc_view selectno" style="display:none;" id="js_allnav">
+							<div class="allnav">
+								<a href="order_wash.html">
+									<div class="icon"><img src="images/allnav_001.png"></div>
+									<div class="text">订单管理</div>
+								</a>
+								<a href="goods.html">
+									<div class="icon"><img src="images/allnav_004.png"></div>
+									<div class="text">衣物管理</div>
+								</a>
+								
+								<a href="user.html">
+									<div class="icon"><img src="images/allnav_005.png"></div>
+									<div class="text">用户管理</div>
+								</a>
+								<a href="trade_recharge.html">
+									<div class="icon"><img src="images/allnav_008.png"></div>
+									<div class="text">充值记录</div>
+								</a>
+								<a href="stockin.html" class="active">
+									<div class="icon"><img src="images/stockin.png"></div>
+									<div class="text">入库</div>
+								</a>
+								<a href="stockout.html">
+									<div class="icon"><img src="images/stockout.png"></div>
+									<div class="text">出库</div>
+								</a>
+								<a href="leavefactory.html">
+									<div class="icon"><img src="images/stockout.png"></div>
+									<div class="text">出厂</div>
+								</a>
+								<a href="coupons.html">
+									<div class="icon"><img src="images/allnav_006.png"></div>
+									<div class="text">优惠券</div>
+								</a>
+								<a href="staff.html">
+									<div class="icon"><img src="images/allnav_007.png"></div>
+									<div class="text">员工管理</div>
+								</a>
+								<a href="community.html">
+									<div class="icon"><img src="images/allnav_002.png"></div>
+									<div class="text">小区管理</div>
+								</a>
+								<a href="srpersonnel.html">
+									<div class="icon"><img src="images/allnav_003.png"></div>
+									<div class="text">收送专员</div>
+								</a>
+								<a href="product.html">
+									<div class="icon"><img src="images/allnav_004.png"></div>
+									<div class="text">产品管理</div>
+								</a>
+								<a href="setup.html">
+									<div class="icon"><img src="images/allnav_0014.png"></div>
+									<div class="text">设置</div>
+								</a>
+								<a href="index.html">
+									<div class="icon"><img src="images/home.png"></div>
+									<div class="text">主页</div>
+								</a>
+							</div>
+							<div class="pointer wc_view"></div>
+						</div>
+						<div class="t_menu wc_view">
+							<div class="t_menu_item">
+								<a href="stockin.html" class="btn btn_blue">返回扫码入库</a>
+							</div>
+						</div>
+						<div class="wc_controls_right wc_view">
+							<div class="nav_title" id="js_logout">入库人员-李美华</div>
+							<div class="icon_down"></div>
+							<ul class="selectnav_son selectno" style="display:none;" id="js_logout_open">
+								<div class="pointer wc_view"></div>
+								<li>安全退出</li>
+							</ul>
+						</div>
+					</div>
+					<div class="contentbody wc_view">
+						<div class="detail_info">
+							<div class="item">
+								<div class="bh">
+									<div class="i_title">订单号 W20150512832699</div>
+									<div class="i_state right"><span class="color_red">待分拣入库</span></div>
+								</div>
+								<div class="i_describe"><i>顾客：</i>18674869955 王五 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>折扣：</i>75% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>地址：</i>湖南省长沙市天心区湘府华城北3栋2单元1202</div>
+							</div>
+							<div class="item_title">
+								衣物清单
+							</div>
+							<div class="item">
+								<table class="table clothinglist">
+									<thead>
+										<tr>
+											<th>衣物/编号</th>
+											<th>服务</th>
+											<th>特征</th>
+											<th>附加服务</th>
+											<th>价格</th>
+											<th>附加费</th>
+											<th>小计</th>
+											<th>衣物条码</th>
+											<th>修改条码</th>
+											<th>打印</th>
+											<th>操作</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>西服/8678</td>
+											<td>A</td>
+											<td>
+												<p>白色 柒牌</p>
+												<p>磨损 污渍</p>
+											</td>
+											<td>
+												<p>缝扣（￥10.00）</p>
+												<p>加急（￥10.00）</p>
+											</td>
+											<td>￥21.00</td>
+											<td>￥20.00</td>
+											<td><span class="color_blue">￥41.00</span></td>
+											<td>87627378494944</td>
+											<td><a href="javascript:void(0);" class="btn_s btn_blue">修改</a></td>
+											<td><a href="javascript:void(0);" class="btn_s btn_green">打印</a></td>
+											<td><a href="javascript:void(0);" class="btn_s btn_red">删除</a></td>
+										</tr>
+										<tr>
+											<td>西服/8678</td>
+											<td>A</td>
+											<td>
+												<p>白色 柒牌</p>
+												<p>磨损 污渍</p>
+											</td>
+											<td>
+												<p>缝扣（￥10.00）</p>
+												<p>加急（￥10.00）</p>
+											</td>
+											<td>￥21.00</td>
+											<td>￥20.00</td>
+											<td><span class="color_blue">￥41.00</span></td>
+											<td>87627378494944</td>
+											<td><a href="javascript:void(0);" class="btn_s btn_blue">修改</a></td>
+											<td><a href="javascript:void(0);" class="btn_s btn_green">打印</a></td>
+											<td><a href="javascript:void(0);" class="btn_s btn_red">删除</a></td>
+										</tr>
+										<tr>
+											<td>西服/8678</td>
+											<td>A</td>
+											<td>
+												<p>白色 柒牌</p>
+												<p>磨损 污渍</p>
+											</td>
+											<td>
+												<p>缝扣（￥10.00）</p>
+												<p>加急（￥10.00）</p>
+											</td>
+											<td>￥21.00</td>
+											<td>￥20.00</td>
+											<td><span class="color_blue">￥41.00</span></td>
+											<td>87627378494944</td>
+											<td><a href="javascript:void(0);" class="btn_s btn_blue">修改</a></td>
+											<td><a href="javascript:void(0);" class="btn_s btn_green">打印</a></td>
+											<td><a href="javascript:void(0);" class="btn_s btn_red">删除</a></td>
+										</tr>
+									</tbody>
+								</table>
+								
+								<div class="hb mt10"><button class="btn btn_blue js_button_open">添加衣物</button> 已录入 <span class="color_blue bold">3</span> 件衣物。</div>
+								<div class="total">
+									<div class="t_item">
+										衣物洗涤原金额：<span class=" fsize20">￥80.00</span>
+									</div>
+									<div class="t_item bordertop">
+										75%折后金额（最小为分）：<span class="color_blue fsize20">￥40.00</span> + 附加服务费：<span class="color_blue fsize20">￥60.00</span> = 应付订单总额：<span class="color_blue fsize20 bold">￥100.00</span>
+									</div>
+								</div>
+								<div class="buttonbar center">
+									<div class="button_item"><button class="btn btn_green" onclick="location.href='stockin.html'">全部录入完成</button></div>
+									<div class="button_item"><button class="btn btn_blue" onclick="location.href='print_order_wash.html'">打印订单</button></div>
+								</div>
+							</div>
+							<div class="data_none">未选取订单</div>
+							<div class="loadingbox"><img src="images/loading.gif"></div>
+						</div>
+					</div>
+				</div>
+				<!-- end pane_right -->
+			</div>
+			<!-- end pane -->
+		</div>
+		<!-- end pane_box -->
+		
+		<!-- //录入衣物弹出层 开始 -->
+		<div class="modal_screen" id="modal_screen_001" style="display: block;">
+		  <div class="modal_dialog_big" id="modal_s_big_001">
+		    <div class="modal_content">
+		    	<div class="mc_head">
+		    		录入衣物
+		    		<div class="close"><a href="javascript:void(0);" class="js_closemodal">关闭</a></div>
+		    	</div>
+		    	<div class="mc_body">
+					<div class="stockinbox">
+						<div class="sto_head">
+							<div class="itemarea">
+								<div class="showselected onlyone">
+									<a href="javascript:void(0);" class="item">外套</a>
+								</div>
+								<div class="shownav havemust">
+									<a href="javascript:void(0);" class="">衣物品名<span class="must"></span></a>
+								</div>
+							</div>
+							<div class="itemarea">
+								<div class="showselected onlyone">
+									<a href="javascript:void(0);" class="item">棉</a>
+								</div>
+								<div class="shownav">
+									<a href="javascript:void(0);" class="">布料</a>
+								</div>
+							</div>
+							<div class="itemarea">
+								<div class="showselected onlyone">
+									<a href="javascript:void(0);" class="item">干洗</a>
+								</div>
+								<div class="shownav havemust">
+									<a href="javascript:void(0);" class="">服务类型<span class="must"></span></a>
+								</div>
+							</div>
+							<div class="itemarea">
+								<div class="showselected">
+									<a href="javascript:void(0);" class="item">米黄</a>
+									<a href="javascript:void(0);" class="item">大红</a>
+									<a href="javascript:void(0);" class="item">玫瑰红</a>
+								</div>
+								<div class="shownav havemust">
+									<a href="javascript:void(0);">颜色</a>
+								</div>
+							</div>
+							<div class="itemarea">
+								<div class="showselected">
+									<a href="javascript:void(0);" class="item">污渍</a>
+									<a href="javascript:void(0);" class="item">起球</a>
+									<a href="javascript:void(0);" class="item">皮毛发硬</a>
+									<a href="javascript:void(0);" class="item">红酒渍</a>
+									<a href="javascript:void(0);" class="item">黑油渍</a>
+									<a href="javascript:void(0);" class="item">笔迹</a>
+									<a href="javascript:void(0);" class="item">发霉</a>
+									<a href="javascript:void(0);" class="item">污渍</a>
+									<a href="javascript:void(0);" class="item">起球</a>
+									<a href="javascript:void(0);" class="item">皮毛发硬</a>
+									<a href="javascript:void(0);" class="item">红酒渍</a>
+									<a href="javascript:void(0);" class="item">黑油渍</a>
+									<a href="javascript:void(0);" class="item">笔迹</a>
+									<a href="javascript:void(0);" class="item">发霉</a>
+									<a href="javascript:void(0);" class="item">污渍</a>
+								</div>
+								<div class="shownav havemust">
+									<a href="javascript:void(0);" class="active">瑕疵</a>
+								</div>
+							</div>
+							<div class="itemarea big_2x">
+								<div class="showselected">
+									<a href="javascript:void(0);" class="item">洗后颜色加深</a>
+									<a href="javascript:void(0);" class="item">洗后装饰物易掉</a>
+									<a href="javascript:void(0);" class="item">洗后常磨处会发白</a>
+									<a href="javascript:void(0);" class="item">洗后手感会有变化</a>
+									<a href="javascript:void(0);" class="item">洗后还会印子</a>
+									<a href="javascript:void(0);" class="item">洗后涂层易掉</a>
+								</div>
+								<div class="shownav havemust">
+									<a href="javascript:void(0);">洗后效果</a>
+								</div>
+							</div>
+							<div class="itemarea">
+								<div class="showselected onlyone">
+									<a href="javascript:void(0);" class="item">Nike</a>
+								</div>
+								<div class="shownav havemust">
+									<a href="javascript:void(0);" class="">品牌</a>
+								</div>
+							</div>
+							<div class="itemarea">
+								<div class="showselected">
+									<a href="javascript:void(0);" class="item">修色10元</a>
+									<a href="javascript:void(0);" class="item">加急10元</a>
+									<a href="javascript:void(0);" class="item">织补8元</a>
+								</div>
+								<div class="shownav havemust">
+									<a href="javascript:void(0);">附加服务</a>
+								</div>
+							</div>
+							<div class="itemarea">
+								<div class="showselected">
+									<a href="javascript:void(0);" class="item">腰带</a>
+									<a href="javascript:void(0);" class="item">帽边</a>
+									<a href="javascript:void(0);" class="item">内胆</a>
+								</div>
+								<div class="shownav havemust">
+									<a href="javascript:void(0);">附件</a>
+								</div>
+							</div>
+						</div><!-- //sto_head -->
+						<div class="sto_content">
+							<div class="select_list">
+								<div class="select_item">
+									<a href="javascript:void(0);">掉色<span class="checked_icon"></span></a>
+								</div>
+								<div class="select_item">
+									<a href="javascript:void(0);" class="active">发霉<span class="checked_icon"></span></a>
+								</div>
+								<div class="select_item">
+									<a href="javascript:void(0);">掉色<span class="checked_icon"></span></a>
+								</div>
+								<div class="select_item">
+									<a href="javascript:void(0);" class="">皮毛发硬<span class="checked_icon"></span></a>
+								</div>
+								<div class="select_item">
+									<a href="javascript:void(0);">掉色<span class="checked_icon"></span></a>
+								</div>
+								<div class="select_item">
+									<a href="javascript:void(0);" class="">污渍<span class="checked_icon"></span></a>
+								</div>
+								<div class="select_item">
+									<a href="javascript:void(0);">掉色<span class="checked_icon"></span></a>
+								</div>
+								<div class="select_item">
+									<a href="javascript:void(0);" class="">洗后常磨处会发白<span class="checked_icon"></span></a>
+								</div>
+								<div class="select_item">
+									<a href="javascript:void(0);">掉色<span class="checked_icon"></span></a>
+								</div>
+								<div class="select_item">
+									<a href="javascript:void(0);" class="">洗后常磨处会发白<span class="checked_icon"></span></a>
+								</div>
+								<div class="select_item">
+									<a href="javascript:void(0);">掉色<span class="checked_icon"></span></a>
+								</div>
+								<div class="select_item">
+									<a href="javascript:void(0);" class="active">发霉<span class="checked_icon"></span></a>
+								</div>
+								<div class="select_item">
+									<a href="javascript:void(0);">掉色<span class="checked_icon"></span></a>
+								</div>
+								<div class="select_item">
+									<a href="javascript:void(0);" class="">皮毛发硬<span class="checked_icon"></span></a>
+								</div>
+								<div class="select_item">
+									<a href="javascript:void(0);">掉色<span class="checked_icon"></span></a>
+								</div>
+								<div class="select_item">
+									<a href="javascript:void(0);" class="">污渍<span class="checked_icon"></span></a>
+								</div>
+								<div class="select_item">
+									<a href="javascript:void(0);">掉色<span class="checked_icon"></span></a>
+								</div>
+							</div>
+						</div><!-- //sto_content -->
+					</div><!-- //stockinbox -->
+		    	</div>
+		    	<div class="mc_foot">
+		    		<div class="buttonbar">
+						<div class="button_item"><button class="btn btn_blue js_drop_002">确定提交</button></div>
+					</div>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="modal_cover"></div>
+		</div>
+		<!-- //录入衣物弹出层 结束 -->
+		
+	
+		<!-- start javascript -->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/common.js"></script>
+		<!-- end javascript -->
+	</body>
+</html>

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="Author" content="xiaoxiongdao.com Inc.">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>订单详情</title>
+		<link rel="icon" href="images/favicon.ico">
+		<link href="styles/common.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<!-- start pane_box -->
+		<div class="pane_box wc_view">
+			<!-- start pane -->
+			<div class="pane wc_view pane_row_2">
+				<!-- start pane_left -->
+				<div class="pane_left wc_view">
+					<div class="toolbar wc_view">
+						<div class="wc_controls wc_view selectno" id="js_openallnav">
+							<div class="nav_title">订单管理</div>
+							<div class="logo"></div>
+							<div class="icon_down" style="left:140px;"></div>
+						</div>
+						<div class="allnavbox wc_view selectno" style="display:none;" id="js_allnav">
+							<div class="allnav">
+								<a href="order_wash.html" class="active">
+									<div class="icon"><img src="images/allnav_001.png"></div>
+									<div class="text">订单管理</div>
+								</a>
+								<a href="goods.html">
+									<div class="icon"><img src="images/allnav_004.png"></div>
+									<div class="text">衣物管理</div>
+								</a>
+								
+								<a href="user.html">
+									<div class="icon"><img src="images/allnav_005.png"></div>
+									<div class="text">用户管理</div>
+								</a>
+								<a href="trade.html">
+									<div class="icon"><img src="images/allnav_008.png"></div>
+									<div class="text">交易记录</div>
+								</a>
+								<a href="stockin.html">
+									<div class="icon"><img src="images/stockin.png"></div>
+									<div class="text">入库</div>
+								</a>
+								<a href="stockout.html">
+									<div class="icon"><img src="images/stockout.png"></div>
+									<div class="text">出库</div>
+								</a>
+								<a href="leavefactory.html">
+									<div class="icon"><img src="images/leavefactory.png"></div>
+									<div class="text">出厂</div>
+								</a>
+								<a href="coupons.html">
+									<div class="icon"><img src="images/allnav_006.png"></div>
+									<div class="text">优惠券</div>
+								</a>
+								<a href="staff.html">
+									<div class="icon"><img src="images/allnav_007.png"></div>
+									<div class="text">员工管理</div>
+								</a>
+								<a href="community.html">
+									<div class="icon"><img src="images/allnav_002.png"></div>
+									<div class="text">小区管理</div>
+								</a>
+								<a href="store.html">
+									<div class="icon"><img src="images/allnav_store.png"></div>
+									<div class="text">门店管理</div>
+								</a>
+								<a href="store_owner.html">
+									<div class="icon"><img src="images/allnav_storeowner.png"></div>
+									<div class="text">店主管理</div>
+								</a>
+								<a href="operation.html">
+									<div class="icon"><img src="images/allnav_operation.png"></div>
+									<div class="text">运营中心</div>
+								</a>
+								<a href="srpersonnel.html">
+									<div class="icon"><img src="images/allnav_003.png"></div>
+									<div class="text">收送专员</div>
+								</a>
+								<a href="product.html">
+									<div class="icon"><img src="images/product.png"></div>
+									<div class="text">产品管理</div>
+								</a>
+								<a href="setup.html">
+									<div class="icon"><img src="images/allnav_0014.png"></div>
+									<div class="text">设置</div>
+								</a>
+								<a href="index.html">
+									<div class="icon"><img src="images/home.png"></div>
+									<div class="text">主页</div>
+								</a>
+								<a href="telephone.html">
+									<div class="icon"><img src="images/telephone.png"></div>
+									<div class="text">电话下单</div>
+								</a>
+								<a href="waybill.html">
+									<div class="icon"><img src="images/icon_waybill.png"></div>
+									<div class="text">运单码</div>
+								</a>
+							</div>
+							<div class="pointer wc_view"></div>
+						</div>
+					</div>
+					<div class="contentbody wc_view" style="bottom:0px;">
+						<div class="l_content">
+							<div class="memu" style="top:0px;">
+								<div class="menu_item active">
+									<div class="item_border"></div>
+									<div class="item_text">所有</div>
+								</div>
+								<div class="menu_item">
+									<div class="item_border"></div>
+									<div class="item_text">已下单，待接单</div>
+								</div>
+								<div class="menu_item">
+									<div class="item_border"></div>
+									<div class="item_text">收件中</div>
+								</div>
+								<div class="menu_item">
+									<div class="item_border"></div>
+									<div class="item_text">已收件</div>
+								</div>
+								<div class="menu_item">
+									<div class="item_border"></div>
+									<div class="item_text">已取消</div>
+								</div>
+								<div class="menu_item">
+									<div class="item_border"></div>
+									<div class="item_text">已入库，洗涤中</div>
+								</div>
+								<div class="menu_item">
+									<div class="item_border"></div>
+									<div class="item_text">返洗中</div>
+								</div>
+								<div class="menu_item">
+									<div class="item_border"></div>
+									<div class="item_text">已出库</div>
+								</div>
+								<div class="menu_item">
+									<div class="item_border"></div>
+									<div class="item_text">已出厂，派送中</div>
+								</div>
+								<div class="menu_item">
+									<div class="item_border"></div>
+									<div class="item_text">已完成</div>
+								</div>
+								<div class="menu_item">
+									<div class="item_border"></div>
+									<div class="item_text">已付款</div>
+								</div>
+								<div class="menu_item">
+									<div class="item_border"></div>
+									<div class="item_text">已作废</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end pane_left -->
+				
+				<!-- start pane_left_line -->
+				<div class="pane_left_line wc_view"><div class="line"></div></div>
+				<!-- end pane_left_line -->
+					
+				<!-- start pane_right -->
+				<div class="pane_right have_contenttop wc_view">
+					<div class="toolbar wc_view selectno">
+						<div class="wc_controls wc_view">
+							<div class="nav_title" id="js_logout">超级管理员</div>
+							<div class="icon_down"></div>
+							<ul class="selectnav_son selectno" style="display:none;" id="js_logout_open">
+								<div class="pointer wc_view"></div>
+								<li>安全退出</li>
+							</ul>
+						</div>
+					</div>
+					<div class="contenttop wc_view">
+						<div class="page_title">
+							<div class="left wc_view">
+								<a href="order_wash.html" class="btn_back"><span class="icon"></span>返回</a>
+							</div>
+							<div class="right wc_view">
+								<span class="color_green">已完成</span>
+							</div>
+							订单详情（W20150512832699）
+						</div>
+					</div>
+					
+					<div class="contentbody wc_view">
+						<div class="detail_info">
+							<div class="item">
+								<div class="bh">
+									<div class="i_title">订单号 W20150512832699</div>
+									<div class="i_state right"><span class="color_green">已完成</span></div>
+								</div>
+								<div class="i_describe">微信下单（件洗）</div>
+								<div class="i_describe"><i>运单编号</i>730980876456</div>
+								<div class="i_describe"><i>门店</i>国家体院馆店</div>
+								<div class="buttonbar bordertop">
+									<div class="button_item"><button class="btn btn_blue js_button_002" >录入运单编号</button></div>
+									<div class="button_item"><button class="btn btn_blue js_button_001" >修改成功</button></div>
+								</div>
+							</div>
+							<div class="item_title">
+								订单跟踪
+							</div>
+							<div class="item">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="140">处理日期</th>
+											<th>处理信息</th>
+											<th width="120">操作人</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="on">
+											<td>2015.05.13 10:00</td>
+											<td>已完成</td>
+											<td>彭华裔</td>
+										</tr>
+										<tr>
+											<td>2015.05.13 09:00</td>
+											<td>配送中，待收衣</td>
+											<td>系统配送人员</td>
+										</tr>
+										<tr>
+											<td>2015.05.12 20:00</td>
+											<td>洗涤完，已全部出库(5)，待配送</td>
+											<td>系统检查人员</td>
+										</tr>
+										<tr>
+											<td>2015.05.12 15:00</td>
+											<td>洗涤中，已出库(2)件，待出库(3)件</td>
+											<td>系统检查人员</td>
+										</tr>
+										<tr>
+											<td>2015.05.12 11:45</td>
+											<td>洗涤中</td>
+											<td>系统</td>
+										</tr>
+										<tr>
+											<td>2015.05.12 11:30</td>
+											<td>已分拣，待洗涤</td>
+											<td>系统检查人员</td>
+										</tr>
+										<tr>
+											<td>2015.05.12 11:10</td>
+											<td>已到工厂，待分拣</td>
+											<td>系统</td>
+										</tr>
+										<tr>
+											<td>2015.05.12 10:30</td>
+											<td>已收衣，送往工厂途中</td>
+											<td>彭华裔</td>
+										</tr>
+										<tr>
+											<td>2015.05.12 10:01</td>
+											<td>已接单，收送专员火速赶来</td>
+											<td>彭华裔</td>
+										</tr>
+										<tr>
+											<td>2015.05.12 10:00</td>
+											<td>用户下单，待确认接单</td>
+											<td>用户</td>
+										</tr>
+									</tbody>
+									<tfoot >
+									
+									</tfoot>
+								</table>
+							</div>
+							<div class="item_title">
+								衣物清单
+							</div>
+							<div class="item">
+								<span class="color_grey">暂无数据。</span>
+								<div class="buttonbar bordertop">
+									<div class="button_item"><button class="btn btn_blue js_button_003">录入衣物</button></div>
+									<div class="button_item"><button class="btn btn_grey">灰色</button></div>
+									<div class="button_item"><button class="btn btn_red">红色</button></div>
+									<div class="button_item"><button class="btn btn_green">绿色</button></div>
+								</div>
+							</div>
+							<div class="item_title">
+								衣物清单
+							</div>
+							<div class="item">
+								<table class="table clothinglist">
+									<thead>
+										<tr>
+											<th>衣物</th>
+											<th>服务类型</th>
+											<th>特征</th>
+											<th>附加服务</th>
+											<th>衣物条码</th>
+											<th>单价</th>
+											<th>附加费</th>
+											<th>小计</th>
+											<th>状态</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<p>西服</p>
+												<p>86678</p>
+											</td>
+											<td>干洗</td>
+											<td>
+												<p>白色 柒牌</p>
+												<p>磨损 污渍</p>
+											</td>
+											<td>
+												<p>缝扣（￥10.00）</p>
+												<p>加急（￥10.00）</p>
+											</td>
+											<td>8762737844</td>
+											<td>￥21.00</td>
+											<td>￥20.00</td>
+											<td><span class="color_blue">￥62.00</span></td>
+											<td><span class="color_red">未出库</span></td>
+										</tr>
+										<tr>
+											<td>
+												<p>夹克衫</p>
+												<p>86678</p>
+											</td>
+											<td>干洗</td>
+											<td>
+												<p>白色 柒牌</p>
+												<p>污渍</p>
+											</td>
+											<td>
+												<p>加急（￥10.00）</p>
+											</td>
+											<td>8762737849</td>
+											<td>￥28.00</td>
+											<td>￥10.00</td>
+											<td><span class="color_blue">￥38.00</span></td>
+											<td><span class="color_green">已出库</span></td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="total">
+									<div class="t_item">
+										<i>衣物洗涤原金额：</i>
+										<div class="num"><span class="fsize20">￥100.00</span></div>
+									</div>
+									<div class="t_item">
+										<i>会员折后金额：</i>
+										<div class="num"><span class="color_blue fsize20">￥80.00 (80%)</span></div>
+									</div>
+									<div class="t_item">
+										<i>+ 附加服务费：</i>
+										<div class="num"><span class="color_blue fsize20">￥20.00</span></div>
+									</div>
+									<div class="t_item bordertop">
+										<i>订单总额：</i>
+										<div class="num"><span class="color_blue fsize20 bold">￥100.00</span></div>
+									</div>
+									<div class="t_item bordertop">
+										<i>修改应付总额为：</i>
+										<div class="num"><span class="color_blue fsize20 bold">￥60.00</span><button class="btn_s btn_blue js_button_007 ml20">修改总价</button></div>
+									</div>
+									<div class="buttonbar bordertop">
+										<div class="button_item"><button class="btn btn_blue js_button_008" >收款</button></div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="bh">
+									<div class="i_title">支付信息</div>
+								</div>
+								<div class="i_describe"><i>支付方式</i>微信支付</div>
+								<div class="i_describe"><i>流水号</i>8374748484949483783944749988</div>
+								<div class="i_describe"><i>支付时间</i>2015.05.13 10:00</div>
+								<div class="i_describe"><i>使用优惠券</i>￥20.00 编号：928749398293772</div>
+								<div class="i_describe"><i>支付金额</i><span class="color_blue bold">￥60.00</span></div>
+							</div>
+							<div class="item_title">
+								客户备注
+							</div>
+							<div class="item">
+								<div class="bh">
+									<div class="i_title">请带个大袋子来，好多要洗。</div>
+								</div>
+								<div class="buttonbar bordertop">
+									<div class="button_item"><button class="btn btn_grey">修改备注</button></div>
+								</div>
+							</div>
+							<div class="item_title">
+								管理备注
+							</div>
+							<div class="item">
+								<table class="table clothinglist">
+									<thead>
+										<tr>
+											<th>内容</th>
+											<th width="90">添加人</th>
+											<th width="100">添加时间</th>
+											<th width="40">操作</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><div class="fsize16">客户要求很好，要仔细检查。客户要求很好，要仔细检查客户要求很好，要仔细检查客户要求很好，要仔细检查客户要求很好，要仔细检查。</div></td>
+											<td>超级管理员</td>
+											<td>2015.05.12 14:10</td>
+											<td><a href="javascript:void(0);" class="color_red">删除</a></td>
+										</tr>
+										<tr>
+											<td><div class="fsize16">除污渍不合格，反洗。</div></td>
+											<td>超级管理员</td>
+											<td>2015.05.12 15:10</td>
+											<td><a href="javascript:void(0);" class="color_red">删除</a></td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="buttonbar">
+									<div class="button_item"><button class="btn btn_blue">添加管理备注</button></div>
+								</div>
+							</div>
+							<div class="item_title">
+								客户信息
+							</div>
+							<div class="item">
+								<div class="bh">
+									<div class="i_title">王五 18674869955</div>
+								</div>
+								<div class="i_describe">湖南省长沙市天心区湘府华城北3栋2单元1202</div>
+							</div>
+							<div class="item_title">
+								取件人员
+							</div>
+							<div class="item">
+								<div class="bh">
+									<div class="i_title">彭华裔</div>
+								</div>
+								<div class="i_describe"><i>电话</i>18674869955</div>
+								<div class="i_describe"><i>工号</i>CS001</div>
+								<div class="i_describe"><i>评分</i>100%</div>
+								<div class="avatar">
+									<img src="upload/cs001.jpg">
+								</div>
+								<div class="buttonbar bordertop">
+									<div class="button_item"><button class="btn btn_blue">指派收送专员</button></div>
+								</div>
+							</div>
+							<div class="item_title">
+								送件人员
+							</div>
+							<div class="item">
+								<div class="bh">
+									<div class="i_title">王志超</div>
+								</div>
+								<div class="i_describe"><i>电话</i>18674869955</div>
+								<div class="i_describe"><i>工号</i>CS001</div>
+								<div class="i_describe"><i>评分</i>100%</div>
+								<div class="avatar">
+									<img src="upload/cs001.jpg">
+								</div>
+								<div class="buttonbar bordertop">
+									<div class="button_item"><button class="btn btn_blue">指派收送专员</button></div>
+								</div>
+							</div>
+							<div class="data_none">未选取订单</div>
+							<div class="loadingbox"><img src="images/loading.gif"></div>
+						</div>
+					</div>
+				</div>
+				<!-- end pane_right -->
+			</div>
+			<!-- end pane -->
+		</div>
+		<!-- end pane_box -->
+		
+		<!-- //提示 开始 -->
+		<div class="modal" id="modal_001" style="display: none;">
+		  <div class="modal_dialog_tips" id="modal_t_001">
+		    <div class="modal_content">
+		    	<div class="mc_body center">
+		    		<span class="color_green">修改成功</span>
+		    	</div>
+		    	<div class="mc_foot">
+		    		<div class="buttonbar">
+						<div class="button_item"><button class="btn btn_grey js_drop_001">取消</button></div>
+						<div class="button_item"><button class="btn btn_blue js_drop_001">确定</button></div>
+					</div>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="modal_cover"></div>
+		</div>
+		<!-- //提示 结束 -->
+		
+		<!-- //输入框 开始 -->
+		<div class="modal" id="modal_007" style="display: none;">
+		  <div class="modal_dialog_tips" id="modal_t_007">
+		    <div class="modal_content">
+		    	<div class="mc_head">
+		    		修改总价
+		    	</div>
+		    	<div class="mc_body">
+		    		<div class="inputitem">
+		    			<input type="text" class="inputtext" value="60">
+		    		</div>
+		    	</div>
+		    	<div class="mc_foot">
+		    		<div class="buttonbar">
+						<div class="button_item"><button class="btn btn_grey js_drop_007">取消</button></div>
+						<div class="button_item"><button class="btn btn_blue js_drop_007">确定</button></div>
+					</div>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="modal_cover"></div>
+		</div>
+		<!-- //输入框 结束 -->
+		
+		<!-- //输入框 开始 -->
+		<div class="modal" id="modal_002" style="display: none;">
+		  <div class="modal_dialog_tips" id="modal_t_002">
+		    <div class="modal_content">
+		    	<div class="mc_body">
+		    		<div class="inputitem">
+		    			<input type="text" class="inputtext" placeholder="录入运单号码" onfocus="">
+		    		</div>
+		    	</div>
+		    	<div class="mc_foot">
+		    		<div class="buttonbar">
+						<div class="button_item"><button class="btn btn_grey js_drop_002">取消</button></div>
+						<div class="button_item"><button class="btn btn_blue js_drop_002">确定</button></div>
+					</div>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="modal_cover"></div>
+		</div>
+		<!-- //输入框 结束 -->
+		
+		<!-- //大型弹出层 开始 -->
+		<div class="modal" id="modal_big_001" style="display: none;">
+		  <div class="modal_dialog_big" id="modal_t_big_001">
+		    <div class="modal_content">
+		    	<div class="mc_body">
+		    		<div class="inputitem">
+		    			<input type="text" class="inputtext" placeholder="录入运单号码" onfocus="">
+		    		</div>
+		    	</div>
+		    	<div class="mc_foot">
+		    		<div class="buttonbar">
+						<div class="button_item"><button class="btn btn_grey js_drop_002">取消</button></div>
+						<div class="button_item"><button class="btn btn_blue js_drop_002">确定</button></div>
+					</div>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="modal_cover"></div>
+		</div>
+		<!-- //大型弹出层 结束 -->
+		
+		<!-- //输入框 开始 -->
+		<div class="modal" id="modal_008" style="display: none;">
+		  <div class="modal_dialog_tips" id="modal_t_008">
+		    <div class="modal_content">
+		    	<div class="mc_head">
+		    		收款
+		    		<div class="close"><a href="javascript:void(0);" class="js_drop_008">关闭</a></div>
+		    	</div>
+		    	<div class="mc_toolbarbox">
+		    		<div class="mc_toolbar">
+			    		<div class="tabnav two">
+							<div class="tabnav_item active"><span class="t first">卡余额收款</span></div>
+							<div class="tabnav_item"><span class="t last">现金收款</span></div>
+						</div>
+		    		</div>
+		    	</div>
+		    	<div class="mc_body">
+		    		<div class="show_info">
+		    			<dl>
+		    				<dt>客户当前余额：</dt>
+		    				<dd><span class="color_green fsize30 bold">800.00</span> 元</dd>
+		    			</dl>
+		    			<dl>
+		    				<dt>本次订单收款：</dt>
+		    				<dd><span class="color_red fsize30 bold">60.00</span> 元</dd>
+		    			</dl>
+		    		</div>
+		    	</div>
+		    	<div class="mc_foot">
+		    		<div class="buttonbar">
+						<div class="button_item"><button class="btn btn_grey js_drop_008">取消</button></div>
+						<div class="button_item"><button class="btn btn_blue js_drop_008">确定收款</button></div>
+					</div>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="modal_cover"></div>
+		</div>
+		<!-- //输入框 结束 -->
+		
+		
+		<!-- start javascript -->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/common.js"></script>
+		<!-- end javascript -->
+	</body>
+</html>

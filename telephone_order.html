@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="Author" content="xiaoxiongdao.com Inc.">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>下单洗衣</title>
+		<link rel="icon" href="images/favicon.ico">
+		<link href="styles/common.css" rel="stylesheet" type="text/css">
+	</head>
+	<body class="bg_black_toolbar">
+		<!-- start pane_box -->
+		<div class="pane_box wc_view skin_grey">
+			<!-- start pane -->
+			<div class="pane wc_view pane_row_1">	
+				<!-- start pane_right -->
+				<div class="pane_right wc_view">
+					<div class="toolbar wc_view selectno">
+						<div class="wc_controls wc_view selectno" id="js_openallnav">
+							<div class="nav_title">下单洗衣</div>
+							<div class="logo"></div>
+							<div class="icon_down"></div>
+						</div>
+						<div class="allnavbox wc_view selectno" style="display:none;" id="js_allnav">
+							<div class="allnav">
+								<a href="order_wash.html">
+									<div class="icon"><img src="images/allnav_001.png"></div>
+									<div class="text">订单管理</div>
+								</a>
+								<a href="goods.html">
+									<div class="icon"><img src="images/allnav_004.png"></div>
+									<div class="text">衣物管理</div>
+								</a>
+								
+								<a href="user.html">
+									<div class="icon"><img src="images/allnav_005.png"></div>
+									<div class="text">用户管理</div>
+								</a>
+								<a href="trade_recharge.html">
+									<div class="icon"><img src="images/allnav_008.png"></div>
+									<div class="text">充值记录</div>
+								</a>
+								<a href="stockin.html" class="active">
+									<div class="icon"><img src="images/stockin.png"></div>
+									<div class="text">入库</div>
+								</a>
+								<a href="stockout.html">
+									<div class="icon"><img src="images/stockout.png"></div>
+									<div class="text">出库</div>
+								</a>
+								<a href="leavefactory.html">
+									<div class="icon"><img src="images/stockout.png"></div>
+									<div class="text">出厂</div>
+								</a>
+								<a href="coupons.html">
+									<div class="icon"><img src="images/allnav_006.png"></div>
+									<div class="text">优惠券</div>
+								</a>
+								<a href="staff.html">
+									<div class="icon"><img src="images/allnav_007.png"></div>
+									<div class="text">员工管理</div>
+								</a>
+								<a href="community.html">
+									<div class="icon"><img src="images/allnav_002.png"></div>
+									<div class="text">小区管理</div>
+								</a>
+								<a href="srpersonnel.html">
+									<div class="icon"><img src="images/allnav_003.png"></div>
+									<div class="text">收送专员</div>
+								</a>
+								<a href="product.html">
+									<div class="icon"><img src="images/allnav_004.png"></div>
+									<div class="text">产品管理</div>
+								</a>
+								<a href="setup.html">
+									<div class="icon"><img src="images/allnav_0014.png"></div>
+									<div class="text">设置</div>
+								</a>
+								<a href="index.html">
+									<div class="icon"><img src="images/home.png"></div>
+									<div class="text">主页</div>
+								</a>
+								<a href="telephone.html">
+									<div class="icon"><img src="images/home.png"></div>
+									<div class="text">电话下单</div>
+								</a>
+							</div>
+							<div class="pointer wc_view"></div>
+						</div>
+						<div class="t_menu wc_view">
+							<div class="t_menu_item">
+								<a href="telephone.html" class="btn btn_green">返回</a>
+							</div>
+						</div>
+						<div class="wc_controls_right wc_view">
+							<div class="nav_title" id="js_logout">客服-刘诗诗</div>
+							<div class="icon_down"></div>
+							<ul class="selectnav_son selectno" style="display:none;" id="js_logout_open">
+								<div class="pointer wc_view"></div>
+								<li>安全退出</li>
+							</ul>
+						</div>
+					</div>
+					<div class="contentbody wc_view">
+						<div class="paneinner wc_view">
+							<div class="paneinner_left wc_view">
+								<div class="pi_contentbody wc_view" style="bottom:44px;">
+									<div class="userinfoshow">
+										<!-- 是常客 开始 -->
+										<div style="display: block;">
+											<div class="result">
+												<a href="user_detail.html" target="_blank">18674862888</a> <i class="color_green">是常客</i>
+											</div>
+											<div class="ui_user_detail">
+												<div class="ui_user_info">
+													<div class="user_info_meta">
+														<div class="name_item">
+															<img src="images/avatar_user.png" class="user_avatar">
+															<div class="name">王国军（王）<span class="action">改备注</span></div>
+															<div class="usertype">
+														    	<i class="itemarea weixin"></i>
+														    	<i class="itemarea mobi"></i>
+														    	<i class="itemarea mobiok"></i>
+														    	<i class="itemarea android"></i>
+														    	<i class="itemarea ios"></i>
+														    </div>
+														    <div class="mobi">18674862888</div>
+														</div>
+														<div class="u_item desc_item">
+															<div class="desc"><span class="d_title">会员卡号：</span>88800159</div>
+														</div>
+														<div class="u_item desc_item">
+															<div class="desc"><span class="d_title">客户性别：</span>男</div>
+														</div>
+														<div class="u_item desc_item">
+															<div class="desc"><span class="d_title">出生日期：</span>农历：1992年10月1日</div>
+														</div>
+														<div class="u_item desc_item">
+															<div class="desc">
+																<span class="d_title">所属分组：</span>
+																默认分组
+															</div>
+														</div>
+														<div class="u_item desc_item">
+															<div class="desc"><span class="d_title">创建时间：</span>2015-10-01 14:30</div>
+														</div>
+														<div class="u_item desc_item">
+															<div class="desc"><span class="d_title">最近下单：</span>2015-10-01 14:30</div>
+														</div>
+														<div class="u_item desc_item">
+															<div class="desc"><span class="d_title">所属门店：</span>华天e生活五一大道店<span class="gegege">-</span>水立方店</div>
+														</div>
+														<div class="u_item desc_item">
+															<div class="desc"><span class="d_title">客户等级：</span>金卡用户</span> <span class="color_grey">6.5折</span></div>
+														</div>
+														<div class="u_item desc_item">
+															<div class="desc"><span class="d_title">客户积分：</span>109 </div>
+														</div>
+														<div class="u_item desc_item">
+															<div class="desc"><span class="d_title">客户余额：</span>2048.00 元 </div>
+														</div>
+														<div class="u_item desc_item">
+															<div class="desc"><span class="d_title">客户标签：</span>住别墅<span class="gegege">-</span>家有小孩<span class="gegege">-</span>豪爽</div>
+														</div>
+													</div>
+													<!-- //user_info_meta -->
+													
+												</div>
+											</div>
+											<!-- // user_detail -->
+										</div>
+										<!-- 是常客 结束 -->
+										
+										<!-- 是新客户 开始 -->
+										<div style="display: none;">
+											<div class="result">
+												18674862888 <i class="color_red">是新客户</i>
+											</div>
+											<div class="adduserbox">
+												<div class="formglobalbox">
+													<div class="formglobal">
+														<div class="itemgroup">
+															<div class="titlebox">
+																<div class="title">
+																	电话号码
+																</div>
+															</div>
+															<div class="contentbox">
+																<div class="content">
+																	<div class="inputitem">
+														    			<input type="text" class="inputtext" value="18674862888">
+														    		</div>
+														    		<div class="tips"><span class="color_red">请输入正确的号码</span></div>
+																</div>
+															</div>
+														</div>
+														<div class="itemgroup">
+															<div class="titlebox">
+																<div class="title">
+																	姓名
+																</div>
+															</div>
+															<div class="contentbox">
+																<div class="content">
+																	<div class="inputitem">
+														    			<input type="text" class="inputtext" placeholder="姓名" >
+														    		</div>
+																</div>
+															</div>
+														</div>
+														<div class="itemgroup">
+															<div class="titlebox">
+																<div class="title">
+																	性别
+																</div>
+															</div>
+															<div class="contentbox">
+																<div class="content">
+																	<div class="tab_select">
+																		<li class="active"><span>女</span></li>
+																		<li><span>男</span></li>
+																		<li><span>未知</span></li>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- //formglobal -->
+													
+													
+												</div>
+												<!-- //formglobalbox -->
+											</div>
+											<!-- // adduserbox -->
+										</div>
+										<!-- 是新客户 结束 -->
+									</div>
+									<!-- // userinfoshow -->
+								</div>
+								<!-- // pi_contentbody -->
+								<div class="pi_footer wc_view">
+									<div class="buttonbar center">
+										<div class="button_item"><button class="btn btn_green ">保存用户信息</button></div>
+									</div>
+								</div>
+								<!-- //pi_footer -->
+							</div>
+							<!-- // paneinner_left -->
+							
+							<!-- start paneinner_left_line -->
+							<div class="paneinner_left_line wc_view"><div class="line"></div></div>
+							<!-- end paneinner_left_line -->
+							
+							<div class="paneinner_right wc_view">
+								<div class="pi_contentbody wc_view" style="bottom:44px;">
+									<div class="placeorderbox">
+										<div class="placeorder">
+											<div class="item_area">
+												<div class="title">门店</div>
+												<div class="content">
+													<div class="tab_select">
+														<li class="active"><span>国家体院馆店</span></li>
+														<li><span>高新店</span></li>
+														<li><span>高新店</span></li>
+														<li><span>高新店</span></li>
+														<li><span>高新店</span></li>
+														<li><span>高新店</span></li>
+														<li><span>高新店</span></li>
+														<li><span>高新店</span></li>
+														<li><span>高新店</span></li>
+														<li><span>高新店</span></li>
+														<li><span>高新店</span></li>
+														<li><span>高新店</span></li>
+														<li><span>高新店</span></li>
+														<li><span>高新店</span></li>
+														<li class="button js_button_004">
+															<span>更多...</span>
+														</li>
+													</div>
+												</div>
+											</div>
+											<div class="item_area">
+												<div class="title">订单金额</div>
+												<div class="content">
+													<div class="inputitem" style="width:160px;">
+										    			<input type="text" class="inputtext" placeholder="订单金额">
+										    			<div class="delete"></div>
+										    		</div>
+												</div>
+											</div>
+											<div class="item_area">
+												<div class="title">订单备注</div>
+												<div class="content">
+													<div class="inputitem">
+										    			<input type="text" class="inputtext" placeholder="订单备注">
+										    			<div class="delete"></div>
+										    		</div>
+												</div>
+											</div>
+											<div class="item_area">
+												<div class="title">收送方式</div>
+												<div class="content">
+													<div class="tab_select">
+														<a href="javascript:void(0);" class="active">上门取送</a>
+														<a href="javascript:void(0);">只取不送</a>
+														<a href="javascript:void(0);">不取只送</a>
+														<a href="javascript:void(0);">不取不送</a>
+													</div>
+												</div>
+											</div>
+											<div class="item_area">
+												<div class="title">取件时间</div>
+												<div class="content">
+													<div class="tab_select">
+														<a href="javascript:void(0);" class="active">08:00-10:00</a>
+														<a href="javascript:void(0);">10:00-12:00</a>
+														<a href="javascript:void(0);">12:00-14:00</a>
+														<a href="javascript:void(0);">14:00-16:00</a>
+														<a href="javascript:void(0);" class="off">16:00-18:00</a>
+														<a href="javascript:void(0);">16:00-18:00</a>
+														<a href="javascript:void(0);">16:00-18:00</a>
+														<a href="javascript:void(0);">16:00-18:00</a>
+														<a href="javascript:void(0);">16:00-18:00</a>
+													</div>
+												</div>
+											</div>
+											<div class="item_area">
+												<div class="title">洗衣方式</div>
+												<div class="content">
+													<div class="tab_select">
+														<a href="javascript:void(0);" class="active">件洗</a>
+														<a href="javascript:void(0);">袋洗</a>
+														<a href="javascript:void(0);">窗帘清洗</a>
+														<a href="javascript:void(0);">洗鞋</a>
+														<a href="javascript:void(0);">皮具护理</a>
+													</div>
+												</div>
+											</div>
+											<div class="item_area">
+												<div class="title">地址</div>
+												<div class="content">
+													<div class="selectitembox">
+														<ul> 
+															<li>
+																<div class="si_item">
+																	<div class="si_item_inner">
+																		<p>13699899090 章三</p>
+																		<p>北京 北京市 朝阳区 朝阳路555号朝阳路555号朝阳路555号朝阳路555号</p>
+																		<div class="icon_select"></div>
+																	</div>
+																</div>
+															</li>
+															<li>
+																<div class="si_item">
+																	<div class="si_item_inner active">
+																		<p>13699899090 章三</p>
+																		<p>北京 北京市 朝阳区 朝阳路555号</p>
+																		<div class="icon_select"></div>
+																	</div>
+																	
+																</div>
+															</li>
+															<li>
+																<div class="si_item">
+																	<div class="si_item_inner">
+																		<p>13699899090 章三</p>
+																		<p>北京 北京市 朝阳区 朝阳路555号朝阳路555号朝阳路555号朝阳路555号</p>
+																		<div class="icon_select"></div>
+																	</div>
+																</div>
+															</li>
+															<li>
+																<div class="si_item">
+																	<div class="si_item_inner">
+																		<p>13699899090 章三</p>
+																		<p>北京 北京市 朝阳区 朝阳路555号朝阳路555号朝阳路555号朝阳路555号</p>
+																		<div class="icon_select"></div>
+																	</div>
+																</div>
+															</li>
+															<li>
+																<div class="si_item">
+																	<div class="si_item_inner">
+																		<p>13699899090 章三</p>
+																		<p>北京 北京市 朝阳区 朝阳路555号朝阳路555号朝阳路555号朝阳路555号</p>
+																		<div class="icon_select"></div>
+																	</div>
+																</div>
+															</li>
+															<li class="additem">
+																<div class="si_item">
+																	<div class="si_item_inner js_button_005">
+																		添加地址
+																		<div class="icon_additem"></div>
+																	</div>
+																</div>
+															</li>
+														</ul>
+													</div>
+													<!-- //selectitembox -->
+												</div>
+											</div>
+											
+											
+										</div>
+										<div class="data_none">请先在左侧创建客户信息</div>
+									</div>
+									<!-- // placeorderbox -->
+								</div>
+								<!-- // pi_contentbody -->
+								<div class="pi_footer wc_view">
+									<div class="buttonbar center">
+										<div class="button_item"><button class="btn btn_green disable js_button_006">提交下单</button></div>
+									</div>
+								</div>
+								<!-- //pi_footer -->
+								
+							</div>
+							<!-- // paneinner_right -->
+							
+						</div>
+						<!-- // paneinner -->
+					</div>
+					<!-- // contentbody -->
+				</div>
+				<!-- end pane_right -->
+			</div>
+			<!-- end pane -->
+		</div>
+		<!-- end pane_box -->
+		
+		<!-- //列表选定 开始 -->
+		<div class="modal" id="modal_005" style="display: none;">
+		  <div class="modal_dialog_tips" id="modal_t_005">
+		    <div class="modal_content">
+		    	<div class="mc_head">
+		    		添加地址
+		    	</div>
+		    	<div class="mc_body">
+		    		<div class="controlarea">
+			    		<div class="inputtitle">所在省/市/区：</div>
+			    		<div class="selectbox">
+			    			<div class="dropdown_menu left">
+				    			<a href="javascript:;" class="dropdown_a">
+				    				<label>请选择</label>
+				    				<i class="arrow"></i>
+				    			</a>
+								<div class="dropdown_data_container" style="display: none;">
+									<div class="pointer wc_view"></div>
+								    <ul class="dropdown_data_list">
+							            <li class="dropdown_data_item ">  
+							                <a href="javascript:void(0);">北京市</a>
+							            </li>
+							            <li class="dropdown_data_item ">  
+							                <a href="javascript:void(0);">湖南省</a>
+							            </li>
+							            <li class="dropdown_data_item ">  
+							                <a href="javascript:void(0);">广东省</a>
+							            </li>
+								    </ul>
+								</div>
+							</div>
+							<div class="dropdown_menu left">
+				    			<a href="javascript:;" class="dropdown_a">
+				    				<label>请选择</label>
+				    				<i class="arrow"></i>
+				    			</a>
+								<div class="dropdown_data_container" style="display: none;">
+									<div class="pointer wc_view"></div>
+								    <ul class="dropdown_data_list">
+							            <li class="dropdown_data_item ">  
+							                <a href="javascript:void(0);">长沙市</a>
+							            </li>
+							            <li class="dropdown_data_item ">  
+							                <a href="javascript:void(0);">株洲市</a>
+							            </li>
+							            <li class="dropdown_data_item ">  
+							                <a href="javascript:void(0);">湘潭市</a>
+							            </li>
+								    </ul>
+								</div>
+							</div>
+							<div class="dropdown_menu left">
+				    			<a href="javascript:;" class="dropdown_a">
+				    				<label>请选择</label>
+				    				<i class="arrow"></i>
+				    			</a>
+								<div class="dropdown_data_container" style="display: none;">
+									<div class="pointer wc_view"></div>
+								    <ul class="dropdown_data_list">
+							            <li class="dropdown_data_item ">  
+							                <a href="javascript:void(0);">芙蓉区</a>
+							            </li>
+							            <li class="dropdown_data_item ">  
+							                <a href="javascript:void(0);">雨花区</a>
+							            </li>
+							            <li class="dropdown_data_item ">  
+							                <a href="javascript:void(0);">岳麓区</a>
+							            </li>
+								    </ul>
+								</div>
+							</div>
+			    		</div>
+		    		</div>
+		    		<div class="controlarea">
+			    		<div class="inputtitle">小区/大厦：</div>
+			    		<div class="inputitem">
+			    			<input type="text" class="inputtext" placeholder="请输入小区（大厦）名">
+			    			<div class="delete"></div>
+			    		</div>
+		    		</div>
+		    		<div class="controlarea">
+			    		<div class="inputtitle">门牌号/详细地址：</div>
+			    		<div class="inputitem">
+			    			<input type="text" class="inputtext" placeholder="请输入门牌号等详细地址">
+			    			<div class="delete"></div>
+			    		</div>
+		    		</div>
+		    		<div class="controlarea">
+			    		<div class="inputtitle">联系人姓名：</div>
+			    		<div class="inputitem">
+			    			<input type="text" class="inputtext" placeholder="请输入联系人姓名">
+			    			<div class="delete"></div>
+			    		</div>
+		    		</div>
+		    		<div class="controlarea">
+			    		<div class="inputtitle">性别：</div>
+			    		<div class="radio_warp_one">
+							<div class="radio_box">
+								<label class="lsink"><input type="radio" name="gender" value="0" checked="">
+									女士
+								</label>
+							</div>
+							<div class="radio_box">
+								<label class="lsink"><input type="radio" name="gender" value="1">
+									 男士
+								</label>
+							</div>
+						</div>
+		    		</div>
+		    		<div class="controlarea">
+			    		<div class="inputtitle">联系人电话：</div>
+			    		<div class="inputitem">
+			    			<input type="text" class="inputtext" placeholder="请输入联系人电话号码">
+			    			<div class="delete"></div>
+			    		</div>
+		    		</div>
+		    	</div>
+		    	<div class="mc_foot">
+		    		<div class="buttonbar">
+						<div class="button_item"><button class="btn btn_grey js_drop_005">取消</button></div>
+						<div class="button_item"><button class="btn btn_green js_drop_005">确定</button></div>
+					</div>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="modal_cover"></div>
+		</div>
+		<!-- //列表选定 结束 -->
+		
+		<!-- //数据提示 开始 -->
+		<div class="modal" id="modal_006" style="display: none;">
+		  <div class="modal_dialog_tips" id="modal_t_006">
+		    <div class="modal_content">
+		    	<div class="mc_head">
+		    		确认下单
+		    	</div>
+		    	<div class="mc_body">
+		    		<div class="show_info">
+		    			<dl>
+		    				<dt>客户</dt>
+		    				<dd>18674862888 张三 （75%）</dd>
+		    			</dl>
+		    			<dl>
+		    				<dt>门店</dt>
+		    				<dd><span class="color_blue">水立方店</span></dd>
+		    			</dl>
+		    			<dl>
+		    				<dt>订单金额</dt>
+		    				<dd><span class="color_blue">78.00元</span></dd>
+		    			</dl>
+		    			<dl>
+		    				<dt>订单备注</dt>
+		    				<dd>下午14:00来取。</dd>
+		    			</dl>
+		    			<dl>
+		    				<dt>收送方式</dt>
+		    				<dd><span class="color_red">上门收送</span></dd>
+		    			</dl>
+		    			<dl>
+		    				<dt>取件时间</dt>
+		    				<dd><span class="color_red">08:00-10:00</span></dd>
+		    			</dl>
+		    			<dl>
+		    				<dt>洗涤方式</dt>
+		    				<dd><span class="color_red">件洗</span></dd>
+		    			</dl>
+		    			
+		    			<dl>
+		    				<dt>地址</dt>
+		    				<dd>
+		    					<p>13699899090 章三</p>
+		    					<p>北京 北京市 朝阳区 朝阳路555号</p>
+		    				</dd>
+		    			</dl>
+		    			
+		    		</div>
+		    	</div>
+		    	<div class="mc_foot">
+		    		<div class="buttonbar">
+						<div class="button_item"><button class="btn btn_grey js_drop_006">取消</button></div>
+						<div class="button_item"><button class="btn btn_green" onclick="location.href='order_detail.html'">确认下单</button></div>
+					</div>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="modal_cover"></div>
+		</div>
+		<!-- //数据提示  结束 -->
+		
+	
+		<!-- //输入框 开始 -->
+		<div class="modal" id="modal_004" style="display: none;">
+		  <div class="modal_dialog_tips" id="modal_t_004">
+		    <div class="modal_content">
+		    	<div class="mc_head">
+		    		选择门店
+		    		<div class="close"><a href="javascript:void(0);" class="js_drop_004">关闭</a></div>
+		    	</div>
+		    	<div class="mc_body">
+	    			<div class="sbl_content">
+	    				<div class="selectedlist">
+			    			<div class="selected_item">
+								<div class="name">
+									水立方店
+								</div>
+								<div class="checked_icon"></div>
+							</div>
+							<div class="selected_item active">
+								<div class="name">
+									水立方店
+								</div>
+								<div class="checked_icon"></div>
+							</div>
+							<div class="selected_item">
+								<div class="name">
+									水立方店
+								</div>
+								<div class="checked_icon"></div>
+							</div>
+							<div class="selected_item">
+								<div class="name">
+									水立方店
+								</div>
+								<div class="checked_icon"></div>
+							</div>
+							<div class="selected_item">
+								<div class="name">
+									水立方店
+								</div>
+								<div class="checked_icon"></div>
+							</div>
+							<div class="selected_item">
+								<div class="name">
+									水立方店
+								</div>
+								<div class="checked_icon"></div>
+							</div>
+							<div class="selected_item">
+								<div class="name">
+									水立方店
+								</div>
+								<div class="checked_icon"></div>
+							</div>
+							<div class="selected_item">
+								<div class="name">
+									水立方店
+								</div>
+								<div class="checked_icon"></div>
+							</div>
+							<div class="loadingmore">正在加载更多 <img src="images/loading.gif"></div>
+							<div class="data_none">没有更多了</div>
+							<div class="loadingbox"><img src="images/loading.gif"></div>
+			    		</div>
+	    			</div>
+	    			<!-- //sbl_content -->
+		    	</div>
+		    	<div class="mc_foot">
+		    		<div class="buttonbar">
+						<div class="button_item"><button class="btn btn_grey js_drop_004">取消</button></div>
+						<div class="button_item"><button class="btn btn_blue js_drop_004">确定</button></div>
+					</div>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="modal_cover"></div>
+		</div>
+		<!-- //输入框 结束 -->
+		
+	
+		<!-- start javascript -->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/common.js"></script>
+		<!-- end javascript -->
+	</body>
+</html>

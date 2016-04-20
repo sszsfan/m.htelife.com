@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="Author" content="WeCheerful Inc.">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>打印订单</title>
+		<link rel="icon" href="images/favicon.ico">
+		<style type="text/css">
+			*{-webkit-tap-highlight-color:transparent;outline:0}
+			body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;vertical-align:baseline;}
+			body {margin:0;font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","华文细黑","STHeiti","微软雅黑","Microsoft YaHei",SimHei,sans-serif !important;color:#000;-webkit-text-size-adjust: 100% !important;background: #fff;font-weight: normal;font-size: 9px;line-height:1.2;display: block;-webkit-text-size-adjust:none }
+			table{border-collapse:collapse;border-spacing:0}
+			body,html {display: block;-webkit-text-size-adjust:none;height: 42mm; padding: 0;text-align: left;margin: 0;overflow: hidden;}
+			body {padding: 0 0 0 1mm;}
+			.container {padding:0px;margin: 0;}
+	        .page {padding:0px;margin: 0;}
+			
+			.print_order {height: 38mm;text-align: left;padding: 2mm 0 0 3mm;margin: 0;overflow: hidden;}
+			.print_order .po_top {height: 18mm;overflow: hidden;display: block;}
+			.print_order .po_bottom {height: 20mm;overflow: hidden;display: block;}
+
+			.col_box {display: block;overflow: hidden;}
+			.col_box .col_item {float: left;}
+			.col_box .col_item .title {margin-bottom: 2mm;font-size: 11px;}
+			.col_box .col_item .user {margin-top: 2mm;}
+			.col_box .col_item .text_big {font-size: 11px;}
+			.col_box .col_6 {width: 60%; }
+			.col_box .col_4 {width: 40%; }
+			.col_box .col_7 {width: 70%; }
+			.col_box .col_3 {width: 30%; }
+			.col_box .col_5 {width: 50%; }
+			
+			.qrcode {float: left;width: 18mm;height: 18mm;}
+			.qrcode img {width: 18mm;height: 18mm;}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="page">
+				<div class="print_order">
+					<div class="col_box po_top">
+						<div class="col_item col_6">
+							<div class="title">华天e生活物流单</div>
+							<div class="text_big">客户信息：13678789898 王二五</div>
+							<div class="text">客户地址：长沙市-岳麓区-岳麓区湘腾商业广场3栋-2908</div>
+							
+						</div>
+						<div class="col_item col_4">
+							<div class="qrcode"><img src="images/p_clothing_qr.png"></div>
+						</div>
+					</div>
+					
+					<div class="col_box po_bottom">
+						<div class="col_item col_5">
+							<div class="text">所属门店：国家体育馆店</div>
+							<div class="text">取件人员：李四</div>
+							<div class="text">洗涤工厂：麓谷工厂</div>
+							<div class="text">货架编号：001</div>
+							<div class="text">应付金额：158.00元 － 未付款</div>
+						</div>
+						<div class="col_item col_5">
+							<div class="text_big">D20160126000002</div>
+							<div class="text">分拣时间：2016-01-26 12:11:33</div>
+							<div class="text">衣物件数：8</div>
+							<div class="user">客户签名：</div>
+						</div>
+					</div>
+				</div>
+				<!-- //print_order -->
+			</div>
+			<!-- //page -->
+		</div>
+		<!-- //container -->
+	</body>
+</html>
