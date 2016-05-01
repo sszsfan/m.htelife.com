@@ -144,6 +144,10 @@
 									<div class="item_border"></div>
 									<div class="item_text">所有订单</div>
 								</div>
+								<div class="menu_item" onclick="location.href='order_wash_get.html'">
+									<div class="item_border"></div>
+									<div class="item_text">门店接收订单</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -339,6 +343,9 @@
 									        <th>
 										        <div>所属门店</div>
 										    </th>
+										    <th>
+										        <div>衣物</div>
+										    </th>
 										    <th class="money_inner">
 										        <div>实付金额（元）</div>
 										    </th>
@@ -353,10 +360,10 @@
 								    
 								    <tbody class="table_list_item">
 								    	<tr class="nothing_row">
-										    <td colspan="8"></td>
+										    <td colspan="9"></td>
 										</tr>
 										<tr class="header_row">
-										    <td colspan="3">
+										    <td colspan="4">
 											    <div>订单号：W20150808417210  <span class="color_grey">微信下单（件洗）</span></div><div>支付流水号号：W20150808417210</div>
 										    </td>
 										    <td colspan="5" class="text_right">
@@ -410,9 +417,15 @@
 										    	</div>
 										    </td>
 										    <td>
-										    	<div>华天e生活五一大道店</div>
+										    	<div>
+										    		<p><span>华天e生活五一大道店</span></p>
+											    	<p><span class="mark mark_black">20</span></p>
+											    	<p><a href="javascript:void(0);" class="btn_s btn_blue js_button_006 mt5">设置上架号</a></p>
+											    </div>
 										    </td>
-										    
+										    <td>
+										    	<p>29</p>
+										    </td>
 										    <td class="money_inner">
 										    	<p>500.00</p>
 										    	<p><a href="order_refund_detail.html">有退款记录</a></p>
@@ -421,11 +434,14 @@
 										    	<div class="color_green">已付款</div>
 										    </td>
 										    <td>
-										    	<div>已入库，洗涤中</div>
+										    	<div>
+											    	<p><span class="color_green">已入库，洗涤中</span></p>
+											    	<p><span class="mark mark_black">9</span></p>
+												</div>
 										    </td>
 										</tr>
 										<tr class="remark_row">
-										    <td colspan="8">
+										    <td colspan="9">
 										    	<span class="remark_user_row">用户备注：快来取衣。</span>
 										    	<span class="gegege">-</span>
 												<span class="remark_admin_row">管理备注：顾客要出差，要求尽快上门取衣。</span>
@@ -434,10 +450,10 @@
 								    </tbody>
 								    <tbody class="table_list_item">
 								    	<tr class="nothing_row">
-										    <td colspan="7"></td>
+										    <td colspan="9"></td>
 										</tr>
 										<tr class="header_row">
-										    <td colspan="3">
+										    <td colspan="4">
 											    <div>订单号：W20150808417210  <span class="color_grey">后台下单（件洗）</span></div>
 										    </td>
 										    <td colspan="5" class="text_right">
@@ -491,7 +507,9 @@
 										    <td>
 										    	<div>华天e生活五一大道店</div>
 										    </td>
-										    
+										    <td>
+										    	<p>29</p>
+										    </td>
 										    <td class="money_inner">
 										    	246.00
 										    </td>
@@ -510,10 +528,10 @@
 								    </tbody>
 								    <tbody class="table_list_item">
 								    	<tr class="nothing_row">
-										    <td colspan="8"></td>
+										    <td colspan="9"></td>
 										</tr>
 										<tr class="header_row">
-										    <td colspan="3">
+										    <td colspan="4">
 											    <div>订单号：W20150808417210  <span class="color_grey">微信下单（件洗）</span></div><div>支付流水号号：W20150808417210</div>
 										    </td>
 										    <td colspan="5" class="text_right">
@@ -568,7 +586,9 @@
 										    <td>
 										    	<div>华天e生活五一大道店</div>
 										    </td>
-										    
+										    <td>
+										    	<p>29</p>
+										    </td>
 										    <td class="money_inner">
 										    	500.00
 										    </td>
@@ -580,7 +600,7 @@
 										    </td>
 										</tr>
 										<tr class="remark_row">
-										    <td colspan="8">
+										    <td colspan="9">
 										    	<span class="remark_user_row">用户备注：快来取衣。</span>
 										    	<span class="gegege">-</span>
 												<span class="remark_admin_row">管理备注：顾客很急。</span>
@@ -742,6 +762,26 @@
 		  <div class="modal_cover"></div>
 		</div>
 		<!-- //输入框 结束 -->
+		
+		
+		<!-- //提示 开始 -->
+		<div class="modal" id="modal_006" style="display: none;">
+		  <div class="modal_dialog_tips" id="modal_t_006">
+		    <div class="modal_content">
+		    	<div class="mc_body center">
+		    		<div class="p40_40 color_green">上架号：<span class="fsize30 bold">20</span></div>
+		    	</div>
+		    	<div class="mc_foot">
+		    		<div class="buttonbar center">
+						<div class="button_item"><button class="btn btn_grey js_drop_006">暂不上架</button></div>
+						<div class="button_item"><button class="btn btn_green js_drop_006">已上架</button></div>
+					</div>
+		    	</div>
+		    </div>
+		  </div>
+		  <div class="modal_cover"></div>
+		</div>
+		<!-- //提示 结束 -->
 	
 		<!-- start javascript -->
 		<script src="js/jquery-1.11.3.min.js"></script>
