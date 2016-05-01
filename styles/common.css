@@ -1165,7 +1165,6 @@ textarea[readonly] {
 .pane_right {top:0px;left:581px;right: 0;bottom:0;cursor: auto;min-width: 368px;}
 .pane_right .toolbar {left: 0px;top: 0px;right: 0px;height: 44px;background-color: #082b4f;border-bottom: 1px solid #000;cursor: auto;z-index:2;}
 
-.pane_right .contentbody {left: 0px;top: 44px;right: 0px;bottom:0px;background-color: #e7e8eb;border-left:none;cursor: auto;overflow: auto;}
 
 .pane_right .contentbody {left: 0px;top: 44px;right: 0px;bottom:0px;background-color: #ffffff;border-left:none;cursor: auto;overflow: auto;}
 
