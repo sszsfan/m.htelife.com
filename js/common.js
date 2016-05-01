@@ -218,4 +218,150 @@ $(function(){
 	    setTimeout("$('#js_popover_tips_001').fadeOut()",1600);
 	  });
 	});
+/*	
+	//滑动开关
+	$(document).ready(function(){
+		function switchBox(parentbox,childbox1,childbox2){
+			parentbox.bind("click",function(){
+				if(parentbox.hasClass("parentbox2")){
+					parentbox.removeClass("parentbox2");
+					childbox1.removeClass("childbox1_2");
+					childbox2.removeClass("childbox2_2");
+				}else{
+					parentbox.addClass("parentbox2");
+					childbox1.addClass("childbox1_2");
+					childbox2.addClass("childbox2_2");						
+				}
+			});	
+		}
+		var num=$(".parentbox1").length;
+		for(var j=0; j<num; j++){
+			var pbox = $(".parentbox1:eq("+j+")");
+			var box1 = $(".childbox1_1:eq("+j+")");
+			var box2 = $(".childbox2_1:eq("+j+")");
+			switchBox(pbox,box1,box2);
+		}		
+	});
+*/
+	$(document).ready(function(){
+		//日期动态图
+		function TimeLine(startTime,endTime){
+			//起始时间取小时、分钟字符串
+			var startHour = parseInt(startTime.slice(0,2));
+			var startMinute = parseInt(startTime.slice(3,5));
+			//起始时间总分钟数
+			var start_minutes = startHour*60 + startMinute;
+
+			//结束时间取小时、分钟字符串
+			var endHour = parseInt(endTime.slice(0,2));
+			var endMinute = parseInt(endTime.slice(3,5));
+			//截止时间总分钟数
+			var end_minutes = endHour*60 + endMinute;
+			
+			//当前时间
+			var today = new Date();
+			var nowHour = today.getHours();
+			var nowMinute = today.getMinutes();
+			//当前时间总分钟数
+			var now_minutes = nowHour*60 + nowMinute;
+
+			//如果时钟、分钟数小于10，在前面加0
+			var nowHour2 = nowHour;
+			if(nowHour<10){
+				nowHour2 = "0" + nowHour2;
+			}
+			var nowMinute2 = nowMinute;
+			if(nowMinute2<10){
+				nowMinute2 = "0" + nowMinute2;
+			}
+
+			//添加右边时间列表
+			var num = (end_minutes - start_minutes)/30;
+			var showHour = startHour;
+			var showMinute = startMinute;
+			
+			for(var i=0; i<=num; i++){
+				showMinute = startMinute + 30*(i%2);
+				if(showMinute==60){
+					showMinute = 0;
+					showHour = showHour + 1;
+				}
+				var showHour2 = showHour;
+				var showMinute2 = showMinute;
+				if(showHour2<10){
+					showHour2 = "0" + showHour2;
+				}
+				if(showMinute2<10){
+					showMinute2 = "0" + showMinute2;
+				}
+				$(".time_num").append("<p>"+showHour2+":"+showMinute2+"</p>");	
+				if(i<num){
+					$(".form_chart").append("<div class=\"top_line\">"+"<input  type=\"text\" />"+"</div>");	
+				}
+			}
+
+			//判断当前时间是否在起止时间范围内
+			if(now_minutes > start_minutes &&now_minutes < end_minutes){
+				$(".dynamic_line").removeClass("hidden").css({"top":now_minutes-start_minutes});
+				$(".time_now").removeClass("hidden").css({"top":now_minutes-start_minutes}).html(nowHour2+":"+nowMinute2);
+			}else{
+				$(".dynamic_line").addClass("hidden");
+				$(".time_now").addClass("hidden");
+			}
+			
+			$(":input").change(function(){
+				$(this).addClass("input_bgcolor_red");
+				if($(this).val()==""){
+					$(this).removeClass("input_bgcolor_red");
+				}
+			});
+		}	
+		TimeLine("09:30:00","18:30:00");
+	});
+
+		//滑动开关
+	$(document).ready(function(){
+		function switchBox(parentbox,childbox1,childbox2){
+			parentbox.bind("click",function(){
+				if(parentbox.hasClass("parentbox2")){
+					parentbox.removeClass("parentbox2");
+					childbox1.removeClass("childbox1_2");
+					childbox2.removeClass("childbox2_2");
+				}else{
+					parentbox.addClass("parentbox2");
+					childbox1.addClass("childbox1_2");
+					childbox2.addClass("childbox2_2");						
+				}
+			});	
+		}
+		var num=$(".parentbox1").length;
+		for(var j=0; j<num; j++){
+			var pbox = $(".parentbox1:eq("+j+")");
+			var box1 = $(".childbox1_1:eq("+j+")");
+			var box2 = $(".childbox2_1:eq("+j+")");
+			switchBox(pbox,box1,box2);
+		}		
+	});
+
+
+/*	
+	function slideSwitch(elementid){
+		var con = $("<div class=\"parentbox1\" id="+elementid+"><div class=\"childbox1_1\"></div><div class=\"childbox2_1\"></div></div>");
+		$("#"+elementid).append(con);
+		$("#"+elementid).children(".parentbox1").bind("click",function(){
+			if($("#"+elementid).children(".parentbox1").hasClass("parentbox2")){
+				$("#"+elementid).children(".parentbox1").removeClass("parentbox2");
+				$("#"+elementid).children(".parentbox1").children(".childbox1_1").removeClass("childbox1_2");
+				$("#"+elementid).children(".parentbox1").children(".childbox2_1").removeClass("childbox2_2");	
+			}else{
+				$("#"+elementid).children(".parentbox1").addClass("parentbox2");
+				$("#"+elementid).children(".parentbox1").children(".childbox1_1").addClass("childbox1_2");
+				$("#"+elementid).children(".parentbox1").children(".childbox2_1").addClass("childbox2_2");
+			}
+			
+		});
+	}
+	slideSwitch("insertBtn");
+*/		
+
 })();

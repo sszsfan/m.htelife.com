@@ -64,6 +64,7 @@ input:-webkit-autofill {-webkit-box-shadow : 0 0 0px 1000px #fff inset ;}
 .p10 {padding: 10px;}
 .p20 {padding:5px 20px;}
 .p200 {padding:10px 200px;}
+.mg10{margin:0 10px;}
 .color_blue {color: #167efb;}
 .color_red {color: #ff0000;}
 a.color_red:hover {color: #ff0000;}
@@ -72,6 +73,7 @@ a.color_black:hover {color: #000;}
 .color_green {color: #3dc700;}
 .color_yellow {color: #ff9933;}
 .color_grey {color: #999;}
+.color_orange{color:#f5a623;}
 .bgcolor_blue {background-color: #72c6f7;}
 .bgcolor_red {background-color: #ff0000;}
 .bgcolor_green {background-color: #60d295;}
@@ -107,7 +109,7 @@ img.img100 {width: 100px;height: 100px;}
 img.img120 {width: 120px;height: 120px;}
 img.img60 {width: 60px;height: 60px;}
 img.border_radius_p50 {border-radius: 50%;}
-
+.top27{position:relative; top:-27px;}
 
 .delete {width: 15px;height: 15px;content: '\20';display: block;background: url("../images/icon_global.png");background-size: 240px 600px;background-position: 0px -20px;cursor: pointer;z-index: 1;position: absolute; top:50%;margin-top: -7.5px;right: 10px;}
 
@@ -148,6 +150,85 @@ textarea[readonly] {
 .select_bigitem .sbi_item .sbi_item_inner.active .icon_select {width: 20px;height: 20px;display: block;content: '\20';background-image: url("../images/icon_global.png");background-size: 240px 600px;background-position: -60px 0px;position: absolute;top:50%;margin-top: -10px;right:20px;}
 /* 通用大的选项 结束 */
 
+/* 通用滑动开关 开始 */
+.parentbox1{
+	position:relative;
+	width:56px;
+	height:29px;
+	border:1px solid #ff0000;
+	border-radius:14px;	
+	background-color:#ff0000;
+	-webkit-transition:all .3s linear;
+	transition:all .3s linear;
+}
+.parentbox2{
+	position:relative;
+	width:56px;
+	height:29px;
+	border:1px solid #04BE02;
+	border-radius:14px;	
+	background-color:#04BE02;
+	-webkit-transition:all .3s linear;
+	transition:all .3s linear;
+}
+.childbox1_1{
+	position:absolute;
+	top:0;
+	left:0;
+	width:54px;
+	height:27px;
+	border-radius:13px;
+	border:1px solid #ff0000;
+	background-color:#ff0000;
+	-webkit-transition:all .3s linear;
+	transition:all .3s linear;
+}
+.childbox1_2{
+	position:absolute;
+	top:15px;
+	left:28px;
+	width:0;
+	height:0;
+	border-radius:13px;
+	border:1px solid #04BE02;
+	background-color:#04BE02;
+	-webkit-transition:all .3s linear;
+	transition:all .3s linear;
+}
+.childbox2_1{
+	position:absolute;
+	top:0;
+	left:0;
+	width:27px;
+	height:27px;
+	border:1px solid #dfdfdf;
+	border-radius:13px;
+	background-color:#fff;
+	-webkit-transition:all .3s linear;
+	transition:all .3s linear;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+.childbox2_2{
+	position:absolute;
+	top:0;
+	left:27px;
+	width:27px;
+	height:27px;
+	border:1px solid #dfdfdf;
+	border-radius:13px;
+	background-color:#fff;
+	-webkit-transition:all .3s linear;
+	transition:all .3s linear;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+/* 通用滑动开关 结束 */
+
+/* 通用搜索框search_bar 开始 */
+.search_bar{position:relative;border:1px solid #e7e7e9; height:29px; width:180px; display:inline-block; margin-left:20px;}
+.search_bar .search_input{margin:0; padding:5px; border:none;height:19px; width:135px; font-size: 12px; line-height: 19px;}
+.search_bar .search_btn{position:absolute; top:0; right:0;width:35px;height:29px;border:none; background-color: #f4f5f9;}
+.search_bar .search_icon{position:absolute; top:3px; right:6px; width: 18px;height: 18px;background-size: 75.27px 581.72px;background-image: url('../images/icon.png');background-position: -55.63px -185.7px;background-repeat: no-repeat;}
+/* 通用搜索框search_bar 结束 */
 
 .reportbox {border:1px solid #e7e7e7;margin-bottom: 10px;overflow: hidden;display: block;}
 .reportbox .rb_inner {padding:20px;}
@@ -1070,14 +1151,14 @@ textarea[readonly] {
 
 /* pane_center */
 .pane_center {left: 200px;top: 0px;bottom: 0px;width: 380px;cursor: auto;}
-.pane_center .toolbar {left: 0px;top: 0px;right: 0px;height: 44px;background-color: #082b4f;border-bottom: 1px solid #000;cursor: auto;z-index:2;}
+.pane_center .toolbar {left: 0px;top: 0px;right: 0px;height: 44px;background-color: #f9f9f9;border-bottom: 1px solid #a3c3db;cursor: auto;z-index:2;}
 .pane_center .contenttop {left: 0px;top: 44px;right: 0px;background-color: #f9f9f9;border-left:none;cursor: auto;}
 .pane_center .contentbody {left: 0px;top: 109px;right: 0px;bottom:44px;background-color: #f9f9f9;border-left:none;cursor: auto;overflow: auto;}
 .pane_center .footer {left: 0px; bottom: 0px;right: 0px;height: 44px;background-color: #ddeefb;border-left:none;cursor: auto;}
 
 /* pane_center_line */
 .pane_center_line {left: 578px;top: 0px;bottom: 0px;cursor: ew-resize;width: 5px;  z-index: 99;}
-.pane_center_line .line {background-color: #26517d;left: 2px;position: absolute;width: 1px;top: 0px;bottom: 0px;}
+.pane_center_line .line {background-color: #ddd;left: 2px;position: absolute;width: 1px;top: 0px;bottom: 0px;}
 
 
 /* pane_right */
@@ -1311,13 +1392,12 @@ textarea[readonly] {
 /* pane_center start */
 .pane_center .toolbar .search {top:7px;left: 2px;right: 2px;height: 31px;}
 .pane_center .toolbar .search .inputinner {left: 0px;top:0px;right:100px;height: 31px;}
-.pane_center .toolbar .search .inputinner .icon_search {left: 10px;top:3px;width: 0px;height: 22px;background-size: 92px 711px;background-image: url('../images/icon.png');background-position: -68px -227px;background-repeat: no-repeat;}
-.pane_center .toolbar .search .inputinner .inputtext {top:0px;left: 5px;bottom:0px;right: 0px;width: 100%;height: 31px;line-height: 31px;background: none;border: none;font-size: 18px;outline: none;background: transparent;-webkit-appearance: none;color: #fff;}
-.pane_center .toolbar .search .inputinner .inputtext::-webkit-input-placeholder {color: rgba(255,255,255,0.3);}
+.pane_center .toolbar .search .inputinner .icon_search {left: 10px;top:3px;width: 22px;height: 22px;background-size: 92px 711px;background-image: url('../images/icon.png');background-position: -68px -227px;background-repeat: no-repeat;}
+.pane_center .toolbar .search .inputinner .inputtext {top:0px;left: 36px;bottom:0px;right: 0px;width: 100%;height: 31px;line-height: 31px;background: none;border: none;font-size: 18px;outline: none;background: transparent;-webkit-appearance: none;color: #333333;}
 .pane_center .toolbar .search .inputinner .delete {right: -30px;}
 
 .pane_center .toolbar .search .buttoninner {right:0px;top:0px;width: 60px;height: 31px;}
-.pane_center .toolbar .search .buttoninner .button {width: 60px;height: 31px;top:0px;right: 0px;line-height: 31px;background: none;-webkit-appearance: none;color:#167efb;font-size: 18px;cursor: pointer;border-left: 1px solid rgba(255,255,255,0.3);}
+.pane_center .toolbar .search .buttoninner .button {width: 60px;height: 31px;top:0px;right: 0px;line-height: 31px;background: none;-webkit-appearance: none;color:#167efb;font-size: 18px;cursor: pointer;border-left: 1px solid #ddd;}
 
 /* pane_center 》时间段筛选 开始 */
 .pane_center .contenttop .selectbar {display: block;border-bottom: 1px solid #e7e7e7;padding: 5px 10px;height:53px;box-shadow: 0px 1px 0px #fff;}
@@ -1401,7 +1481,7 @@ textarea[readonly] {
 
 .pane_right .toolbar .wc_controls .selectnav_son .pointer {left: 50%;margin-left: -16px;top: -15px;background-size: 162px 198px;background-image: url('../images/icon_allnav.png');background-position: -128px -167px;background-repeat: no-repeat;position: absolute;width: 33px;height: 15px;transform: rotate(180deg);-ms-transform: rotate(180deg);-webkit-transform: rotate(180deg);-moz-transform: rotate(180deg);z-index: 20002;}
 
-.pane_right .toolbar .t_menu_normal {left: 20px;top:8px;cursor: pointer;height: 25px;line-height: 25px; display: block;overflow: hidden;color: #fff;}
+.pane_right .toolbar .t_menu_normal {left: 20px;top:8px;cursor: pointer;height: 25px;line-height: 25px; display: block;overflow: hidden;}
 .pane_right .toolbar .t_menu_normal .t_menu_item {height: 25px;line-height: 25px; padding:0;margin-right: 10px;float: left;}
 .pane_right .toolbar .t_menu_normal .t_menu_item a{height: 25px;line-height: 25px;}
 
@@ -2108,7 +2188,7 @@ body.bg_yellow_toolbar .pane_right .toolbar {background: #ffba00;}
 
 
 /* bg_black start */
-body.bg_black_toolbar .pane_right .toolbar {background: #082b4f;border-bottom: 1px solid #000;}
+body.bg_black_toolbar .pane_right .toolbar {background: #333;border-bottom: 1px solid #000;}
 body.bg_black_toolbar .pane_right .toolbar .wc_controls .logo {background-image: url("../images/logo.png")}
 body.bg_black_toolbar .pane_right .contentbody.bg_grey_m {background-color: #e4e4e4;}
 
@@ -2118,6 +2198,83 @@ body.bg_black_toolbar .pane_right .toolbar .wc_controls .nav_title {color:#fff;}
 body.bg_black_toolbar .pane_right .toolbar .wc_controls .icon_down {background-size: 92px 400px;background-image: url('../images/icon_all.png');background-position: 0px -135px;}
 /* bg_black end */
 
+/* 家政工作时间 开始 */
+.start_end_time{padding-left:20px;}
+.pane_right .contentbody.work_time{top:136px; margin:0 20px; border:1px solid #d2d2d2;}
+.date_today {height:40px; line-height: 40px; font-size: 30px; margin-top:15px; margin-left: 50px;}
+.time_chart{width:50%; height:100%;}
+.time_date{width:50%; height: 100%; background-color: #f4f5f9;}
+
+.dynamic_chart{ position:relative; overflow: hidden; padding-left:10px; }
+.time_now{position:absolute; top:0; left:10px;width:30px;line-height:30px; color:red;}
+.form_chart{float:left;position:relative; width:70%; margin:15px 10px 15px 40px;}
+.form_chart .dynamic_line{position:absolute; top:0; width:100%;height:0; border-top:1px solid red; z-index:5;}
+.form_chart .dynamic_line i{position:absolute; width:8px; height:8px;border:1px solid #fff; border-radius: 50%; background-color:red; left:-5px; top:-5px;}
+.form_chart div{height:30px; margin:0; padding:0;}
+.form_chart input{display:block; height:18px; padding:5px 0 5px 15px; margin:0; border:none; width:80%; background-color:#fff; color:red; border-left: 1px solid #fff;}
+.form_chart input:focus{border-color: red;}
+.form_chart input.input_bgcolor_red{background-color:#fdd3d3; border-color: red; }
+.form_chart input.input_bgcolor_blue{background-color: #cce4ff; border-color:blue; color:blue;}
+
+.time_num {float:left;}
+.time_num p{height:30px; line-height: 30px; padding:0; margin:0; border:0;}
+.top_line, .bottom_line{position:relative;}
+.top_line:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    width:100%;
+    height:1px;
+    border-top:1px solid #d9d9d9;
+    transform: scaleY(.5);
+    transform-origin: 0 -100%;
+    -webkit-transform-origin: 0 -100%;
+}
+.bottom_line:after{
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    width:100%;
+    height:1px;
+    border-top:1px solid #d9d9d9;
+    transform: scaleY(.5);
+    transform-origin: 0 100%;
+    -webkit-transform-origin: 0 100%;
+}
+.hidden{display:none;}
+/* 家政工作时间 结束 */
+/* 家政通知 开始*/
+.notice_num {border:1px solid #e5e5e5;width:100%; line-height: 40px; text-align: center; font-size: 20px; background-color:#f5fbff;}
+.notice_input{display:block; height:40px; width:100%; line-height: 30px; font-size: 18px; text-indent: 20px; border:1px solid #e5e5e5; margin:10px auto; padding:0;}
+.notice_textarea{width:100%; min-height: 500px; border:1px solid #e5e5e5; padding:0; line-height: 30px; font-size: 18px;}
+.bottom_nav{position:fixed;bottom:0; right:0;left:200px; padding:5px 0; text-align:center; background-color:#f5fbff; border-top:1px solid #000;}
+.bottom_nav a{display: inline-block; margin:0 20px; padding:2px 30px;}
+/* 家政通知 结束*/
+/* 家政订单管理 开始 */
+.row_box strong{font-weight: 500;}
+.order_detail_info{border:1px solid #e7e7eb; overflow: hidden; position: relative;}
+.center_line{position:absolute;top:0; bottom:0; left:370px; width:0; border-left:1px solid #e7e7eb; }
+.order_pay_info{width:330px; padding:10px 20px;}
+.order_logistics_info{margin-left:371px;padding:20px; }
+.order_logistics_info p{font-size: 12px; line-height: 20px;}
+.order_logistics_info .order_logistics_list{overflow: hidden;}
+.left140{margin-left:140px;}
+.not_pay{border:1px solid #f52323; margin:10px auto;}
+.not_pay .btn_not_pay{background-color: #fdd3d3; height:60px; line-height: 60px; border-bottom:1px solid #f52323; color: #f52323; font-weight: 500; font-size: 25px; text-align: center;}
+.not_pay .not_pay_content{text-align: center;margin:10px;}
+.not_pay .not_pay_content p{font-size: 16px; line-height: 30px; height:30px;}
+.not_pay .not_pay_content button{padding:0 25px; height:30px; line-height:30px; font-size:14px; margin-top:10px;}
+.paid{border:1px solid #3dc700; margin:10px auto;}
+.paid .btn_paid{background-color: #3dc700; height:60px; line-height: 60px; border-bottom:1px solid #3dc700; color: #fff; font-weight: 500; font-size: 25px; text-align: center;}
+.paid .paid_content{text-align: left;margin:10px; line-height: 20px;}
+.remark{margin:10px auto; line-height: 20px;}
+.remark .change{margin:10px auto; display:block;}
+
+/* 家政订单管理 结束 */
 
 /* ----- modal start ----- */
 /* ----- modal start ----- */
@@ -2223,12 +2380,13 @@ body.bg_black_toolbar .pane_right .toolbar .wc_controls .icon_down {background-s
 /*  skin 开始 */
 
 /*  skin_grey 开始 */
+.skin_grey .pane_left .toolbar {background: #e4e6e8;}
 .skin_grey .pane_left .contentbody {background: #e4e6e8;}
 .skin_grey .pane_left .contentbody .l_content .memu .menu_item.active .item_text {color:#000;}
 .skin_grey .pane_left .contentbody .l_content .memu .menu_item .item_border {border-bottom: 1px solid #d4d4d4;box-shadow: 0px 1px 0px #ebecee;}
 .skin_grey .pane_left .contentbody .l_content .memu .menu_item.active .item_border {background-color: #d6d8db;border-top: 1px solid #c5c5c5;border-bottom: 1px solid #c5c5c5;}
 .skin_grey .pane_left .footer .l_footer {background: #e4e6e8;border-top: 1px solid #c2c4c5;}
-
+.skin_grey .pane_left_line .line {background-color: #c2c4c5;}
 /*  skin_grey 结束 */
 
 /*  skin_red 开始 */
