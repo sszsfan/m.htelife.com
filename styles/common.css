@@ -1121,7 +1121,7 @@ textarea[readonly] {
 .tabmenu {position: relative;height: 30px;}
 .tabmenu ul {zoom: 1;margin-left: 1px;float: left;}
 .tabmenu ul li {float: left;margin-left: -1px;}
-.tabmenu ul li a {display: inline-block;padding: 0 12px;line-height: 29px;color: #167efb;border: 1px solid #167efb;background: #fff;min-width: 80px;text-align: center;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+.tabmenu ul li a {display: inline-block;padding: 0 8px;line-height: 29px;color: #167efb;border: 1px solid #167efb;background: #fff;min-width: 70px;text-align: center;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
 .tabmenu ul li a:hover {text-decoration: none;}
 .tabmenu ul li.active a,.tabbar ul li a.active {background: #167efb;color:#fff;}
 .tabmenu li.selectdate {position: relative;}
