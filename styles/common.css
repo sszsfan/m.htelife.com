@@ -228,7 +228,7 @@ textarea[readonly] {
 .search_bar{position:relative;border:1px solid #e7e7e9; height:29px; width:180px; display:inline-block; margin-left:20px;}
 .search_bar .search_input{margin:0; padding:5px; border:none;height:19px; width:135px; font-size: 12px; line-height: 19px;}
 .search_bar .search_btn{position:absolute; top:0; right:0;width:35px;height:29px;border:none; background-color: #f4f5f9;}
-.search_bar .search_icon{position:absolute; top:3px; right:6px; width: 18px;height: 18px;background-size: 75.27px 581.72px;background-image: url('../images/icon.png');background-position: -55.63px -185.7px;background-repeat: no-repeat;}
+.search_bar .search_icon{position:absolute; top:4px; right:6px; width: 20px;height: 20px;background-size: 20px 20px;background-image: url('../images/icon_search.png');background-position: 0 0;background-repeat: no-repeat;}
 /* 通用搜索框search_bar 结束 */
 
 .reportbox {border:1px solid #e7e7e7;margin-bottom: 10px;overflow: hidden;display: block;}

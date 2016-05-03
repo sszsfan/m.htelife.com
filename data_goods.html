@@ -286,6 +286,8 @@
 									</div>
 								</div>
 							</div>
+
+
 							<!-- //tablebox -->
 							<div class="data_none">暂无数据</div>
 							<div class="loadingbox"><img src="images/loading.gif"></div>
@@ -309,6 +311,7 @@
 		    	<div class="mc_body">
 		    		<div class="main_bd">
 		    			<div class="loadingbox"><img src="images/loading.gif"></div>
+		    			<div id="container" style="min-width: 500px; height: 400px; max-width: 500px; margin: 0 auto"></div>
 		    		</div>
 		    	</div>
 		    </div>
@@ -316,10 +319,73 @@
 		  <div class="modal_cover"></div>
 		</div>
 		<!-- //弹出框  结束 -->
+
 	
 		<!-- start javascript -->
 		<script src="js/jquery-1.11.3.min.js"></script>
 		<script src="js/common.js"></script>
+		<!-- 饼状图 -->
+		<style type="text/css">
+			${demo.css}
+
+		</style>
+		<script type="text/javascript">
+			$(function () {
+			    $('#container').highcharts({
+			        chart: {
+			            plotBackgroundColor: null,
+			            plotBorderWidth: null,
+			            plotShadow: false,
+			            type: 'pie'
+			        },
+			        title: {
+			            text: '衬衫共398件'
+			        },
+			        tooltip: {
+			            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+			        },
+			        plotOptions: {
+			            pie: {
+			                allowPointSelect: true,
+			                cursor: 'pointer',
+			                dataLabels: {
+			                    enabled: true,
+			                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+			                    style: {
+			                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+			                    }
+			                }
+			            }
+			        },
+			        series: [{
+			            name: '衬衫占比',
+			            colorByPoint: true,
+			            data: [{
+			                name: '一号门店',
+			                y: 50
+			            }, {
+			                name: '二号门店',
+			                y: 20,
+			                //sliced: true,
+			                //selected: true
+			            }, {
+			                name: '三号门店',
+			                y: 18
+			            }, {
+			                name: '四号门店',
+			                y: 2
+			            }, {
+			                name: '五号门店',
+			                y: 9
+			            }, {
+			                name: '六号门店',
+			                y: 1
+			            }]
+			        }]
+			    });
+			});
+		</script>		
+		<script src="../m.htelife.com/js/highcharts.js"></script>
 		<!-- end javascript -->
 	</body>
 </html>
