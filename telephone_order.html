@@ -10,7 +10,7 @@
 		<meta content="telephone=no" name="format-detection">
 		<meta content="email=no" name="format-detection">
 		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<title>下单洗衣</title>
+		<title>人工下单</title>
 		<link rel="icon" href="images/favicon.ico">
 		<link href="styles/common.css" rel="stylesheet" type="text/css">
 	</head>
@@ -20,10 +20,10 @@
 			<!-- start pane -->
 			<div class="pane wc_view pane_row_1">	
 				<!-- start pane_right -->
-				<div class="pane_right wc_view">
+				<div class="pane_right wc_view ">
 					<div class="toolbar wc_view selectno">
 						<div class="wc_controls wc_view selectno" id="js_openallnav">
-							<div class="nav_title">下单洗衣</div>
+							<div class="nav_title">人工下单</div>
 							<div class="logo"></div>
 							<div class="icon_down"></div>
 						</div>
@@ -257,10 +257,21 @@
 							<div class="paneinner_left_line wc_view"><div class="line"></div></div>
 							<!-- end paneinner_left_line -->
 							
-							<div class="paneinner_right wc_view">
-								<div class="pi_contentbody wc_view" style="bottom:44px;">
-									<div class="placeorderbox">
-										<div class="placeorder">
+							<div class="paneinner_right wc_view have_toolbar have_footer">
+								<div class="pi_toolbar ">
+									<div class="wh_tab">
+										<p class="js_wh_tab active">洗涤下单</p>
+										<p class="js_wh_tab">家政下单</p>
+									</div>
+								</div>
+								<!-- // pi_toolbar -->
+								<div class="pi_contentbody wc_view">
+									<!-- <div class="wh_tab">
+										<p class="active">洗涤下单</p>
+										<p>家政下单</p>
+									</div> -->
+									<div class="js_wh_content active">
+										<div class="placeorder">	
 											<div class="item_area">
 												<div class="title">门店</div>
 												<div class="content">
@@ -317,6 +328,15 @@
 											<div class="item_area">
 												<div class="title">取件时间</div>
 												<div class="content">
+													<div class="tab_select2">
+														<a href="javascript:void(0);" class="active first">05-10</a>
+														<a href="javascript:void(0);">05-11</a>
+														<a href="javascript:void(0);">05-12</a>
+														<a href="javascript:void(0);">05-13</a>
+														<a href="javascript:void(0);" class="last">05-14</a>
+													</div>
+												</div>
+												<div class="content">
 													<div class="tab_select">
 														<a href="javascript:void(0);" class="active">08:00-10:00</a>
 														<a href="javascript:void(0);">10:00-12:00</a>
@@ -329,6 +349,7 @@
 														<a href="javascript:void(0);">16:00-18:00</a>
 													</div>
 												</div>
+
 											</div>
 											<div class="item_area">
 												<div class="title">洗衣方式</div>
@@ -342,6 +363,133 @@
 													</div>
 												</div>
 											</div>
+											<div class="item_area">
+												<div class="title">地址</div>
+												<div class="content">
+													<div class="selectitembox">
+														<ul> 
+															<li>
+																<div class="si_item">
+																	<div class="si_item_inner">
+																		<p>13699899090 章三</p>
+																		<p>北京 北京市 朝阳区 朝阳路555号朝阳路555号朝阳路555号朝阳路555号</p>
+																		<div class="icon_select"></div>
+																	</div>
+																</div>
+															</li>
+															<li>
+																<div class="si_item">
+																	<div class="si_item_inner active">
+																		<p>13699899090 章三</p>
+																		<p>北京 北京市 朝阳区 朝阳路555号</p>
+																		<div class="icon_select"></div>
+																	</div>
+																	
+																</div>
+															</li>
+															<li>
+																<div class="si_item">
+																	<div class="si_item_inner">
+																		<p>13699899090 章三</p>
+																		<p>北京 北京市 朝阳区 朝阳路555号朝阳路555号朝阳路555号朝阳路555号</p>
+																		<div class="icon_select"></div>
+																	</div>
+																</div>
+															</li>
+															<li>
+																<div class="si_item">
+																	<div class="si_item_inner">
+																		<p>13699899090 章三</p>
+																		<p>北京 北京市 朝阳区 朝阳路555号朝阳路555号朝阳路555号朝阳路555号</p>
+																		<div class="icon_select"></div>
+																	</div>
+																</div>
+															</li>
+															<li>
+																<div class="si_item">
+																	<div class="si_item_inner">
+																		<p>13699899090 章三</p>
+																		<p>北京 北京市 朝阳区 朝阳路555号朝阳路555号朝阳路555号朝阳路555号</p>
+																		<div class="icon_select"></div>
+																	</div>
+																</div>
+															</li>
+															<li class="additem">
+																<div class="si_item">
+																	<div class="si_item_inner js_button_005">
+																		添加地址
+																		<div class="icon_additem"></div>
+																	</div>
+																</div>
+															</li>
+														</ul>
+													</div>
+													<!-- //selectitembox -->
+												</div>
+											</div>
+											
+											
+										</div>
+										<div class="data_none">请先在左侧创建客户信息</div>
+									</div>
+
+									<div class="js_wh_content" style="display:none;">
+										<div class="placeorder">	
+											<div class="item_area">
+												<div class="title">服务类型</div>
+												<div class="content">
+													<div class="tab_select js_h_tab">
+														<li data-price="50" data-unit="小时" class="active"><span>日常保洁</span></li>
+														<li data-price="8" data-unit="平方米"><span>新房开荒</span></li>
+														<li data-price="8" data-unit="平方米"><span>擦玻璃</span></li>
+													</div>
+												</div>
+											</div>
+											<div class="item_area">
+												<div class="title">服务信息</div>
+												<div class="content">
+													<div class="inputitem" style="width:80px;">
+										    			<input class="inputtext js_wash_value" maxLength="6" />
+										    			<div class="delete"></div>
+										    		</div>
+												</div>
+												<p class="count_unit js_count_unit">小时</p>
+												<span class="js_countunit_tip countunit_tip color_red" style="display:none;">&nbsp;&nbsp;&nbsp;&nbsp;*请输入数字</span>
+											</div>
+											<div class="item_area">
+												<div class="title">合计</div>
+												<div class="content">
+													<p class="total_momey js_total_money"><span class="js_count">0</span>&nbsp;小时&nbsp;×&nbsp;<span class="js_unitprice">50</span>&nbsp;<span class="js_unit">元/小时</span>&nbsp;=&nbsp;<span class="js_totalprice  color_red fsize16">0</span>&nbsp;元</p>
+												</div>
+												<input id="js_hidden" type="hidden" />
+											</div>
+											<div class="item_area">
+												<div class="title">服务时间</div>
+												<div class="content">
+													<div class="tab_select2">
+														<a href="javascript:void(0);" class="active first">05-10</a>
+														<a href="javascript:void(0);">05-11</a>
+														<a href="javascript:void(0);">05-12</a>
+														<a href="javascript:void(0);">05-13</a>
+														<a href="javascript:void(0);" class="last">05-14</a>
+													</div>
+												</div>
+												<div class="content">
+													<div class="tab_select">
+														<a href="javascript:void(0);" class="active">08:00-10:00</a>
+														<a href="javascript:void(0);">10:00-12:00</a>
+														<a href="javascript:void(0);">12:00-14:00</a>
+														<a href="javascript:void(0);">14:00-16:00</a>
+														<a href="javascript:void(0);" class="off">16:00-18:00</a>
+														<a href="javascript:void(0);">16:00-18:00</a>
+														<a href="javascript:void(0);">16:00-18:00</a>
+														<a href="javascript:void(0);">16:00-18:00</a>
+														<a href="javascript:void(0);">16:00-18:00</a>
+													</div>
+												</div>
+
+											</div>
+											
 											<div class="item_area">
 												<div class="title">地址</div>
 												<div class="content">

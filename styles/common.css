@@ -224,6 +224,7 @@ textarea[readonly] {
 }
 /* 通用滑动开关 结束 */
 
+
 /* 通用搜索框search_bar 开始 */
 .search_bar{position:relative;border:1px solid #e7e7e9; height:29px; width:180px; display:inline-block; margin-left:20px;}
 .search_bar .search_input{margin:0; padding:5px; border:none;height:19px; width:135px; font-size: 12px; line-height: 19px;}
@@ -305,6 +306,12 @@ textarea[readonly] {
 .imgpreview.center .imgpreview_inner .img_have {margin: 0 auto;}
 .imgpreview .imgpreview_inner .img_have img {width: 140px;height: 140px;}
 /* 通用图片预览 结束 */
+
+/* 通用切换栏 开始 */
+.wh_tab{overflow:hidden; text-align: center; height:40px; line-height: 40px;font-size: 14px; border-bottom:1px solid #e7e7e7;}
+.wh_tab p{float:left; width:50%;}
+.wh_tab p.active{background-color:#3dc700; color:#fff;}
+/* 通用切换栏 结束 */
 
 /* 通用定位弹出框 开始 */
 .ui_popover {position: absolute;top:30px;left: 0px;width: 200px;height: 200px;border: 1px solid #e7e7e7;background: #fff;}
@@ -464,7 +471,16 @@ textarea[readonly] {
 .tab_select a.active:hover,.tab_select li.active:hover {border:1px solid #b1dbf9;}
 .tab_select a.button,.tab_select li.button {color:#167efb;border:1px solid #f8f8f8;cursor: pointer;}
 .tab_select a.button:hover,.tab_select li.button:hover {border:1px solid #167efb;}
-/* 通用选项选择 结束 */
+
+.tab_select2 {display:inline-block; margin-bottom:10px;}
+.tab_select2 a {margin:0; float:left;height: 25px;line-height: 25px;padding:0 10px;border:1px solid #e7e7e7; border-left:none; background: #f8f8f8;color:#000;margin-bottom:1px;list-style: none;}
+.tab_select2 a.first{border:border:1px solid #e7e7e7; border-radius: 3px 0 0 3px;}
+.tab_select2 a.last{border:border:1px solid #e7e7e7; border-radius: 0 3px 3px 0;}
+.tab_select2 a:hover {border:1px solid #999;background: #fff;text-decoration: none;}
+.tab_select2 a.active {background: #cae8fb;color:#007aff;border:1px solid #b1dbf9;}
+.tab_select a.active:hover {border:1px solid #b1dbf9;}
+
+/* 通用选项选择 结束 */ 
 
 /* 通用展示选项 开始 */
 .tab_show {padding: 0;margin: 0;overflow: hidden;display: inline-block;}
@@ -533,11 +549,12 @@ textarea[readonly] {
 .inputitem.w_m {width: 180px;}
 .inputitem.w_s {width: 50px;}
 
+
 .inputitem .textinfo {margin-left: 8px;}
 .inputitem .gegege {margin: 0 10px;}
 .inputitem .tototo {margin: 0 10px;}
 .textareaitem {padding:0;margin:0 6px;position: relative;}
-.textareaitem .textarea {width:100%;border:1px solid #e7e7e7;min-height:88px;line-height:26px;padding:1px 5px;margin:0 -6px}
+.textareaitem .textarea {width:100%;border:1px solid #e7e7e7;min-height:88px;line-height:26px;padding:1px 5px;margin:0 -6px; resize:none;}
 /* 通用输入框 结束 */
 
 /* 通用上传文件按钮 开始 */
@@ -1066,6 +1083,7 @@ textarea[readonly] {
 .show_info dl {display: inline-block;width: 100%;font-size: 12px;margin-bottom: 10px;line-height: 30px;}
 .show_info dl dt {color:#999;width: 120px;padding-right:15px;display: block;float: left;text-align: right;}
 .show_info dl dd {display: block;text-align: left;margin-left: 140px;margin-right: 40px;}
+.show_info p{color:#999; font-size: 12px; line-height: 30px;}
 /* 通用展示信息 居中 结束 */
 
 /* 通用展示信息 开始 */
@@ -1088,6 +1106,7 @@ textarea[readonly] {
 .tabnav {display: block;overflow: hidden;padding: 10px 0px;margin: 0 auto;}
 .tabnav .tabnav_item {float: left;cursor: pointer;}
 .tabnav.two .tabnav_item {width:50%;}
+.tabnav.three .tabnav_item {width:33.33%;}
 .tabnav.five .tabnav_item {width:20%;}
 .tabnav .tabnav_item .t {text-align: center;font-size: 12px;height:25px;line-height:25px;color: #167efb;display:block;border-width: 1px 0 1px 1px;border-style: solid;border-color: #167efb;}
 .tabnav .tabnav_item.active .t {background: #167efb;color: #fff;}
@@ -1211,6 +1230,8 @@ textarea[readonly] {
 
 .paneinner_right .pi_footer {left: 0px; bottom: 0px;right: 0px;height: 44px;background-color: #fff;border-left:none;cursor: auto;border-top:1px solid #a3c3db;}
 
+.paneinner_right.have_toolbar .pi_contentbody {top: 44px;} /* 当有顶部栏 */
+.paneinner_right.have_footer .pi_contentbody {bottom: 44px;} /* 当有底部栏 */
 /* 内页框架 结束 */
 
 
@@ -2069,8 +2090,9 @@ body.bg_blue_coupons .poweredby a {color: rgba(255,255,255,0.3);}
 .placeorder .item_area .content .dropdown_menu .dropdown_a {background: #cae8fb;color:#007aff;border:1px solid #b1dbf9;}
 .placeorder .item_area .content .dropdown_menu .dropdown_a .arrow {border-top-color: #007aff;}
 .placeorder .item_area .i_title {display: inline-block;height: 35px;line-height: 35px;}
-
-
+.placeorder .item_area p.total_momey{height:27px; line-height: 27px;}
+.placeorder .item_area .count_unit{position:absolute; left:235px; top:8px; line-height: 30px; height:30px;}
+.placeorder .item_area .countunit_tip{position:absolute; left:280px; top:8px; line-height: 30px; height:30px;}
 
 
 
