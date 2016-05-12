@@ -362,6 +362,99 @@ $(function(){
 		});
 	}
 	slideSwitch("insertBtn");
-*/		
+*/	
+	//tab选项卡切换（洗涤下单家政下单）
+	$(document).ready(function(){
+		function changeTab(tab,content){
+			$(tab).each(function(i){
+				$(this).click(function(){
+					$(tab).removeClass("active");
+					$(this).addClass("active");
+					$(content).css({"display":"none"});
+					$(content).eq(i).css({"display":"block"});
+				})
+			})
+		}
+		changeTab(".js_wh_tab",".js_wh_content");
+	});	
 
+/*	$(document).ready(function(){
+		//参数为输入框选择器,单价,显示框选择器
+		function whMoney(count,unitPrice){
+			$(count).bind("blur",function(){
+				var reg = /^\d+(\.\d)?$/g; 
+				var reg2 = /^\d+$/g;
+				var value = $(count).val();
+				var total = value * unitPrice;
+				if(!reg.test(value)&&!reg2.test(value)){
+					count = $(count).val("");
+				}else{
+					$(".js_count").eq(0).html(value);
+					$(".js_unitprice").eq(0).html(unitPrice);
+					$(".js_totalprice").eq(0).html(total);
+					$("#js_back_data").val(total);
+				}				
+			});
+		}
+		whMoney("#js_wash_value",50);
+	});*/
+
+	$(document).ready(function(){
+		/*
+		$(".js_h_tab").each(function(i){
+			$(this).click(function(){
+				$(".js_h_tab").removeClass("active");
+				$(this).addClass("active");
+				if(i == 0){
+					$(".js_count_unit").html("小时");
+					$(".js_unit").html("元/小时");
+					$(".js_unitprice").html(50);
+				}else{
+					$(".js_count_unit").html("平方米");
+					$(".js_unit").html("元/平方米");
+					$(".js_unitprice").html(8);
+				}
+			});
+		})*/
+		function countPrice(){
+			var price=50;
+			var total=0;
+			$(".js_h_tab").find("li").click(function(){
+				$(".js_h_tab").find("li").removeClass("active");
+				var th = $(this);
+				th.addClass("active");
+				price = th.data("price");
+				/*var value = $(".js_wash_value").val();
+				total = value * unitPrice;
+				$(".js_totalprice").html(total);*/
+				var unit = th.data("unit");	
+				$(".js_unitprice").text(price);
+				$(".js_count_unit").text(unit);
+				$(".js_unit").text("元/"+unit);
+				$("#js_hidden").val(total);
+				$(".js_wash_value").blur();
+			});
+			$(".js_wash_value").bind("blur",function(){
+				
+				var reg = /^\d+(\.\d)?$/g; 
+				var reg2 = /^\d+$/g;
+				var value = $(".js_wash_value").val();
+				total = value * price;
+				if(!reg.test(value)&&!reg2.test(value)){
+					$(".js_countunit_tip").css({"display":"block"});
+					$(".js_wash_value").val("");
+					
+				}else{
+					$(".js_countunit_tip").css({"display":"none"});
+					$(".js_total_money").html('<span class="js_count"></span>&nbsp;小时&nbsp;×&nbsp;<span class="js_unitprice"></span>&nbsp;<span class="js_unit">元/小时</span>&nbsp;=&nbsp;<span class="js_totalprice  color_red fsize16"></span>&nbsp;元');
+					$(".js_count").text(value);
+					$(".js_unitprice").text(price);
+					$(".js_totalprice").text(total);
+					$("#js_hidden").val(total);
+				}				
+			});
+		}
+		countPrice();
+		
+	});
 })();
