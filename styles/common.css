@@ -864,7 +864,7 @@ textarea[readonly] {
 
 .table_global tr.trade_son_item td {border-top: 1px dashed #e7e7e7;}
 
-.table_global .time_inner {min-width: 70px;}
+.table_global .time_inner {min-width: 80px;}
 .table_global .money_inner {min-width: 120px;}
 .table_global .user_inner {min-width: 120px;}
 .table_global .name_inner {min-width: 120px;}
