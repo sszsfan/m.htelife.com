@@ -135,7 +135,9 @@ textarea[readonly] {
     background-color: #eee;
 }
 
-
+.price_text1 {display: inline-block; width:50px; text-align: center;}
+.price_text {display: inline-block; text-align: center; margin:0 10px;}
+/*.price_text2 {display: inline-block; text-align: center; margin:0 10px; margin-right:40px;}*/
 /* 通用内容盒子 开始 */
 .box {margin-bottom: 10px;display: block;}
 .ui_box {border: 1px solid #e7e7e7;margin-bottom: 10px;display: block;}
@@ -2300,6 +2302,8 @@ body.bg_black_toolbar .pane_right .toolbar .wc_controls .icon_down {background-s
 .order_logistics_info p{font-size: 12px; line-height: 20px;}
 .order_logistics_info .order_logistics_list{overflow: hidden;}
 .left140{margin-left:140px;}
+.left500{margin-left:500px;}
+.left40{margin-left:40px; float:left;}
 .not_pay{border:1px solid #f52323; margin:10px auto;}
 .not_pay .btn_not_pay{background-color: #fdd3d3; height:60px; line-height: 60px; border-bottom:1px solid #f52323; color: #f52323; font-weight: 500; font-size: 25px; text-align: center;}
 .not_pay .not_pay_content{text-align: center;margin:10px;}
